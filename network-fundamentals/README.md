@@ -41,3 +41,55 @@ The types of networks that exist are limited to the geographical area they cover
 
 - **Peer-to-Peer (P2P) Network**: A P2P network is a decentralized network architecture where each device (peer) in the network can act as both a client and a server, allowing direct sharing of resources, data, and services among all connected devices without the need for a central server. P2P networks are often used for file sharing and collaborative applications.
 - **Client-Server Network**: A client-server network is a network architecture where multiple client devices (computers, smartphones, etc.) connect to a central server that provides resources, services, and data to the clients. The server manages and controls access to resources, while clients request and consume those resources. Client-server networks are commonly used in business environments for applications like email, databases, and web services.
+
+## Backbone vs Segments (OB 1.6)
+
+When an organization sets up a network, they are going to have to decide how to structure the network. All networks are pretty much going to have what's called a backbone and a segment.
+
+A **backbone** connected all the different segments of the network withing the organization together.
+
+A **switch** (we will cover switches in more detail later) allows for **VLANs** (Virtual Local Area Networks) to be created on a network segment. A VLAN allows devices on different physical segments to communicate as if they were on the same physical segment. VLANs allow you to control traffic, improve security, and reduce congestion on a network.
+
+What exactly is the **backbone** and the **segments** of a network? Generally, the backbone is the main connection point of the network. It can be a high-speed switch or router that connects all the different **segments** of the network together. Connected to the backbone are the various servers, internet devices, and all the **segments** switches.
+The **segments** of the network are the smaller sections that connect to the backbone. Each segment can be a different department, floor, or building within an organization. Each segment typically has its own switch that connects all the devices within that segment together.
+
+Here is a simple diagram to illustrate the backbone and segments of a network:
+
+```
+          [ Backbone Switch/Router ]
+                    /      |      \
+                   /       |       \
+          [ Segment 1 ] [ Segment 2 ] [ Segment 3 ]
+           (Switch)       (Switch)      (Switch)
+          /   |   \     /   |   \     /   |   \
+       PC1  PC2  PC3  PC4  PC5  PC6  PC7  PC8  PC9
+```
+
+In this diagram, the backbone switch/router connects all the segments together. Each segment has its own switch that connects the devices within that segment. This structure allows for efficient communication and resource sharing within the organization.
+
+### Backbone and Segments
+
+- **Backbone**: A **network backbone** is the main infrastructure that interconnects various segments of a computer network, providing a central pathway for data exchange. It is typically composed of high-capacity, high-speed links and core routers or switches, which handle the bulk of network traffic and ensure efficient data transmission across the network.
+
+```
+          [ Backbone Switch/Router ] -> Internet Router
+                    /      |      \
+                   /       |       \
+           (Sales)       (Engineering)      (Servers)
+          /   |   \     /   |   \     /   |   \
+          { These are the segments of the network }
+```
+
+- **Network Segment**: **Network segments** are smaller sub-networks or clusters of devices that connect to the backbone. Each segment can include a variety of networked devices such as computers, servers, switches, and other networking equipment. Segments often represent different departments or areas within an organization, and they rely on rhe backbone to communicate with other segments and access shared resources.
+
+```
+          [ Backbone Switch/Router ]
+                    /      |      \
+                   /       |       \
+          [ Segment 1 ] [ Segment 2 ] [ Segment 3 ]
+           (Switch)       (Switch)      (Switch)
+          /   |   \     /   |   \     /   |   \
+       PC1  PC2  PC3  PC4  PC5  PC6  PC7  PC8  PC9
+```
+
+In summary, the backbone serves as the central hub for data transmission, while network segments are the smaller, localized areas that connect to the backbone, allowing for organized and efficient communication within the overall network structure.
