@@ -147,3 +147,60 @@ There are several different types of network topologies, each with unique config
      / | \      |        / | \
 [ D1][D2][D3] [ D4 ] [ D5][D6][D7 ]
 ```
+
+## Three-Tier Model (OB 1.6)
+
+The **three-tier hierarchy network model** is a widely adopted structured approach to network design that organizes network architecture into three distinct layers or tiers.
+
+**Each layer is designed to serve a specific purpose**, optimizing scalability, performance, and manageability of the network.
+
+A quick diagram of the three-tier model looks like this:
+
+```
+        [ Core Layer ]                      [Core Layer ]
+              |                                  |
+        [ Distribution Layer ]         [ Distribution Layer ]
+              /  \                                /   \
+             /    \                              /     \
+[ Access Layer ]  [Access Layer ]   [ Access Layer ]     [ Access Layer ]
+        |                |                  |                   |
+   [ End Devices ]  [End Devices]     [End Devices]        [ End Devices ]
+```
+
+### The Three Tiers
+
+There are three layers or tiers in the three-tier hierarchy network model: the Core Layer, the Distribution Layer, and the Access Layer.
+
+- **Core Layer**: The **core layer** is the topmost layer of the three-tier hierarchy network model. It serves as the backbone of the network, providing high-speed and reliable connectivity between different distribution layers. The core layer is responsible for fast and efficient data transport across the network, ensuring minimal latency and high availability. It typically consists of high-capacity routers and switches that can handle large volumes of traffic.
+- **Distribution Layer**: The **distribution layer** is the middle layer of the three-tier hierarchy network model. It acts as an intermediary between the core layer and the access layer, aggregating data from multiple access layer devices and forwarding it to the core layer. The distribution layer is responsible for implementing policies, routing, and filtering traffic between different segments of the network. It often includes routers and multilayer switches that provide advanced features such as Quality of Service (QoS) and security.
+- **Access Layer**: The **access layer** is the bottommost layer of the three-tier hierarchy network model. It is the layer where end devices, such as computers, printers, and other network-enabled devices, connect to the network. The access layer provides connectivity to these end devices and manages their access to network resources. It typically consists of switches and wireless access points that facilitate communication between end devices and the rest of the network.
+
+### Core Layer
+
+The **core layer** is the backbone of the network, handling high-speed packet switching across the entire network. It is **responsible for fast and reliable data routing** and sho;d have high redundancy and fault tolerance to prevent network downtime.
+
+Imagine the core layer as the highway system of a city, where major roads connect different parts of the city efficiently.
+
+In more technical imagination, imagine the core layer as a high-speed switch or router that connects multiple distribution layers together, ensuring that data can travel quickly and reliably across the network.
+
+Coming from a programming background, you can think of the core layer as the main application server that handles all the requests and responses between different modules of an application, ensuring smooth and efficient communication.
+
+### Distribution Layer
+
+The **distribution layer** acts as the intermediary between the core layer and the access layer, managing routing, filtering, and WAN access. It **aggregates data** received from the access layer before it is transmitted to the core layer for routing to the final destination.
+
+Think of the distribution layer as the main roads that connect neighborhoods to the highway system in a city.
+
+In more technical imagination, imagine the distribution layer as a switch or router that connects multiple access layers together, managing traffic and ensuring that data is properly routed to the core layer.
+
+Coming from a programming background, you can think of the distribution layer as the controller in an MVC (Model-View-Controller) architecture, managing the flow of data between the model (core layer) and the view (access layer).
+
+### Access Layer
+
+The **access layer** is the network's point of entry for devices and end users, connecting them to the network. This layer includes switches and access points that **provide connectivity** to desktops, laptops, and other network-enabled devices.
+
+Think of the access layer as the local streets in a neighborhood that connect homes and businesses to the main roads.
+
+In more technical imagination, imagine the access layer as a switch or access point that connects end devices to the network, allowing them to communicate with other devices and access network resources.
+
+Coming from a programming background, you can think of the access layer as the user interface of an application, where users interact with the system and access its features.
