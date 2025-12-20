@@ -247,3 +247,27 @@ The architecture facilitates easier management and maintenance, while enhancing 
 ---
 
 The only time you are going to be dealing with a 3-tier model is when you are working with large enterprise networks. Most small to medium-sized networks are going to be using either a spine-and-leaf architecture or a collapsed core architecture.
+
+## North South vs East West Traffic (OB 1.6)
+
+When discussing designing networks, you have to understand how data flows through the network. There are two main types of data flow: **North-South traffic** and **East-West traffic**.
+
+In its simplest form, **North-South traffic** refers to network traffic that literally flows up and down the data center and outside the data center. If the traffic is going from a user to a server or from a server to the internet, that is considered North-South traffic.
+
+On the other hand, **East-West traffic** refers to network traffic that flows laterally within the data center. If the traffic is going from one server to another server within the same data center, that is considered East-West traffic.
+
+### North-South Traffic
+
+**North-South traffic** describes the flow of network traffic between the **data center** and the **outside world** (e.g., users, clients, external networks), focusing on inbound and outbound traffic patterns.
+
+It typically involves client-to-server communications, where clients access services hosted within the data center.
+
+For example, when a user accesses a web application hosted in a data center, the request travels from the user's device (outside the data center) to the web server (inside the data center), and the response travels back to the user's device. This flow of traffic is considered North-South traffic.
+
+### East-West Traffic
+
+**East-West traffic** describes the flow of network traffic **within the data center itself**, focusing on lateral communications between servers, applications, and services hosted within the same environment.
+
+This includes server-to-server, server-to-storage, and VM-to-VM communications, highlighting the importance of efficient internal networking to support high volumes of internal data exchange.
+
+For example, when a web server communicates with a database server within the same data center to retrieve information for a user request, this interaction generates East-West traffic. The data exchanged between these servers remains within the data center, making it an example of East-West traffic.
