@@ -93,3 +93,57 @@ In this diagram, the backbone switch/router connects all the segments together. 
 ```
 
 In summary, the backbone serves as the central hub for data transmission, while network segments are the smaller, localized areas that connect to the backbone, allowing for organized and efficient communication within the overall network structure.
+
+## Topologies (OB 1.6)
+
+A **network topology** is basically the layout or structure of the network.
+
+In more detail, a **network topology** describes the layout or arrangement of elements (links, nodes, routers, switches, etc.) of a computer network.
+
+There are several different types of network topologies, each with unique configurations and characteristics, influencing the network's performance, reliability, and scalability. In simpler terms, each topology has its own advantages and disadvantages.
+
+### Common Network Topologies
+
+- **Point-to-Point Topology**: A **point-to-point topology** is the simplest type of network topology, where two devices are directly connected to each other. This topology involves a **direct connection** between two networking devices, typically using a single cable or wireless link. It is mainly used for dedicated connections, such as those between a main office and a branch office, or between two pieces of networking equipment.
+  - For example, a **site-to-site WAN** connection between two offices or a **host-to-host PAN** connection. A simpler example would be a direct connection between two computers using an Ethernet cable or a wireless link.
+
+```
+[ Device A ] <-----> [ Device B ]
+```
+
+- **Mesh Topology**: A **mesh topology** is a network configuration where each device is interconnected with multiple other devices, creating a web-like structure. This topology is a network setup where each host is connected to every other host in the network, creating a network with **no central connecting point**. This topology ensures **high availability and redundancy**, as multiple paths exist for data to travel between devices. If any on link fails, data can be rerouted through multiple alternative paths.
+  - **Advantages**: High fault tolerance, redundancy, and reliability due to multiple connections between devices.
+  - **Disadvantages**: Complex setup and maintenance, higher costs due to the increased number of connections required.
+  - For example, the internet is a large-scale mesh network where multiple routers and servers are interconnected to ensure data can be transmitted even if some connections fail.
+
+```
+       [ Device A ]
+       /    |     \
+   [ Device B ]--[ Device C ]
+       \    |     /
+       [ Device D ]
+```
+
+- **Star or Hub-and-Spoke Topology**: A **star or hub-and-spoke topology** is a network configuration where all devices are connected to a central hub or switch. In this topology, **all nodes are connected to a central node such as hubs/switches/wireless access points**. This setup simplifies network management and troubleshooting, as all data passes through the central hub. However, it **creates a single point of failure**; if the central hub fails, the entire network becomes inoperable.
+  - **Advantages**: Easy to manage and troubleshoot, scalable, and allows for easy addition or removal of devices.
+  - **Disadvantages**: Single point of failure at the central hub, potential bottleneck if the hub is overloaded.
+  - For example, most home and office networks use a star topology where all devices connect to a central router or switch.
+
+```
+            [ Central Hub ]
+           /      |      \
+      [ Device A ][ Device B ][ Device C ]
+```
+
+- **Hybrid Topology**: A **hybrid topology** is a network configuration that combines two or more different types of topologies to leverage the advantages of each. This topology combines **two or more different topologies** to form a resultant topology that leverages the advantages and mitigates the disadvantages of the individual topologies used. Hybrid topologies offer flexibility in network design and can be tailored to meet specific organizational needs or constraints.
+  - **Advantages**: Flexibility, scalability, and the ability to optimize network performance by combining different topologies.
+  - **Disadvantages**: Complexity in design and management, potential for increased costs due to the combination of different topologies.
+  - For example, a large organization might use a star topology within individual departments and connect those departments using a mesh topology for inter-departmental communication.
+
+```
+        [ Central Hub ]
+       /      |      \
+  [ Dept A ] [ Dept B ] [ Dept C ]
+     / | \      |        / | \
+[ D1][D2][D3] [ D4 ] [ D5][D6][D7 ]
+```
