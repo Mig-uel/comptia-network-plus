@@ -271,3 +271,75 @@ For example, when a user accesses a web application hosted in a data center, the
 This includes server-to-server, server-to-storage, and VM-to-VM communications, highlighting the importance of efficient internal networking to support high volumes of internal data exchange.
 
 For example, when a web server communicates with a database server within the same data center to retrieve information for a user request, this interaction generates East-West traffic. The data exchanged between these servers remains within the data center, making it an example of East-West traffic.
+
+## Traffic Flow (OB 1.6)
+
+On a network, traffic can flow in certain directions. For example, traffic can flow from one-to-one (device to device), one-to-many (device to multiple devices), and many-to-many (multiple devices to multiple devices). The technical terms for these types of traffic flows are unicast, multicast, and broadcast.
+
+### Unicast
+
+The most common type of traffic flow on a network is **unicast**. **Unicast** is a one-to-one form of communication where data is **sent from one source to one specific destination** identified by a unique IP address.
+
+It is the most common form of **IP communication**, used for most internet traffic, such as web browsing, email, and file transfers.
+
+Unicast communication ensures that data packets are delivered to a single, specific recipient over a network.
+
+For example, when you send an email to a specific person, the email is sent using unicast communication, where the email server sends the message directly to the recipient's email server using their unique IP address.
+
+```
+[ Sender ] ----unicast----> [ Receiver ]
+```
+
+### Multicast
+
+**Multicast** is a method of communication where data is sent **from one or more sources to multiple destinations simultaneously** over a network, using a specific multicast group address.
+
+Multicast is efficient for applications like streaming video or audio, **where the same data needs to be delivered to multiple recipients**, reducing the bandwidth consumption compared to sending individual unicast messages to each recipient.
+
+This approach is used in both IPv4 and IPv6 networks to optimize the delivery of packets to multiple destinations.
+
+For example, when a live video stream is broadcasted to multiple viewers, multicast communication is used to send the video data to all viewers who have joined the multicast group.
+
+```
+          [ Sender ]
+              |
+       -----------------
+       |       |       |
+   [ Receiver1 ][ Receiver2 ][ Receiver3 ]
+```
+
+### Anycast
+
+Anycast is a network addressing and routing method where data is sent to the **nearest or best destination as determined by the routing protocol**, from among multiple potential destinations that share the same IP address.
+
+It is used in IPv6 (and to a lesser extent in IPv4) to provide fast and efficient delivery of services by directing users to the closest server, **commonly used in DNS and CDN (Content Delivery Network) services**.
+
+Anycast can improve network performance and availability by **automatically routing traffic to the nearest or most optimal server** based on network conditions.
+
+For example, when a user requests a website that is hosted on multiple servers around the world, anycast routing directs the user's request to the nearest server, reducing latency and improving load times.
+
+```
+          [ Anycast Address ]
+              /      |      \
+       [ Server1 ] [ Server2 ] [ Server3 ]
+              \      |      /
+           [ User Request ]
+```
+
+### Broadcast
+
+**Broadcast** is a method of communication where a message is sent from **one sender to all potential receivers** within a specific network segment.
+
+In IPv4 networks, the broadcast address is used to **send data to all devices on a local network** simultaneously, such as when a device requests an IP address via DHCP.
+
+Broadcast is not supported in IPv6 networks, instead, IPv6 uses multicast to achieve similar functionality.
+
+For example, when a device sends an ARP request to find the MAC address of another device on the same local network, it uses broadcast communication to send the request to all devices on that network segment.
+
+```
+          [ Sender ]
+              |
+       -----------------
+       |       |       |
+   [ Receiver1 ][ Receiver2 ][ Receiver3 ]
+```
