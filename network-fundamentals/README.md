@@ -204,3 +204,46 @@ Think of the access layer as the local streets in a neighborhood that connect ho
 In more technical imagination, imagine the access layer as a switch or access point that connects end devices to the network, allowing them to communicate with other devices and access network resources.
 
 Coming from a programming background, you can think of the access layer as the user interface of an application, where users interact with the system and access its features.
+
+## Spine-and-Leaf Architecture and Collapsed Core Architecture (OB 1.6)
+
+As you start designing networks, one architectural design you could use is the **spine-and-leaf architecture**.
+
+### Spine-and-Leaf Architecture
+
+The **spine-and-leaf architecture** is a network topology commonly used in data centers and large-scale enterprise networks. It is a **two-tier or two-layer** network topology that is highly scalable and **minimizes latency** by ensuring that every leaf (access layer) switch is separated by no more than two switches from any other leaf switch.
+
+In this topology, leaf switches form the access layer where devices are connected, while spine switches serve as the core or backbone of the network, interconnecting all leaf switches without any direct connections between them.
+
+In simpler terms, spine switches connect to all leaf switches, but leaf switches do not connect to each other directly. For example, consider an enterprise CISCO switch for the spine layer and multiple smaller switches for the leaf layer. All leaf switches connect to spine switches, but leaf switches do not connect to each other at all.
+
+```
+        [ Spine Switch 1 ]   [ Spine Switch 2 ]
+               |                    |
+       -------------------------------
+       |        |        |        |
+ [ Leaf Switch 1 ][ Leaf Switch 2 ][ Leaf Switch 3 ]
+       |                |                |
+   [ End Devices ]  [ End Devices ]  [ End Devices ]
+```
+
+The reason why this design is fast and low latency is that its only two layers, and any device on the network is only two hops away from any other device.
+
+A **hop** is a term used to describe the journey of a data packet from one network device (like a router or switch) to another as it travels across a network. Each time a packet passes through a device, it is considered one hop. The number of hops can affect the latency and speed of data transmission, with fewer hops generally resulting in faster communication.
+For example, if a data packet travels from your computer to a web server and passes through three routers along the way, that would be considered three hops.
+
+### Collapsed Core Architecture
+
+Another architectural design you could use is the **collapsed core architecture**.
+
+The **collapsed core architecture** is a network design that combines the core and distribution layers into a single layer, effectively "collapsing" the traditional three-tier model into a two-tier model.
+
+Collapse core architecture merges the **core** and **distribution** layers into a single layer, simplifying the network design and reducing hardware costs.
+
+This approach is ideal for **small to medium-sized networks** where managing several layers may not be necessary.
+
+The architecture facilitates easier management and maintenance, while enhancing performance by reducing latency between the network's core and distribution functions.
+
+---
+
+The only time you are going to be dealing with a 3-tier model is when you are working with large enterprise networks. Most small to medium-sized networks are going to be using either a spine-and-leaf architecture or a collapsed core architecture.
