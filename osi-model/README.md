@@ -32,3 +32,30 @@ If I want to send you a mail, I need to use SMTP to send the mail, but how does 
 This is going to get complex very quickly because in order to transmit data effectively, we need multiple protocols to work together. This will eventually lead us to a layered approach to networking, which is where the OSI model comes in.
 
 In summary, a protocol is just a language that computers use to communicate with each other. Different protocols are used for different purposes, and multiple protocols are often used together to transmit data effectively over a network.
+
+## Introduction to a Layered Approach to Networking
+
+In order to set up a network, you're not just going to be using one piece of gear, you are going to be using multiple pieces of gear. These pieces of gear are layered in order to create a functional network.
+
+For example, if you want to set up a network, you are going to have the cabling, switches, routers, firewalls, etc. However, physical gear is not enough to set up a network. You also have the software side of things, which includes protocols, applications, and services which every piece of gear is going to use in order to communicate with each other.
+
+To manage the complexity of networking, we use a layered approach. This means that we break down the networking process into smaller, more manageable layers, each with its own specific function. Each layer is responsible for a specific aspect of networking, and they work together to ensure that data is transmitted effectively.
+
+The most common model used to describe this layered approach is the OSI (Open Systems Interconnection) model.
+
+The OSI model is a layered approach to how computers connect.
+
+It consists of seven layers, each with its own specific function:
+
+1. **Layer 1 - Physical Layer**: This layer is responsible for the physical transmission of data over a network. It includes the cabling, connectors, and other physical components that make up the network.
+2. **Layer 2 - Data Link Layer**: This layer is responsible for the reliable transmission of data over a physical link. It includes protocols such as Ethernet and Wi-Fi, which are used to transmit data over a local area network (LAN). We can think of this layer as the switch layer.
+3. **Layer 3 - Network Layer**: This layer is responsible for routing data between different networks. It includes protocols such as IP (Internet Protocol), which is used to route data over the internet. We can think of this layer as the router layer.
+4. **Layer 4 - Transport Layer**: This layer is responsible for ensuring that data is transmitted reliably and efficiently. It includes protocols such as TCP (Transmission Control Protocol) and UDP (User Datagram Protocol), which are used to manage the flow of data between devices. We can think of this layer as the firewall layer.
+
+The rest of the layers (Layers 5-7) are more focused on the software side of things:
+
+5. **Layer 5 - Session Layer**: This layer is responsible for establishing, managing, and terminating sessions between applications. It ensures that data is properly synchronized and organized during communication.
+6. **Layer 6 - Presentation Layer**: This layer is responsible for translating data between different formats. It ensures that data is presented in a way that is understandable to the receiving application, including data encryption and compression.
+7. **Layer 7 - Application Layer**: This layer is responsible for providing services to end-users. It includes protocols such as HTTP, FTP, and SMTP, which are used to access web pages, transfer files, and send emails.
+
+The point of all this is that we are going to be using a layered approach. In particular, we are going to be using the OSI model to help us understand how data is transmitted over a network. It is a seven-layer model that breaks down the networking process into smaller, more manageable layers, each with its own specific function.
