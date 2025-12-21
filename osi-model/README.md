@@ -59,3 +59,51 @@ The rest of the layers (Layers 5-7) are more focused on the software side of thi
 7. **Layer 7 - Application Layer**: This layer is responsible for providing services to end-users. It includes protocols such as HTTP, FTP, and SMTP, which are used to access web pages, transfer files, and send emails.
 
 The point of all this is that we are going to be using a layered approach. In particular, we are going to be using the OSI model to help us understand how data is transmitted over a network. It is a seven-layer model that breaks down the networking process into smaller, more manageable layers, each with its own specific function.
+
+## What is the OSI Model? (OB 1.1)
+
+In today's world, we enjoy interoperability. What is interoperability? It is where different systems can talk to each other regardless of their underlying architecture or design. Windows can talk to Mac, Mac can talk to Unix, Unix can talk to Linux, and so on.
+
+However, if you go back to the 1970s and 1980s, this was not the case. Different vendors had their own proprietary systems that could not talk to each other. This created a lot of problems for businesses and organizations that needed to connect different systems together.
+There was no common language aka protocol for these systems to communicate with each other.
+
+How did we get here? The International Organization for Standardization (ISO) created a model called the OSI model to help solve this problem.
+
+### OSI Model Layers
+
+The OSI model is called an internetworking model, which are used to organize and describe network functions. Each layers describes a different set of unique functions that work together to enable communication between devices on a network.
+
+OSI stands for Open Systems Interconnection, which means that the model is designed to be open and flexible, allowing different systems to communicate with each other regardless of their underlying architecture or design.
+
+Any system that follows the OSI model can communicate with any other system that also follows the OSI model. This is because the OSI model provides a common framework for communication, which allows different systems to understand each other.
+
+The **Open System Interconnection (OSI) model** is made up of **seven layers** containing various types of hardware and software components that work together to enable communication between devices on a network.
+
+- Created to achieve interoperability of diverse vendor devices and software systems
+- Partitions communication systems into abstraction layers
+- **Protocols** are the standard terms that computers use to understand each other
+- Each layer serves the layer above it and is served by the layer below it
+
+### Mnemonics
+
+To remember the OSI model layers, you can use the following mnemonics:
+
+**From Top to Bottom (Layer 7 to Layer 1):**
+
+- **A**ll **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing
+
+**From Bottom to Top (Layer 1 to Layer 7):**
+
+- **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way
+
+Remember, the OSI model is as follows:
+
+1. **Physical Layer** (Layer 1)
+2. **Data Link Layer** (Layer 2)
+3. **Network Layer** (Layer 3)
+4. **Transport Layer** (Layer 4)
+5. **Session Layer** (Layer 5)
+6. **Presentation Layer** (Layer 6)
+7. **Application Layer** (Layer 7)
+
+Remember, layer 1 is at the bottom, and layer 7 is at the top!
