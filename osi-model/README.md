@@ -259,3 +259,29 @@ As the data works its way down from the Application Layer (Layer 7) to the Prese
   - MIDI (Musical Instrument Digital Interface)
 
 So far, we have received data from the Application Layer through protocols such as HTTP or FTP. The Presentation Layer takes this data and ensures that it is in a format that the receiving application can understand. This may involve converting character codes, compressing data, or encrypting data for secure transmission. Once the data is properly formatted, it is passed down to the Session Layer (Layer 5) for further processing.
+
+## Session Layer (OB 1.1)
+
+When computers are communicating with each other, one of the things we have to do is to ensure that they know when they should be talking, are they still talking, and when they should stop talking. This is where the **Session Layer** comes in.
+
+Layer 5 is the **Session Layer**. This layer is responsible for establishing, managing, and terminating sessions between applications.
+
+- Provides logical persistent connection between peer hosts
+- Manages conversation between applications exchanging data
+- Creates, monitors, tears down sessions
+- Full-duplex (data flows both ways simultaneously), half-duplex (data flows both ways, but not at the same time), or simplex (data flows in only one direction) communication
+- Examples of communication modes:
+  - Full-duplex: Both devices can send and receive data simultaneously (e.g., a phone call, switches)
+  - Half-duplex: Devices can send and receive data, but not at the same time (e.g., walkie-talkies)
+  - Simplex: Data flows in only one direction (e.g., television broadcast, keyboard to computer)
+- Synchronization: Inserts checkpoints into data streams to allow for recovery in case of failure
+- This layer has protocols that deal with session establishment, maintenance, and termination
+- Examples of protocols used in this layer include:
+  - NFS (Network File System)
+  - SQL (Structured Query Language)
+  - NetBIOS (Network Basic Input/Output System)
+  - SAP (Session Announcement Protocol)
+  - PPTP (Point-to-Point Tunneling Protocol)
+  - RPC (Remote Procedure Call)
+
+So far, the Application Layer (Layer 7) has generated data to be sent over the network, and the Presentation Layer (Layer 6) has formatted the data for transmission. The Session Layer (Layer 5) now takes over to establish a session between the communicating applications. It manages the conversation, ensuring that both applications are synchronized and can communicate effectively. Once the session is established, the data is passed down to the Transport Layer (Layer 4) for further processing.
