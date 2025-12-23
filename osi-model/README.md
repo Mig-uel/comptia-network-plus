@@ -285,3 +285,30 @@ Layer 5 is the **Session Layer**. This layer is responsible for establishing, ma
   - RPC (Remote Procedure Call)
 
 So far, the Application Layer (Layer 7) has generated data to be sent over the network, and the Presentation Layer (Layer 6) has formatted the data for transmission. The Session Layer (Layer 5) now takes over to establish a session between the communicating applications. It manages the conversation, ensuring that both applications are synchronized and can communicate effectively. Once the session is established, the data is passed down to the Transport Layer (Layer 4) for further processing.
+
+## Transport Layer (OB 1.1)
+
+Before we talk about the Transport Layer, keep in mind that layers 5-7 are all done in software. Layers 1-3 are responsible for movement of data across the network.
+
+The **Transport Layer** is the fourth layer of the OSI model and is responsible for ensuring that data is transmitted reliably and efficiently between devices on a network.
+
+The Transport Layer (Layer 4) has a lot do with check-in. When the data arrives at the host, the Transport Layer is going to check to make sure that all the data arrived and that it is in the correct order.
+
+- One of the busier layers of the OSI model
+- Creates an end-to-end transport between peer hosts
+- UDP and TCP protocols operate at this layer
+  - UDP (User Datagram Protocol): Connectionless protocol that provides fast, but unreliable delivery of data. Used for applications that require speed over reliability, such as video streaming or online gaming. (Simplex communication)
+  - TCP (Transmission Control Protocol): Connection-oriented protocol that provides reliable delivery of data. Used for applications that require accuracy over speed, such as web browsing or email. (Full-duplex communication)
+- Additional protocols that operate at this layer include:
+  - SPX (Sequenced Packet Exchange)
+  - SSL (Secure Sockets Layer)
+  - TLS (Transport Layer Security)
+- Port numbers are also assigned at this layer to identify specific applications or services on a device
+  - Well-known ports (0-1023): Reserved for common services and applications (e.g., HTTP uses port 80, HTTPS uses port 443)
+  - Registered ports (1024-49151): Assigned to specific applications or services by the IANA (Internet Assigned Numbers Authority)
+  - Dynamic or private ports (49152-65535): Used for temporary connections and are not assigned to any specific application or service
+- Responsible for segmentation, flow control, error control, and connection management
+  - Segmentation: Breaks down large data streams into smaller segments for transmission
+  - Flow Control: Manages the rate of data transmission to prevent congestion and ensure efficient use of network resources
+  - Error Control: Detects and corrects errors that may occur during transmission
+  - Connection Management: Establishes, maintains, and terminates connections between devices
