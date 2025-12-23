@@ -344,3 +344,45 @@ The main protocol that operates at this layer is the Internet Protocol (IP).
     - SKIP (Simple Key Management for Internet Protocols)
 
 So far, the Application Layer (Layer 7) has generated data to be sent over the network, the Presentation Layer (Layer 6) has formatted the data for transmission, the Session Layer (Layer 5) has established a session between the communicating applications, and the Transport Layer (Layer 4) has ensured that the data is transmitted reliably and efficiently. The Network Layer (Layer 3) now takes over to route the data packets between different networks. It uses logical addressing (IP addresses) to identify devices on a network and determines the best path for data to travel from the source to the destination. Once the data packets are properly routed, they are passed down to the Data Link Layer (Layer 2) for further processing.
+
+## Data Link Layer (OB 1.1)
+
+The **Data Link Layer** is the second layer of the OSI model and is responsible for providing reliable communication between devices on the same network.
+
+One of the main functions of the Data Link Layer is to manage physical addressing using MAC (Media Access Control) addresses. Each device on a network has a unique MAC address that is used to identify it on the network.
+
+- Gets packets from the Network Layer and encapsulates them into frames for transmission over the physical medium (assuming the data is going down the layers)
+- Transmits frames between devices on the same network
+- Detects and corrects errors that may occur during transmission
+- Converts information into bits for transmission over the Physical Layer (assuming the data is going down the layers)
+- Uses MAC/Hardware addresses to identify and communicate with devices on the same network
+- Moves data to the next physically connected device
+- Devices that operate at this layer include switches and bridges
+- Divided into two sublayers:
+  - Logical Link Control (LLC) Sublayer: Responsible for managing communication between devices on the same network and providing error detection and flow control.
+  - Media Access Control (MAC) Sublayer: Responsible for managing access to the physical medium and providing physical addressing using MAC addresses.
+- Examples of protocols used in this layer include:
+  - Ethernet
+  - Wi-Fi (IEEE 802.11)
+  - ARP (Address Resolution Protocol): resolves IP addresses to MAC addresses
+  - RARP (Reverse Address Resolution Protocol): resolves MAC addresses to IP addresses
+  - PPP (Point-to-Point Protocol)
+  - SLIP (Serial Line Internet Protocol)
+  - L2F (Layer 2 Forwarding)
+  - L2TP (Layer 2 Tunneling Protocol)
+  - PPTP (Point-to-Point Tunneling Protocol)
+  - Token Ring
+  - FDDI (Fiber Distributed Data Interface)
+  - ATM (Asynchronous Transfer Mode)
+  - CDDI (Copper Distributed Data Interface)
+
+**Media Access Control Sublayer (MAC)**
+
+The MAC sublayer is a sublayer of the OSI model's Data Link Layer (Layer 2) that is responsible for managing access to the physical medium and providing physical addressing using MAC addresses.
+It is responsible for the addressing and channel access control mechanisms that enable several nodes to communicate within a network, typically using a MAC address.
+
+**Logical Link Control Sublayer (LLC)**
+
+The LLC sublayer is the upper sublayer of the OSI model's Data Link Layer (Layer 2) that is responsible for managing communication between devices on the same network and providing error detection and flow control.
+
+So far, the Application Layer (Layer 7) has generated data to be sent over the network, the Presentation Layer (Layer 6) has formatted the data for transmission, the Session Layer (Layer 5) has established a session between the communicating applications, the Transport Layer (Layer 4) has ensured that the data is transmitted reliably and efficiently, and the Network Layer (Layer 3) has routed the data packets between different networks. The Data Link Layer (Layer 2) now takes over to provide reliable communication between devices on the same network. It manages physical addressing using MAC addresses, encapsulates packets into frames for transmission, detects and corrects errors, and converts information into bits for transmission over the Physical Layer (Layer 1). Once the data frames are properly prepared, they are passed down to the Physical Layer (Layer 1) for further processing.
