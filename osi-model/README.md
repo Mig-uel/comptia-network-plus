@@ -107,3 +107,29 @@ Remember, the OSI model is as follows:
 7. **Application Layer** (Layer 7)
 
 Remember, layer 1 is at the bottom, and layer 7 is at the top!
+
+## Introduction to the Layers (OB 1.1)
+
+When it comes to the OSI model, keep in mind that every machine in the network is going to be running this model.
+
+Here's a brief overview of what each layer does:
+
+| Layer | Name               | Function                                                                                                                                                               |
+| ----- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 7     | Application Layer  | Generates data to be sent over the network, processes data that is received from the network, and provides services to applications. Examples include HTTP, FTP, SMTP. |
+| 6     | Presentation Layer | Gets the data ready for the application layer by converting, translating, encoding, compressing, and encrypting data.                                                  |
+| 5     | Session Layer      | Manages sessions between applications, including establishing, maintaining, and terminating connections.                                                               |
+| 4     | Transport Layer    | Handles end-to-end communication either via connection-oriented (TCP) or connectionless (UDP) protocols, ensuring data is delivered reliably and in order.             |
+| 3     | Network Layer      | Responsible for logical addressing and routing of data packets across networks using protocols like IP.                                                                |
+| 2     | Data Link Layer    | Manages physical addressing (MAC addresses), error detection, and access to the physical medium. Examples include Ethernet and Wi-Fi.                                  |
+| 1     | Physical Layer     | Deals with the physical connection between devices, including cables, switches, and other hardware components that transmit raw bitstreams over a physical medium.     |
+
+Here's another brief overview of the OSI model layers and their functions:
+
+- **Layer 1 - Physical Layer**: This layers is predominantly about converting bits into electrical, radio, or optical signals. It is concerned with the physical connection between devices, including cables, switches, and other hardware components that transmit raw bitstreams over a physical medium.
+- **Layer 2 - Data Link Layer**: This layer provides communication between devices on the same network. It is responsible for managing physical addressing (MAC addresses), error detection, and access to the physical medium. Examples of protocols used in this layer include Ethernet and Wi-Fi.
+- **Layer 3 - Network Layer**: This layer is responsible for logical addressing and routing of data packets across networks. It uses protocols like IP (Internet Protocol) to determine the best path for data to travel from the source to the destination.
+- **Layer 4 - Transport Layer**: This layer handles end-to-end communication between devices. It can use connection-oriented protocols like TCP (Transmission Control Protocol) or connectionless protocols like UDP (User Datagram Protocol) to ensure that data is delivered reliably and in order.
+- **Layer 5 - Session Layer**: This layer setup the initial connection between the machines. It manages sessions between applications, including establishing, maintaining, and terminating connections.
+- **Layer 6 - Presentation Layer**: This layer is responsible for formatting data for the application layer. It converts, translates, encodes, compresses, and encrypts data to ensure that it is in a format that the application layer can understand.
+- **Layer 7 - Application Layer**: This layer is where applications interact with the network. It generates data to be sent over the network, processes data that is received from the network, and provides services to applications. Examples of protocols used in this layer include HTTP, FTP, and SMTP.
