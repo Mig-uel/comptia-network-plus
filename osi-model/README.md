@@ -195,3 +195,43 @@ This encapsulation process is crucial for ensuring that data is transmitted accu
 In summary, when you are sending data over a network, it goes through the OSI model layers, from layer 7 down to layer 1, with each layer adding its own header/trailer to the data. This process is called encapsulation. When the data reaches its destination, it goes back up the layers from layer 1 to layer 7, with each layer removing its respective header/trailer in a process called decapsulation.
 
 Each layer encapsulates the data from the layer above it by adding its own header (and sometimes a trailer) to the data. This process is essential for ensuring that data is transmitted accurately and efficiently across networks. Different protocols operate at different layers of the OSI model, and understanding how encapsulation works is crucial for network professionals to troubleshoot and manage networks effectively.
+
+## Application Layer (OB 1.1)
+
+The **Application Layer** is the seventh layer of the OSI model and is the closest layer to the end user.
+
+Layer 7 is the **Application Layer**. This is the entry door to network services at a lower level.
+
+- Apps use this layer to get services when they TX (transmit) or RX (receive) data over a network
+- Applications sit on top of this layer and use it to communicate with other applications over a network
+- Responsible for interfacing user applications, network management services, remote access, etc.
+- This is the playground for hackers because this is where users interact with the network
+- Examples of protocols used in this layer include:
+  - Simple Mail Transfer Protocol (SMTP)
+    - Port 25
+  - Simple Network Management Protocol (SNMP)
+    - Port 161
+  - Hypertext Transfer Protocol (HTTP)
+    - Port 80
+  - Hypertext Transfer Protocol Secure (HTTPS)
+    - Port 443
+  - Line Printer Daemon (LPD)
+    - Port 515
+  - File Transfer Protocol (FTP)
+    - Ports 20 and 21
+  - Telnet
+    - Port 23
+  - Trivial File Transfer Protocol (TFTP)
+    - Port 69
+  - Electronic Data Interchange (EDI)
+  - Post Office Protocol Version 3 (POP3)
+    - Port 110
+  - Internet Message Access Protocol (IMAP)
+    - Port 143
+  - Network News Transfer Protocol (NNTP)
+    - Port 119
+  - Secure Remote Procedure Call (SRPC)
+    - Port 135
+  - Secure Electronic Transaction (SET)
+
+Keep in mind that the Application Layer is not the application itself; rather, it provides services to the application. The application uses the services provided by the Application Layer to communicate over the network. And the application protocols mentioned above operate at this layer to facilitate communication between applications over a network.
