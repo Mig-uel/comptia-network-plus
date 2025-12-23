@@ -386,3 +386,24 @@ It is responsible for the addressing and channel access control mechanisms that 
 The LLC sublayer is the upper sublayer of the OSI model's Data Link Layer (Layer 2) that is responsible for managing communication between devices on the same network and providing error detection and flow control.
 
 So far, the Application Layer (Layer 7) has generated data to be sent over the network, the Presentation Layer (Layer 6) has formatted the data for transmission, the Session Layer (Layer 5) has established a session between the communicating applications, the Transport Layer (Layer 4) has ensured that the data is transmitted reliably and efficiently, and the Network Layer (Layer 3) has routed the data packets between different networks. The Data Link Layer (Layer 2) now takes over to provide reliable communication between devices on the same network. It manages physical addressing using MAC addresses, encapsulates packets into frames for transmission, detects and corrects errors, and converts information into bits for transmission over the Physical Layer (Layer 1). Once the data frames are properly prepared, they are passed down to the Physical Layer (Layer 1) for further processing.
+
+## Physical Layer (OB 1.1)
+
+At the Data Link Layer (Layer 2), data is encapsulated into frames for transmission over the physical medium. The frames were converted into bits for transmission over the Physical Layer (Layer 1).
+
+We are going to take the bits and convert them into electrical, radio, or optical signals that can be transmitted over the physical medium.
+
+The **Physical Layer** is the first layer of the OSI model and is responsible for the physical transmission of data over a network.
+
+- Receives bits from the Data Link Layer and converts them into electrical, radio, or optical signals for transmission over the physical medium (assuming the data is going down the layers)
+  - Photons or beam of light for fiber optic cables
+- Devices that operate at this layer include hubs, repeaters, network interface cards (NICs), and cables
+- Defines the physical characteristics of the network, including:
+  - Cables (e.g., twisted pair, coaxial, fiber optic)
+  - Connectors (e.g., RJ45, LC, SC)
+  - Signaling methods (e.g., voltage levels, modulation techniques)
+  - Data rates (e.g., 10 Mbps, 100 Mbps, 1 Gbps)
+  - Physical topology (e.g., star, bus, ring)
+- Responsible for transmitting raw bitstreams over a physical medium
+
+So far, the Application Layer (Layer 7) has generated data to be sent over the network, the Presentation Layer (Layer 6) has formatted the data for transmission, the Session Layer (Layer 5) has established a session between the communicating applications, the Transport Layer (Layer 4) has ensured that the data is transmitted reliably and efficiently, the Network Layer (Layer 3) has routed the data packets between different networks, and the Data Link Layer (Layer 2) has provided reliable communication between devices on the same network. The Physical Layer (Layer 1) now takes over to physically transmit the data over the network. It converts bits into electrical, radio, or optical signals and transmits them over the physical medium using cables and connectors. Once the data is transmitted, it can be received by another device on the network, where it will go back up through the OSI model layers for processing.
