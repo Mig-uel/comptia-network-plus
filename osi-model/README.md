@@ -235,3 +235,27 @@ Layer 7 is the **Application Layer**. This is the entry door to network services
   - Secure Electronic Transaction (SET)
 
 Keep in mind that the Application Layer is not the application itself; rather, it provides services to the application. The application uses the services provided by the Application Layer to communicate over the network. And the application protocols mentioned above operate at this layer to facilitate communication between applications over a network.
+
+## Presentation Layer (OB 1.1)
+
+When data is transferred across the network, it needs to be in a format that the receiving application can understand. This is where the **Presentation Layer** comes in.
+
+As the data works its way down from the Application Layer (Layer 7) to the Presentation Layer (Layer 6), the Presentation Layer is responsible for translating the data into a format that the receiving application can understand.
+
+- Concerned about the format of the data being transmitted
+- Apps must use a common data format to communicate effectively
+- The main functions of this layer include:
+  - Data conversion: Converts data from one format to another (e.g., EBCDIC to ASCII)
+  - Character Code Translation: Translates character codes between different systems (e.g., Unicode to ASCII)
+  - Data Compression: Reduces the size of data to optimize transmission (e.g., ZIP compression)
+  - Data Encryption and Decryption: Secures data by converting it into an unreadable format and back (e.g., SSL/TLS encryption)
+- This layer is generally where data encryption occurs to ensure secure communication over the network
+- Examples of encoding formats used in this layer include:
+  - ASCII (American Standard Code for Information Interchange)
+  - EBCDIC (Extended Binary Coded Decimal Interchange Code)
+  - TIFF (Tagged Image File Format)
+  - JPEG (Joint Photographic Experts Group)
+  - Motion Picture Experts Group (MPEG)
+  - MIDI (Musical Instrument Digital Interface)
+
+So far, we have received data from the Application Layer through protocols such as HTTP or FTP. The Presentation Layer takes this data and ensures that it is in a format that the receiving application can understand. This may involve converting character codes, compressing data, or encrypting data for secure transmission. Once the data is properly formatted, it is passed down to the Session Layer (Layer 5) for further processing.
