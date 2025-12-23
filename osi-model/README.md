@@ -312,3 +312,35 @@ The Transport Layer (Layer 4) has a lot do with check-in. When the data arrives 
   - Flow Control: Manages the rate of data transmission to prevent congestion and ensure efficient use of network resources
   - Error Control: Detects and corrects errors that may occur during transmission
   - Connection Management: Establishes, maintains, and terminates connections between devices
+
+So far, the Application Layer (Layer 7) has generated data to be sent over the network, the Presentation Layer (Layer 6) has formatted the data for transmission, and the Session Layer (Layer 5) has established a session between the communicating applications. The Transport Layer (Layer 4) now takes over to ensure that the data is transmitted reliably and efficiently. It breaks down large data streams into smaller segments, manages the flow of data, detects and corrects errors, and establishes connections between devices. Once the data is properly prepared, it is passed down to the Network Layer (Layer 3) for further processing.
+
+## Network Layer (OB 1.1)
+
+The **Network Layer** is the third layer of the OSI model and is responsible for routing data packets between different networks.
+
+This layer is where routers operate at. The Network Layer is responsible for determining the best path for data to travel from the source to the destination.
+
+The main protocol that operates at this layer is the Internet Protocol (IP).
+
+- Moves data between two hosts that are not physically connected
+- Uses logical addressing (IP addresses) to identify devices on a network
+- Internet Protocol (IP) is the primary protocol used at this layer
+- IP does not guarantee delivery of packets; it is a best-effort delivery system
+- Finds the best path for data to travel from source to destination using routing protocols
+- Uses routing tables to deliver packets to the correct destination
+- Devices that operate at this layer include routers and layer 3 switches
+- Additional network routing protocols that operate at this layer include:
+  - Connectionless protocols:
+    - ICMP (Internet Control Message Protocol)
+    - RIP (Routing Information Protocol)
+    - OSPF (Open Shortest Path First)
+    - BGP (Border Gateway Protocol)
+    - IGMP (Internet Group Management Protocol)
+  - Supports multicast:
+    - IPX (Internetwork Packet Exchange)
+    - IPSec (Internet Protocol Security)
+    - NAT (Network Address Translation)
+    - SKIP (Simple Key Management for Internet Protocols)
+
+So far, the Application Layer (Layer 7) has generated data to be sent over the network, the Presentation Layer (Layer 6) has formatted the data for transmission, the Session Layer (Layer 5) has established a session between the communicating applications, and the Transport Layer (Layer 4) has ensured that the data is transmitted reliably and efficiently. The Network Layer (Layer 3) now takes over to route the data packets between different networks. It uses logical addressing (IP addresses) to identify devices on a network and determines the best path for data to travel from the source to the destination. Once the data packets are properly routed, they are passed down to the Data Link Layer (Layer 2) for further processing.
