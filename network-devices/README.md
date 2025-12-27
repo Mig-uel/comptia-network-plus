@@ -244,3 +244,17 @@ This helps in reducing latency, jitter, and packet loss for time-sensitive appli
 For example, in a corporate network, QoS can be configured to prioritize VoIP traffic over regular web browsing or file downloads. This ensures that during peak usage times, voice calls remain clear and uninterrupted, while less critical data traffic may experience slight delays. By implementing QoS policies, network administrators can optimize the performance of essential applications and maintain a high quality of service for users.
 
 In summary, Voice over Internet Protocol (VoIP) is a technology that enables voice communication over IP networks, and Quality of Service (QoS) is used to prioritize VoIP traffic to ensure clear and uninterrupted voice communication.
+
+## TTL (OB 1.2)
+
+On a network, every time you send data from one device to another, that data has to travel through multiple devices, such as routers and switches, before it reaches its destination. Something gets attached to that data called a **Time to Live (TTL)**.
+
+All data in a network must be assigned a TTL value, which is a field in the header of IP packets that indicates the maximum time or number of hops that the data packet is allowed to exist in the network before it is discarded by a router.
+
+TTL helps prevent data packets from **looping indefinitely** in the network due to routing errors or misconfigurations, which can lead to network congestion and performance issues.
+
+Each time a data packet passes through a router, the router decrements the TTL value by one. If the TTL value reaches zero before the packet reaches its destination, the router discards the packet and typically sends an ICMP "Time Exceeded" message back to the sender.
+
+For example, when a user sends an email, the email data is broken down into smaller packets, each with its own TTL value. As these packets travel through various routers on their way to the recipient's email server, each router decreases the TTL value by one. If a packet's TTL reaches zero before it arrives at the destination, that packet is discarded, preventing it from circulating endlessly in the network. This mechanism helps maintain network efficiency and prevents congestion caused by undeliverable packets.
+
+In summary, Time to Live (TTL) is a field in the header of IP packets that indicates the maximum time or number of hops a data packet is allowed to exist in the network, helping to prevent indefinite looping and maintain network efficiency.
