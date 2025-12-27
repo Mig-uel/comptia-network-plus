@@ -106,3 +106,19 @@ A load balancer can be implemented as a hardware appliance, a software applicati
 
 Coming back to our example, let's say you set up three more servers to handle the load. Now you have four servers in total. You set up a load balancer in front of these servers. When a user tries to access data, their request goes to the load balancer first. The load balancer then decides which server to send the request to based on factors like current server load, response time, or specific algorithms (like round-robin, least connections, etc.). This way, the traffic is distributed evenly across all four servers, preventing any single server from becoming overwhelmed.
 If one of the servers goes down, no one will notice because the load balancer will simply stop sending traffic to that server and distribute the load among the remaining servers. This helps to ensure that the application or service remains available and responsive, even in the face of server failures or high traffic loads.
+
+## Proxy Servers (OB 1.2)
+
+When you manage a network, do you want your users to have unrestricted access to the internet? Or do you want them to have specific access? Do you want to limit what websites they can go to? You've probably experienced this in schools or workplaces where certain websites are blocked. This is where a **proxy server** comes in.
+
+A proxy server acts as an **intermediary** between a user's device and the internet. When a user makes a request to access a website or online resource, the request first goes to the proxy server. The proxy server then forwards the request to the internet on behalf of the user, retrieves the requested content, and sends it back to the user's device.
+
+It can provide additional functionalities such as content caching, access control, and filtering, enhancing both performance and security.
+
+A proxy server is technically a type of firewall, as it can enforce security policies and control access to resources based on predefined rules. By acting as an intermediary, a proxy server can help to protect the internal network from external threats and unauthorized access.
+
+Proxy servers can be implemented as hardware appliances, software applications, or cloud-based services.
+
+For example, let's say you are managing a network for a company. You want to make sure that your employees can only access certain websites during work hours. You set up a proxy server that filters internet traffic based on predefined rules. When an employee tries to access a website, their request goes to the proxy server first. The proxy server checks the request against its rules and decides whether to allow or block the request. If the request is allowed, the proxy server forwards it to the internet and retrieves the requested content. If the request is blocked, the proxy server sends a message back to the employee's device, informing them that access to the website is not allowed.
+
+In summary, a proxy server acts as an intermediary between users and the internet, providing functionalities such as access control, content filtering, and security enforcement to manage and protect network traffic.
