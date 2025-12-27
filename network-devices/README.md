@@ -196,3 +196,17 @@ WLCs can also provide features such as load balancing, roaming support, and inte
 For example, in a large office building, multiple access points are installed on different floors to provide Wi-Fi coverage throughout the building. A wireless controller is used to manage all of these access points, allowing network administrators to configure settings, monitor performance, and enforce security policies from a centralized location. This setup ensures that employees can connect to the wireless network seamlessly as they move throughout the building, while also providing robust security and management capabilities for the IT team.
 
 In summary, access points and wireless controllers are essential components of modern wireless networks, providing reliable and secure connectivity for wireless devices while enabling centralized management and control of the wireless infrastructure.
+
+## Content Delivery Networks (CDN) (OB 1.2)
+
+A Content Delivery Network (CDN) is a **globally distributed network of proxy servers** and data centers designed to deliver web content and services rapidly and efficiently to users based on their geographic location.
+
+CDNs **cache** content such as web pages, images, videos, and other digital assets on servers located closer to end-users, reducing latency and improving load times.
+
+They enhance the performance, reliability, and scalability of web applications by distributing content across multiple servers, reducing the load on origin servers, and mitigating the impact of traffic spikes.
+
+CDNs also provide security features such as DDoS protection, secure content delivery, and traffic encryption, helping to safeguard web applications from cyber threats.
+
+For example, when a user accesses a website that utilizes a CDN, their request is routed to the nearest CDN server rather than the origin server. This proximity reduces the distance data must travel, resulting in faster load times and a better user experience. Additionally, by distributing content across multiple servers, CDNs can handle high traffic volumes more effectively, ensuring that websites remain accessible even during peak usage periods.
+
+In summary, a Content Delivery Network (CDN) is a globally distributed network of proxy servers that delivers web content and services efficiently to users based on their geographic location, enhancing performance, reliability, and security.
