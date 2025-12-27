@@ -210,3 +210,19 @@ CDNs also provide security features such as DDoS protection, secure content deli
 For example, when a user accesses a website that utilizes a CDN, their request is routed to the nearest CDN server rather than the origin server. This proximity reduces the distance data must travel, resulting in faster load times and a better user experience. Additionally, by distributing content across multiple servers, CDNs can handle high traffic volumes more effectively, ensuring that websites remain accessible even during peak usage periods.
 
 In summary, a Content Delivery Network (CDN) is a globally distributed network of proxy servers that delivers web content and services efficiently to users based on their geographic location, enhancing performance, reliability, and security.
+
+## Virtual Private Networks (VPN) (OB 1.2)
+
+One of the most recent changes in networking is the rise of remote work. With more people working from home or other remote locations, there is a need for secure connections to company networks. How are you going to make sure that these remote workers can connect to the company network securely? You use a **Virtual Private Network (VPN)**.
+
+A Virtual Private Network (VPN) is a technology that creates a **safe and encrypted connection** over a less secure network, such as the internet. It allows users to send and receive data as if their devices were directly connected to a private network, providing enhanced security and privacy.
+
+VPNs are used to establish **secure connections** between remote users and a corporate's internal network, allowing for secure data transmission across public networks as if the devices were directly connected to the private network.
+
+They use encryption protocols to protect data from interception and unauthorized access, ensuring that sensitive information remains confidential.
+
+VPNs can be implemented using various protocols, such as IPsec, SSL/TLS, and OpenVPN, each offering different levels of security and performance.
+
+For example, when a remote employee wants to access their company's internal network from home, they can use a VPN client on their device to establish a secure connection to the company's VPN server. The VPN encrypts all data transmitted between the employee's device and the company network, protecting it from potential eavesdropping or interception by malicious actors on the internet. This allows the employee to access company resources, such as files and applications, securely and privately.
+
+In summary, a Virtual Private Network (VPN) is a technology that creates a secure and encrypted connection over a less secure network, enabling remote users to access private networks safely and protecting sensitive data from unauthorized access.
