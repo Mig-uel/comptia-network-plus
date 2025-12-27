@@ -65,3 +65,27 @@ Firewalls are crucial for establishing a **barrier** between secure **internal**
 It can be hardware-based, software-based, or a combination of both. Hardware firewalls are physical devices that are typically placed between a network and the internet, while software firewalls are installed on individual computers or servers.
 
 Firewalls can operate at various layers of the OSI model, including the network layer (Layer 3) and the application layer (Layer 7), providing different levels of security and control over network traffic.
+
+## IDS/IPS (OB 1.2)
+
+When it comes to managing a network in today's world, security is a top priority. Two important tools used to enhance network security are **Intrusion Detection Systems (IDS)** and **Intrusion Prevention Systems (IPS)**.
+
+IDS and IPS can be implemented as hardware appliances, software applications, or a combination of both. They can be deployed at various points in a network, such as at the perimeter or within internal segments, to monitor and protect against potential threats.
+
+### What is an IDS/IPS?
+
+An **Intrusion Detection System (IDS)** is a security tool that can detect malicious network activity or policy violations. It monitors network traffic and analyzes it for signs of suspicious behavior, such as unauthorized access attempts, malware infections, or other security threats. When an IDS detects a potential threat, it generates an alert to notify network administrators, allowing them to take appropriate action.
+
+- Uses signature identification techniques like antimalware software. For example, if a known virus signature is detected in network traffic, the IDS will generate an alert.
+- Additionally, can detect malicious activity based on anomalies or deviations from normal behavior. For example, if a user suddenly starts accessing large amounts of sensitive data, the IDS may flag this as suspicious behavior.
+
+An **Intrusion Prevention System (IPS)**, on the other hand, goes a step further by not only detecting potential threats but also taking proactive measures to block or prevent them from causing harm. An IPS can automatically respond to detected threats by dropping malicious packets, blocking IP addresses, or resetting connections.
+
+- Rules must be configured on an IPS to define what actions to take when a threat is detected. For example, if an IPS detects a known malware signature, it can be configured to automatically drop the malicious packets and block the source IP address.
+
+Both of these systems can operate at multiple layers of the OSI model, including the network layer (Layer 3) and the application layer (Layer 7), providing comprehensive protection against a wide range of threats.
+
+### How IDS/IPS Work?
+
+In a small example, let's say you have a network with several devices connected to it, including computers, servers, and other network appliances. An IDS/IPS can be connected to a port on a switch or router, allowing it to monitor all network traffic passing through that point. As traffic goes through the switch and its destinations, the switch sends a copy of the traffic to the IDS/IPS for analysis. This is called **port mirroring** or **SPAN (Switched Port Analyzer)**.
+The IDS/IPS analyzes the traffic in real-time, looking for signs of malicious activity or policy violations. If it detects a potential threat, it generates an alert (in the case of an IDS) or takes proactive measures to block or prevent the threat (in the case of an IPS). This helps to protect the network from unauthorized access, data breaches, and other security threats.
