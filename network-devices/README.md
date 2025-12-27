@@ -55,3 +55,13 @@ Switches maintain a **MAC address table** that maps MAC addresses to specific ph
 It creates **separate collision domains** for each connected device, meaning that data collisions are minimized, leading to more efficient communication.
 
 Switches can also support **VLANs (Virtual Local Area Networks)**, allowing network administrators to segment a physical network into multiple logical networks for improved security and traffic management.
+
+## Firewalls (OB 1.2)
+
+A **firewall** is a network security device that **monitors** incoming and outgoing network traffic and decides whether to **allow** or **block** specific traffic based on a defined set of **security rules**.
+
+Firewalls are crucial for establishing a **barrier** between secure **internal** networks and **untrusted external** networks, such as the internet, to protect against unauthorized access, cyber threats, and data breaches.
+
+It can be hardware-based, software-based, or a combination of both. Hardware firewalls are physical devices that are typically placed between a network and the internet, while software firewalls are installed on individual computers or servers.
+
+Firewalls can operate at various layers of the OSI model, including the network layer (Layer 3) and the application layer (Layer 7), providing different levels of security and control over network traffic.
