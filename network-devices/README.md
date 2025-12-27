@@ -15,3 +15,43 @@ A router operates at the **network layer (Layer 3)** of the OSI model, directing
 Routers use **routing tables** to determine the best path for forwarding data packets to their destination, connecting **multiple networks** together, such as a local network to the internet.
 
 Routers also provide network security features like **firewalls** and **VPN support**, helping to protect your network from unauthorized access.
+
+## Switches (OB 1.2)
+
+When you are working in a network, two terms you might hear are a **broadcast domain** and a **collision domain**.
+
+A **broadcast domain** is a logical division of a computer network, in which all devices can reach each other by broadcast at the data link layer.
+
+A **collision domain** is a network segment where data packets can collide with one another when being sent on a shared medium or through repeaters.
+
+Back in the day, we used to use hubs to connect devices in a network. A hub is a simple networking device that connects multiple devices in a network, but it has some limitations. Hubs operate at the **physical layer (Layer 1)** of the OSI model and simply **broadcast incoming data packets** to all connected devices, leading to potential **collisions** and inefficiencies.
+
+Collisions are a problem because when two devices send data at the same time, the data can collide and become corrupted, leading to retransmissions and slower network performance.
+
+The technology that allows it to detect collisions is called **Carrier Sense Multiple Access with Collision Detection (CSMA/CD)**. CSMA/CD is a protocol used in Ethernet networks to manage how devices share the same communication channel and handle collisions.
+
+The hubs are basically repeaters that amplify the signal and send it to all devices connected to the hub. This means that all devices connected to the hub are in the same collision domain, which can lead to performance issues as more devices are added to the network.
+
+How do you solve this problem? You use a switch!
+
+A switch works differently. A switch has a table called a **MAC address table** that maps the MAC addresses of connected devices to specific ports on the switch. It operates at the **data link layer (Layer 2)** of the OSI model and **forwards data packets only to the specific device** they are intended for, based on their MAC addresses. This means that each device connected to the switch has its own collision domain, reducing the chances of collisions and improving overall network performance.
+
+In theory, switches have no collisions because each port on a switch represents a separate collision domain. However, in practice, collisions can still occur in certain scenarios, such as when multiple devices connected to the same switch port attempt to send data simultaneously in a half-duplex mode. In full-duplex mode, where devices can send and receive data simultaneously, collisions are effectively eliminated.
+
+There is a problem with switches, though. It is called **broadcast domains**.
+
+Let's say you have a switch with multiple devices connected to it. Before computer A can send data to computer C, it needs to know the MAC address of computer C. How does it find out? It sends a **broadcast** message to all devices in the network, asking "Who has this IP address?" This broadcast message is sent to all devices connected to the switch, which means that all devices in the network receive the message, even if they are not the intended recipient. This creates a broadcast domain, where all devices can hear each other's broadcast messages. Computer C will respond with its MAC address, and computer A can then send the data directly to computer C.
+
+This works with a protocol called **Address Resolution Protocol (ARP)**, which is used to map IP addresses to MAC addresses in a local network.
+
+In summary, switches help to reduce collisions in a network by providing each device with its own collision domain, but they can still create broadcast domains where all devices can hear each other's broadcast messages. And a router can be used to break up broadcast domains.
+
+### What Exactly is a Switch?
+
+A switch operates at the **data link layer (Layer 2)** of the OSI model and is responsible for **forwarding data packets** between devices within the same network based on their MAC addresses.
+
+Switches maintain a **MAC address table** that maps MAC addresses to specific physical ports on the switch. When a data packet arrives at the switch, it examines the destination MAC address and forwards the packet only to the port associated with that address, rather than broadcasting it to all ports like a hub would. This selective forwarding reduces network congestion and improves overall performance.
+
+It creates **separate collision domains** for each connected device, meaning that data collisions are minimized, leading to more efficient communication.
+
+Switches can also support **VLANs (Virtual Local Area Networks)**, allowing network administrators to segment a physical network into multiple logical networks for improved security and traffic management.
