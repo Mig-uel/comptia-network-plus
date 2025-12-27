@@ -136,3 +136,37 @@ NAS devices typically connect to a local area network (LAN) via Ethernet and can
 For example, in a small office environment, a NAS device can be set up to store shared documents, project files, and multimedia content. Employees can access the NAS from their computers to collaborate on files, back up important data, and share resources without needing to transfer files via email or external drives. The NAS provides a centralized location for data storage, making it easier to manage and secure the organization's data.
 
 In summary, Network Attached Storage (NAS) is a dedicated file storage device that provides centralized data storage and file sharing capabilities over a network, making it easy for multiple users and devices to access and manage files from a central location.
+
+## Storage Area Network (SAN) (OB 1.2)
+
+Previously, we discussed Network Attached Storage (NAS), which is a dedicated file storage device that provides centralized data storage and file sharing capabilities over a network.
+
+In a big business environment, they don't just need file storage; they need the ability to process large amounts of data quickly and efficiently.
+
+What they have is an even bigger device called a **Storage Area Network (SAN)**.
+
+A <u>Storage Area Network (SAN)</u> is a dedicated, high-speed network that **provides block-level storage access** to servers. Unlike NAS, which operates at the file level (file-level storage), SANs allow servers to access raw storage blocks (block-level storage), enabling more efficient data processing and management.
+
+<u>SANs</u> are designed to **handle large volumes of data transfers**, providing high performance, scalability, and reliability for enterprise storage needs.
+
+They are commonly used in enterprise environments to enhance storage solutions and improve data access speeds for applications such as databases, virtualization, and large-scale data processing.
+
+SANs typically use specialized networking technologies such as Fibre Channel or iSCSI to connect storage devices (like disk arrays or tape libraries) to servers. This dedicated network allows for faster data transfer rates and reduced latency compared to traditional network storage solutions.
+
+SANs have their own switches and cabling, separate from the regular data network, to ensure optimal performance and reliability. Via switches, it can connect multiple servers to multiple storage devices, creating a flexible and scalable storage infrastructure.
+
+For example, in a large data center, a SAN can be implemented to provide high-speed storage access for multiple servers running critical applications. The SAN allows these servers to read and write data directly to the storage devices at the block level, improving performance and reducing bottlenecks. This setup is particularly beneficial for applications that require fast access to large datasets, such as databases or virtualized environments.
+
+In summary, a Storage Area Network (SAN) is a dedicated, high-speed network that provides block-level storage access to servers, enabling efficient data processing and management for enterprise storage needs.
+
+### NAS vs SAN
+
+NAS and SAN are both storage solutions used in networking, but they have some key differences:
+
+- **Storage Type**: NAS operates at the file level, providing file-based storage and sharing capabilities, while SAN operates at the block level, allowing servers to access raw storage blocks for more efficient data processing.
+- **Network Type**: NAS devices connect to a local area network (LAN) using standard Ethernet protocols, while SANs use specialized networking technologies such as Fibre Channel or iSCSI for high-speed data transfer.
+- **Use Cases**: NAS is typically used for file sharing, data backups, and centralized data management in small to medium-sized environments. SANs are used in enterprise environments that require high performance, scalability, and reliability for applications such as databases, virtualization, and large-scale data processing.
+- **Performance**: SANs generally offer higher performance and lower latency compared to NAS due to their dedicated network infrastructure and block-level access.
+- **Complexity**: SANs are more complex to set up and manage compared to NAS, often requiring specialized knowledge and equipment.
+
+In summary, NAS and SAN are both storage solutions with different architectures, use cases, and performance characteristics. NAS is suitable for file-level storage and sharing, while SAN is designed for high-performance block-level storage access in enterprise environments.
