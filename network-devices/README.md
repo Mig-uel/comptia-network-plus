@@ -226,3 +226,21 @@ VPNs can be implemented using various protocols, such as IPsec, SSL/TLS, and Ope
 For example, when a remote employee wants to access their company's internal network from home, they can use a VPN client on their device to establish a secure connection to the company's VPN server. The VPN encrypts all data transmitted between the employee's device and the company network, protecting it from potential eavesdropping or interception by malicious actors on the internet. This allows the employee to access company resources, such as files and applications, securely and privately.
 
 In summary, a Virtual Private Network (VPN) is a technology that creates a secure and encrypted connection over a less secure network, enabling remote users to access private networks safely and protecting sensitive data from unauthorized access.
+
+## VOIP (OB 1.2)
+
+On a network, you are going to have different types of traffic. One of the most common types of traffic is voice traffic. Voice traffic is used for making phone calls over the internet. This is called **Voice over Internet Protocol (VoIP)**.
+
+VoIP converts voice signals into digital data packets that can be transmitted over IP networks, allowing for cost-effective and flexible communication solutions.
+
+Usually, VoIP data is prioritized over other types of data on a network to ensure clear and uninterrupted voice communication. This prioritization is often achieved through Quality of Service (QoS) settings that allocate more bandwidth and lower latency for VoIP traffic.
+
+Quality of Service (QoS) refers to the **set of technologies and policies** used to manage and prioritize network traffic to ensure optimal performance for specific types of data, such as voice or video.
+
+QoS assigns **different priority levels** to various types of network traffic, allowing critical applications to receive the necessary bandwidth and low latency required for optimal performance.
+
+This helps in reducing latency, jitter, and packet loss for time-sensitive applications like VoIP and video conferencing while enhancing the overall user experience in networks with limited bandwidth.
+
+For example, in a corporate network, QoS can be configured to prioritize VoIP traffic over regular web browsing or file downloads. This ensures that during peak usage times, voice calls remain clear and uninterrupted, while less critical data traffic may experience slight delays. By implementing QoS policies, network administrators can optimize the performance of essential applications and maintain a high quality of service for users.
+
+In summary, Voice over Internet Protocol (VoIP) is a technology that enables voice communication over IP networks, and Quality of Service (QoS) is used to prioritize VoIP traffic to ensure clear and uninterrupted voice communication.
