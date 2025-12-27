@@ -89,3 +89,20 @@ Both of these systems can operate at multiple layers of the OSI model, including
 
 In a small example, let's say you have a network with several devices connected to it, including computers, servers, and other network appliances. An IDS/IPS can be connected to a port on a switch or router, allowing it to monitor all network traffic passing through that point. As traffic goes through the switch and its destinations, the switch sends a copy of the traffic to the IDS/IPS for analysis. This is called **port mirroring** or **SPAN (Switched Port Analyzer)**.
 The IDS/IPS analyzes the traffic in real-time, looking for signs of malicious activity or policy violations. If it detects a potential threat, it generates an alert (in the case of an IDS) or takes proactive measures to block or prevent the threat (in the case of an IPS). This helps to protect the network from unauthorized access, data breaches, and other security threats.
+
+## Load Balancers (OB 1.2)
+
+In your career, you are going to be managing big networks with lots of users. And lots of users means lots and lots of servers. When you have lots of servers, you need a way to make sure that the traffic is distributed evenly across all of them. This is where a **load balancer** comes in.
+
+Imagine a scenario where you have many users and these users are all trying to access data on one server. What if its 1000+ users? 10,000? 1,000,000? And your server is not that powerful. The server can only handle so much traffic before it becomes overwhelmed and starts to slow down or crash.
+What you would do is get more servers to handle the load. But now you have a new problem: how do you make sure that the traffic is distributed evenly across all of these servers?
+You need to balance the load. You need something that we can plugin, that all the user requests go to first, and then distribute those requests across all of the servers. This is what a load balancer does.
+
+A load balancer **distributes** incoming network traffic across **multiple servers** to ensure that no single server becomes overwhelmed with too much traffic. By spreading the workload evenly or according to specific algorithms, load balancers help to improve the performance, reliability, and availability of applications and services.
+
+Load balancers can operate at various layers of the OSI model, including the **transport layer (Layer 4)**, the **application layer (Layer 7)**, and the **network layer (Layer 3)**, providing different levels of control and functionality.
+
+A load balancer can be implemented as a hardware appliance, a software application, or a cloud-based service.
+
+Coming back to our example, let's say you set up three more servers to handle the load. Now you have four servers in total. You set up a load balancer in front of these servers. When a user tries to access data, their request goes to the load balancer first. The load balancer then decides which server to send the request to based on factors like current server load, response time, or specific algorithms (like round-robin, least connections, etc.). This way, the traffic is distributed evenly across all four servers, preventing any single server from becoming overwhelmed.
+If one of the servers goes down, no one will notice because the load balancer will simply stop sending traffic to that server and distribute the load among the remaining servers. This helps to ensure that the application or service remains available and responsive, even in the face of server failures or high traffic loads.
