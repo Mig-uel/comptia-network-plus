@@ -170,3 +170,29 @@ NAS and SAN are both storage solutions used in networking, but they have some ke
 - **Complexity**: SANs are more complex to set up and manage compared to NAS, often requiring specialized knowledge and equipment.
 
 In summary, NAS and SAN are both storage solutions with different architectures, use cases, and performance characteristics. NAS is suitable for file-level storage and sharing, while SAN is designed for high-performance block-level storage access in enterprise environments.
+
+## Access Points and Wireless Controllers (OB 1.2)
+
+Modern networks that are being built today are not really built-in wired solutions unless the environment absolutely requires super high speeds. What we mean by built-in wired solutions is that everything is connected via Ethernet cables. Most networks today are a combination of wired and wireless solutions.
+
+A wireless network is made up of two main components: **access points (APs)** and **wireless controllers**.
+
+A dedicated access point (AP) gives wireless devices the ability to connect to a wired network using Wi-Fi or related standards. Access points are typically connected to a wired router, switch, or hub via an Ethernet cable, and they broadcast a Wi-Fi signal that allows wireless devices to connect to the network.
+
+In more detail, an access point (AP) is a networking device that allows **wireless devices** to connect to a wired network using Wi-Fi or related standards.
+
+**APs operate at the data link layer (Layer 2)** of the OSI model and are responsible for **managing wireless connections**, including authentication, encryption, and data transmission. They bridge the gap between wired and wireless networks, enabling devices such as laptops, smartphones, and tablets to access network resources without the need for physical cables.
+
+They **extend the wireless coverage area** of a network and can manage multiple wireless connections simultaneously, providing reliable and secure access to network resources.
+
+In enterprise networks, you are not going to have just one access point. You are going to have multiple access points spread throughout the building to provide adequate coverage. This is where a **wireless controller** comes in.
+
+A Wireless LAN Controller (WLC) is a networking device that **manages multiple wireless access points (APs)** in a network. It provides centralized control and management of the wireless network, allowing administrators to configure, monitor, and optimize the performance of multiple APs from a single interface.
+
+WLCs simplify the **deployment and management** of large-scale wireless networks, including configuration, security policies, and managing guest access, enhancing the efficiency and security of the wireless infrastructure.
+
+WLCs can also provide features such as load balancing, roaming support, and interference mitigation, ensuring a seamless and reliable wireless experience for users.
+
+For example, in a large office building, multiple access points are installed on different floors to provide Wi-Fi coverage throughout the building. A wireless controller is used to manage all of these access points, allowing network administrators to configure settings, monitor performance, and enforce security policies from a centralized location. This setup ensures that employees can connect to the wireless network seamlessly as they move throughout the building, while also providing robust security and management capabilities for the IT team.
+
+In summary, access points and wireless controllers are essential components of modern wireless networks, providing reliable and secure connectivity for wireless devices while enabling centralized management and control of the wireless infrastructure.
