@@ -122,3 +122,17 @@ Proxy servers can be implemented as hardware appliances, software applications, 
 For example, let's say you are managing a network for a company. You want to make sure that your employees can only access certain websites during work hours. You set up a proxy server that filters internet traffic based on predefined rules. When an employee tries to access a website, their request goes to the proxy server first. The proxy server checks the request against its rules and decides whether to allow or block the request. If the request is allowed, the proxy server forwards it to the internet and retrieves the requested content. If the request is blocked, the proxy server sends a message back to the employee's device, informing them that access to the website is not allowed.
 
 In summary, a proxy server acts as an intermediary between users and the internet, providing functionalities such as access control, content filtering, and security enforcement to manage and protect network traffic.
+
+## Network Attached Storage (NAS) (OB 1.2)
+
+A Network Attached Storage (NAS) is a **dedicated file storage device** that provides centralized data storage and file sharing capabilities over a network. It is designed to be easily accessible by multiple users and devices, allowing them to store, retrieve, and share files from a central location.
+
+NAS systems are designed for **easy file sharing, data backups, and centralized data management**, supporting various file protocols such as SMB/CIFS, NFS, and AFP.
+
+They offer a scalable and cost-effective solution for businesses and home users needing reliable and accessible storage solutions.
+
+NAS devices typically connect to a local area network (LAN) via Ethernet and can be accessed by computers, smartphones, tablets, and other networked devices. They often come with built-in features such as RAID (Redundant Array of Independent Disks) for data redundancy and protection, user access controls, and remote access capabilities.
+
+For example, in a small office environment, a NAS device can be set up to store shared documents, project files, and multimedia content. Employees can access the NAS from their computers to collaborate on files, back up important data, and share resources without needing to transfer files via email or external drives. The NAS provides a centralized location for data storage, making it easier to manage and secure the organization's data.
+
+In summary, Network Attached Storage (NAS) is a dedicated file storage device that provides centralized data storage and file sharing capabilities over a network, making it easy for multiple users and devices to access and manage files from a central location.
