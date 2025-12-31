@@ -107,3 +107,142 @@ An easy way to remember subnet masks for classes A, B, and C is:
 - Class A: The letter A has 1 letter, so the subnet mask has 1 octet of 255: `255.0.0.0`
 - Class B: The letter B has 2 letters, so the subnet mask has 2 octets of 255: `255.255.0.0`
 - Class C: The letter C has 3 letters, so the subnet mask has 3 octets of 255: `255.255.255.0`
+
+## How Many Computers Are in Each Network? (OB 1.7)
+
+> Note: A subnet mask determines which portion of an IP address is the network part and which part is the host part. It also determines how many hosts (computers) can be in that network.
+
+Let's look at an IPv4 address with its subnet mask:
+
+IP Address:
+
+```
+192.168.30.10
+```
+
+Subnet Mask:
+
+```
+255.255.255.0
+```
+
+The network ID is determined by the IP address and the subnet mask. The simplest way to find the network ID is to compare the IP address and subnet mask octet by octet. Wherever there is a `255` in the subnet mask, we take the corresponding octet from the IP address for the network ID. Wherever there is a `0` in the subnet mask, we replace the corresponding octet in the IP address with a `0` for the network ID.
+
+So, for the given IP address and subnet mask:
+
+- First octet: 192 (from IP address, since subnet mask is 255)
+- Second octet: 168 (from IP address, since subnet mask is 255)
+- Third octet: 30 (from IP address, since subnet mask is 255)
+- Fourth octet: 0 (replaced with 0, since subnet mask is 0)
+
+Thus, the network ID is:
+
+```
+192.168.30.0
+```
+
+A network ID identifies a specific network and is used to route traffic within that network. Computers within the same network ID can communicate directly with each other.
+
+Another example with two IP addresses and their subnet masks:
+
+IP Address with Subnet Mask 1:
+
+```
+192.168.40.32 | 255.255.255.0
+```
+
+IP Address with Subnet Mask 2:
+
+```
+192.168.40.220 | 255.255.255.0
+```
+
+Can these two IP addresses communicate directly with each other? First let's find the network ID for both IP addresses.
+
+For the first IP address:
+
+- First octet: 192 (from IP address, since subnet mask is 255)
+- Second octet: 168 (from IP address, since subnet mask is 255)
+- Third octet: 40 (from IP address, since subnet mask is 255)
+- Fourth octet: 0 (replaced with 0, since subnet mask is 0)
+
+Thus, the network ID for the first IP address is:
+
+```
+192.168.40.0
+```
+
+For the second IP address:
+
+- First octet: 192 (from IP address, since subnet mask is 255)
+- Second octet: 168 (from IP address, since subnet mask is 255)
+- Third octet: 40 (from IP address, since subnet mask is 255)
+- Fourth octet: 0 (replaced with 0, since subnet mask is 0)
+
+Thus, the network ID for the second IP address is:
+
+```
+192.168.40.0
+```
+
+Since both IP addresses have the same network ID (`192.168.40.0`), they can communicate directly with each other within the same network.
+
+---
+
+Let's see another example:
+
+IP Address with Subnet Mask 1:
+
+```
+120.10.40.60 | 255.0.0.0
+```
+
+It's network ID is:
+
+```
+120.0.0.0
+```
+
+IP Address with Subnet Mask 2:
+
+```
+120.180.60.100 | 255.0.0.0
+```
+
+It's network ID is:
+
+```
+120.0.0.0
+```
+
+Since both IP addresses have the same network ID (`120.0.0.0`), they can communicate directly with each other within the same network. Remember that the subnet mask determines which portion of the IP address is the network part and which part is the host part. In this case, both IP addresses belong to the same network because their network IDs are identical.
+
+---
+
+Let's try a class B example:
+
+IP Address with Subnet Mask 1:
+
+```
+180.16.32.100 | 255.255.0.0
+```
+
+It's network ID is:
+
+```
+180.16.0.0
+```
+
+IP Address with Subnet Mask 2:
+
+```
+180.17.19.100 | 255.255.0.0
+```
+
+It's network ID is:
+
+```
+180.17.0.0
+```
+
+Since both IP addresses have different network IDs (`180.16.0.0` and `180.17.0.0`), they cannot communicate directly with each other within the same network.
