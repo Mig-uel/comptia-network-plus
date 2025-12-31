@@ -256,3 +256,21 @@ When two computers are in different IP networks, they cannot communicate directl
 A router is a device that connects dissimilar networks together and routes data packets between them. It examines the destination IP address of each packet and determines the best path for it to reach its destination. In contrast, a switch operates at the data link layer (Layer 2) and is used to connect devices within the same network segment. Switches use MAC addresses to forward data frames within the same network.
 
 In other related news, a default gateway is the IP address of the router that connects a local network to other networks, including the internet. It serves as an access point for devices within the local network to communicate with devices outside of that network. When a device wants to send data to a destination outside its own network, it sends the data to the default gateway (router), which then forwards it to the appropriate destination.
+
+## What are the Private IP Addresses? (OB 1.7)
+
+> History: When IP addresses were first being allocated, they realized that the number of available IP addresses was limited. To address this issue, they designated certain ranges of IP addresses as private, which can be used within local networks without being routable on the public internet. These private IP addresses help conserve the limited pool of public IP addresses.
+
+Private IP addresses are IP addresses that you can assign to devices within your own private network, such as your home or office network. These addresses are not routable on the public internet, meaning they cannot be accessed directly from outside your local network.
+
+The ranges of private IP addresses are defined by the Internet Assigned Numbers Authority (IANA) and are as follows:
+
+| Class | Private IP Address Range      |
+| ----- | ----------------------------- |
+| A     | 10.0.0.0 - 10.255.255.255     |
+| B     | 172.16.0.0 - 172.31.255.255   |
+| C     | 192.168.0.0 - 192.168.255.255 |
+
+Devices within a private network can communicate with each other using these private IP addresses. However, to access the internet, devices with private IP addresses typically use a router with Network Address Translation (NAT) to translate their private IP addresses to a public IP address.
+
+Using private IP addresses helps conserve the limited pool of public IP addresses and provides an additional layer of security for devices within the private network.
