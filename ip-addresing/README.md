@@ -246,3 +246,13 @@ It's network ID is:
 ```
 
 Since both IP addresses have different network IDs (`180.16.0.0` and `180.17.0.0`), they cannot communicate directly with each other within the same network.
+
+## Assigning IP Addresses Practice (OB 1.7)
+
+In order to make two computers that are in different IP networks communicate with each other, we need to use a router. Recall that a router works at the network layer (Layer 3) of the OSI model and is responsible for forwarding data packets between different networks. It uses IP addresses to determine the best path for data to travel from the source to the destination.
+
+When two computers are in different IP networks, they cannot communicate directly because their IP addresses belong to different network segments. The router acts as an intermediary that connects these different networks.
+
+A router is a device that connects dissimilar networks together and routes data packets between them. It examines the destination IP address of each packet and determines the best path for it to reach its destination. In contrast, a switch operates at the data link layer (Layer 2) and is used to connect devices within the same network segment. Switches use MAC addresses to forward data frames within the same network.
+
+In other related news, a default gateway is the IP address of the router that connects a local network to other networks, including the internet. It serves as an access point for devices within the local network to communicate with devices outside of that network. When a device wants to send data to a destination outside its own network, it sends the data to the default gateway (router), which then forwards it to the appropriate destination.
