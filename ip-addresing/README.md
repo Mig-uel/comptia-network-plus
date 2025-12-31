@@ -322,3 +322,27 @@ The most commonly used loopback address is `127.0.0.1`.
 
 You can use the loopback address to test network applications and services on your local machine. For example, if you are developing a web application, you can run a web server on your computer and access it using the loopback address `127.0.0.1`.
 
+## Summary of IPv4 Addresses So Far (OB 1.7)
+
+- An IPv4 address is a 32-bit number divided into four octets (8 bits each), represented in decimal format (e.g., `192.168.1.1`).
+- IP addresses are classified into different classes (A, B, C) based on the range of the first octet, which determines the subnet mask and the number of hosts supported.
+- A subnet mask is used to divide an IP address into network and host portions, helping to determine the network ID.
+- Private IP addresses are reserved for use within private networks and are not routable on the public internet.
+- CIDR (Classless Inter-Domain Routing) allows for more flexible allocation of IP addresses using variable-length subnet masking (VLSM).
+- There are different types of IP communication: unicast (one-to-one), multicast (one-to-many), broadcast (one-to-all), and loopback (self-communication).
+- The loopback address (`127.0 .0.1`) is used to test network applications on the local machine without sending data over a network.
+- A router is used to connect different IP networks and facilitate communication between them, while a switch connects devices within the same network segment.
+- A default gateway is the IP address of the router that connects a local network to other networks, allowing devices to communicate outside their own network.
+- APIPA (Automatic Private IP Addressing) assigns a private IP address when a device cannot obtain one from a DHCP server, using the range `169.254.0.1` to `169.254.255.254`.
+- The multicast IP address range is from `224.0.0.0` to `239.255.255.255`.
+- The broadcast address for a subnet is typically the highest address in that subnet (e.g., `192.168.1.255`).
+- The loopback IP address range is from `127.0.0.1` to `127.255.255.255`.
+- The most commonly used loopback address is `127.0.0.1`.
+
+| Class | 1st Octet Range | # of Bits for Network | # of Networks | Default Subnet Mask | CIDR Notation | # of Hosts per Network | Reserved Addresses            |
+| ----- | --------------- | --------------------- | ------------- | ------------------- | ------------- | ---------------------- | ----------------------------- |
+| A     | 1 - 127         | 8                     | 126           | 255.0.0.0           | /8            | 16,777,214             | 10.0.0.0 - 10.255.255.255     |
+| B     | 128 - 191       | 16                    | 16,384        | 255.255.0.0         | /16           | 65,534                 | 172.16.0.0 - 172.31.255.255   |
+| C     | 192 - 223       | 24                    | 2,097,152     | 255.255.255.0       | /24           | 254                    | 192.168.0.0 - 192.168.255.255 |
+| D     | 224 - 239       | N/A                   | N/A           | N/A                 | N/A           | N/A                    | Multicast Range               |
+| E     | 240 - 255       | N/A                   | N/A           | N/A                 | N/A           | N/A                    | Experimental Use              |
