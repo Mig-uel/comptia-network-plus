@@ -274,3 +274,19 @@ The ranges of private IP addresses are defined by the Internet Assigned Numbers 
 Devices within a private network can communicate with each other using these private IP addresses. However, to access the internet, devices with private IP addresses typically use a router with Network Address Translation (NAT) to translate their private IP addresses to a public IP address.
 
 Using private IP addresses helps conserve the limited pool of public IP addresses and provides an additional layer of security for devices within the private network.
+
+## What is CIDR? (OB 1.7)
+
+CIDR stands for Classless Inter-Domain Routing. It is a method for allocating IP addresses and routing IP packets. CIDR was introduced to improve the efficiency of IP address allocation and to slow the exhaustion of IPv4 addresses.
+
+CIDR allows for more flexible allocation of IP addresses compared to the traditional class-based system (Classes A, B, and C). Instead of being restricted to fixed subnet masks based on classes, CIDR uses variable-length subnet masking (VLSM), which allows network administrators to allocate IP addresses based on the actual number of hosts needed in a network.
+
+You may see some IP addresses written in CIDR notation, which includes the IP address followed by a slash and a number:
+
+```
+192.168.30.4/24
+```
+
+In this example, `/24` indicates that the first 24 bits of the IP address are used for the network portion, and the remaining bits are used for the host portion. This corresponds to a subnet mask of `255.255.255.0`. (Recall that each octet is 8 bits, so `/24` means the first three octets (8 + 8 + 8 = 24) are for the network.)
+
+CIDR notation allows for more efficient use of IP addresses by enabling the creation of subnets that can accommodate varying numbers of hosts, reducing waste and improving routing efficiency on the internet.
