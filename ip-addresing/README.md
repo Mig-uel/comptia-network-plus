@@ -312,3 +312,13 @@ In the world of IT, there are basically three ways to communicate using IP addre
 - **Loopback**: The loopback IP address is used to test network software without physically transmitting packets over a network. It allows a device to send data to itself.
   - IP Address: The loopback address is typically `127.0.0.1` - `127.255.255.255`, with `127.0.0.1` being the most commonly used address.
   - Usage: It is commonly used for testing and troubleshooting network applications and services on the local machine.
+
+## What is a Loopback Address? (OB 1.7)
+
+A loopback address is an IP address that is already assigned to your own computer that basically represents your computer. It is used to test network software without physically transmitting packets over a network. When you send data to the loopback address, it is immediately returned to your own computer.
+
+Recall that the loopback IP address is typically `127.0.0.1` - `127.255.255.255`.
+The most commonly used loopback address is `127.0.0.1`.
+
+You can use the loopback address to test network applications and services on your local machine. For example, if you are developing a web application, you can run a web server on your computer and access it using the loopback address `127.0.0.1`.
+
