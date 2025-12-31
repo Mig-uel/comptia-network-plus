@@ -290,3 +290,25 @@ You may see some IP addresses written in CIDR notation, which includes the IP ad
 In this example, `/24` indicates that the first 24 bits of the IP address are used for the network portion, and the remaining bits are used for the host portion. This corresponds to a subnet mask of `255.255.255.0`. (Recall that each octet is 8 bits, so `/24` means the first three octets (8 + 8 + 8 = 24) are for the network.)
 
 CIDR notation allows for more efficient use of IP addresses by enabling the creation of subnets that can accommodate varying numbers of hosts, reducing waste and improving routing efficiency on the internet.
+
+## Other Types of IP Addresses (OB 1.7)
+
+In the world of IT, there are basically three ways to communicate using IP addresses: unicast, multicast, and broadcast.
+
+- **Unicast**: This is the most common type of IP communication. In unicast, data is sent from one specific source to one specific destination. For example, when you visit a website, your computer sends a unicast request to the web server's IP address, and the server responds directly to your computer's IP address.
+
+  - Public IP: These are IP addresses that are assigned to devices that are directly connected to the internet. They are unique across the entire internet and can be accessed from anywhere in the world.
+  - Private IP: These are IP addresses that are used within private networks (like home or office networks) and are not routable on the public internet. They allow devices within the same network to communicate with each other.
+  - APIPA: Stands for **Automatic Private IP Addressing**. This is a feature in some operating systems that automatically assigns a private IP address (from the range `169.254.0.1` to `169.254.255.254`) when a device is unable to obtain an IP address from a DHCP server.
+
+- **Multicast**: In multicast communication, data is sent from one source to multiple specific destinations. This is often used for streaming media or online gaming, where the same data needs to be sent to multiple users simultaneously.
+
+  - IP Range: The IP address range for multicast is from `224.0.0.0` to `239.255.255.255`.
+
+- **Broadcast (Layer 3)**: In broadcast communication, data is sent from one source to all devices on a specific network segment. This is typically used for network discovery protocols or when a device needs to send a message to all other devices in the same subnet.
+
+  - IP Address: The broadcast address for a subnet is typically the highest address in that subnet. For example, in the subnet `192.168.1.0/24`, the broadcast address would be `192.168.1.255`.
+
+- **Loopback**: The loopback IP address is used to test network software without physically transmitting packets over a network. It allows a device to send data to itself.
+  - IP Address: The loopback address is typically `127.0.0.1` - `127.255.255.255`, with `127.0.0.1` being the most commonly used address.
+  - Usage: It is commonly used for testing and troubleshooting network applications and services on the local machine.
