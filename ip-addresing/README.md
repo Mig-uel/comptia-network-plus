@@ -363,3 +363,64 @@ Subnetting is when we take a Classful network (like Class A, B, or C) and divide
   - Efficient IP Address Utilization: Subnetting allows for better allocation of IP addresses, reducing waste and ensuring that IP addresses are used more effectively.
   - Filtering Traffic: Routers can be configured to filter traffic between subnets, enhancing security and control over data flow.
 
+## How to Calculate the Subnet Mask in Subnetting (OB 1.7)
+
+Let's look at a IP address with CIDR notation:
+
+`192.168.30.0/24`
+
+Subnetting involves borrowing bits from the host portion of the IP address to create additional network bits. In this example, the `/24` indicates that the first 24 bits are used for the network portion, leaving 8 bits for the host portion.
+
+At the moment, the subnet mask is `255.255.255.0` and we have 1 network with 256 addresses (254 usable for hosts).
+
+When we subnet, we will increase the number of networks by borrowing bits from the host portion. Each bit borrowed doubles the number of networks and halves the number of hosts per network.
+
+Let's borrow a bit from the host portion:
+
+`192.168.30.0/25`
+
+- Subnet Mask: `255.255.255.128`
+
+A tip to remember subnet masks is that each octet has 8 bits, and the values of each bit from left to right are: `128, 64, 32, 16, 8, 4, 2, 1`.
+
+By borrowing 1 bit, we have:
+
+- Number of Networks: 2 (2^1)
+- Number of Hosts per Network: 126 (2^7 - 2)
+
+Why minus 2? Because we have to reserve 2 addresses in each subnet: one for the network address and one for the broadcast address.
+
+Let's borrow another bit:
+
+`192.168.30.0/26`
+
+- Subnet Mask: `255.255.255.192`
+
+By borrowing 2 bits, we have:
+
+- Number of Networks: 4 (2^2)
+- Number of Hosts per Network: 62 (2^6 - 2)
+
+We are calculating the subnet mask by adding the values of the borrowed bits in the last octet. For `/26`, we borrowed 2 bits, which are `128` and `64`. Adding these gives us `192`, resulting in a subnet mask of `255.255.255.192`.
+
+Another example:
+
+`/8 = 255.0.0.0` (no bits borrowed)
+
+`/9 = 255.128.0.0` (1 bit borrowed: 128)
+
+- Number of Host Bits left: 23
+- Number of Networks: 2
+- Number of Hosts per Network: 8,388,606
+  - Calculation: 2^23(octets left in host portion) - 2
+
+`/30 = ?`
+
+- We borrow 22 bits (30 - 8 = 22)
+- Subnet Mask: `255.255.255.?`
+  - Calculation: 22 - 16 = 6 bits borrowed in the last octet
+  - Values of borrowed bits: 128, 64, 32, 16, 8, 4
+  - Adding these gives us: 128 + 64 + 32 + 16 + 8 + 4 = 252
+  - Therefore, the subnet mask is `255.255.255.252`
+- Number of Networks: 4,194,304 (2^22)
+- Number of Hosts per Network: 2 (2^2 - 2)
