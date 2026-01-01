@@ -346,3 +346,20 @@ You can use the loopback address to test network applications and services on yo
 | C     | 192 - 223       | 24                    | 2,097,152     | 255.255.255.0       | /24           | 254                    | 192.168.0.0 - 192.168.255.255 |
 | D     | 224 - 239       | N/A                   | N/A           | N/A                 | N/A           | N/A                    | Multicast Range               |
 | E     | 240 - 255       | N/A                   | N/A           | N/A                 | N/A           | N/A                    | Experimental Use              |
+
+## What is Subnetting and Why Do It? (OB 1.7)
+
+Subnetting is the process of dividing a larger network into smaller, more manageable subnetworks (subnets). This is done by borrowing bits from the host portion of an IP address to create additional network bits, allowing for more efficient use of IP addresses and improved network performance.
+
+Subnetting is about taking a big network and breaking it down into smaller networks. This helps in organizing the network better, improving security, and reducing congestion.
+
+Subnetting is when we take a Classful network (like Class A, B, or C) and divide it into smaller parts called subnets. This is done by changing the subnet mask to include more bits for the network portion and fewer bits for the host portion.
+
+- Benefits of Subnetting:
+  - Minimize Broadcast Traffic: By dividing a large network into smaller subnets, broadcast traffic is limited to each subnet, reducing overall network congestion.
+  - Optimized Network Performance: Smaller subnets can lead to improved performance as there are fewer devices competing for bandwidth within each subnet.
+  - Simpler Management: Issues can be often isolated to their respective subnets, making it easier to manage and troubleshoot the network.
+  - Security: Subnetting can enhance security by isolating different segments of the network, limiting access between subnets as needed.
+  - Efficient IP Address Utilization: Subnetting allows for better allocation of IP addresses, reducing waste and ensuring that IP addresses are used more effectively.
+  - Filtering Traffic: Routers can be configured to filter traffic between subnets, enhancing security and control over data flow.
+
