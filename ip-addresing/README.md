@@ -424,3 +424,47 @@ Another example:
   - Therefore, the subnet mask is `255.255.255.252`
 - Number of Networks: 4,194,304 (2^22)
 - Number of Hosts per Network: 2 (2^2 - 2)
+
+## What are the Subnets on a Class C Network? (OB 1.7)
+
+Let's try to write down all the subnets we can create on a Class C network by borrowing bits from the host portion. This goes from `/24` to `/31`.
+
+- `/24 = 255.255.255.0`
+
+  - Number of Networks: 1
+  - Number of Hosts per Network: 254
+
+- `/25 = 255.255.255.128`
+
+  - Number of Networks: 2
+  - Number of Hosts per Network: 126 (128 - 2)
+
+- `/26 = 255.255.255.192`
+
+  - Number of Networks: 4
+  - Number of Hosts per Network: 62 ((2^6) - 2)
+
+- `/27 = 255.255.255.224`
+
+  - Number of Networks: 2^3 (3 = number of borrowed bits) = 8
+  - Number of Hosts per Network: 30 ((2^5) - 2)
+
+- `/28 = 255.255.255.240`
+
+  - Number of Networks: 2^4 = 16
+  - Number of Hosts per Network: 14 ((2^4) - 2)
+
+- `/29 = 255.255.255.248`
+
+  - Number of Networks: 2^5 = 32
+  - Number of Hosts per Network: 6 ((2^3) - 2)
+
+- `/30 = 255.255.255.252`
+
+  - Number of Networks: 2^6 = 64
+  - Number of Hosts per Network: 2 ((2^2) - 2)
+
+- `/12 = 255.240.0.0`
+
+  - Number of Networks: 2^4 = 16
+  - Number of Hosts per Network: 1048576 - 2 = 1048574
