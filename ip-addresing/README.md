@@ -514,3 +514,16 @@ We want four networks, so we need to borrow 2 bits from the host portion.
     - Broadcast Address: `192.168.60.255`
 
 Remember, now that these are subnets, devices in different subnets cannot communicate directly without a router.
+
+## Subnetting Class C Network /28 (OB 1.7)
+
+Let's look at an example of subnetting a Class C network: `192.168.100.0/24`
+
+We want to create 16 subnets, so we need to borrow 4 bits from the host portion.
+
+`192.168.100.0/28`
+
+- Subnet Mask: `255.255.255.240`
+- Block Size: 256 - 240 = 16
+- Number of Networks: 16 (2^4)
+- Number of Hosts per Network: 2^4 - 2 = 14
