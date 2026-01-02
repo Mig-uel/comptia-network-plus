@@ -486,3 +486,31 @@ Let's subnet this network into two subnets by borrowing 1 bit from the host port
 - IP Ranges:
   - Subnet 1: `192.168.30.0 - 192.168.30.127`
   - Subnet 2: `192.168.30.128 - 192.168.30.255`
+
+### Subnetting Class C Network /26 (OB 1.7)
+
+Let's look at an example of subnetting a Class C network: `192.168.60.0/24`
+
+We want four networks, so we need to borrow 2 bits from the host portion.
+
+`192.168.60.0/26`
+
+- Subnet Mask: `255.255.255.192`
+- Block Size: 256 - 192 = 64
+- Number of Networks: 4 (2^2)
+- Number of Hosts per Network: 2^6 - 2 = 62
+- IP Ranges:
+  - Subnet 1: `192.168.60.0 - 192.168.60.63`
+    - Network Address: `192.168.60.0`
+    - Broadcast Address: `192.168.60.63`
+  - Subnet 2: `192.168.60.64 - 192.168.60.127`
+    - Network Address: `192.168.60.64`
+    - Broadcast Address: `192.168.60.127`
+  - Subnet 3: `192.168.60.128 - 192.168.60.191`
+    - Network Address: `192.168.60.128`
+    - Broadcast Address: `192.168.60.191`
+  - Subnet 4: `192.168.60.192 - 192.168.60.255`
+    - Network Address: `192.168.60.192`
+    - Broadcast Address: `192.168.60.255`
+
+Remember, now that these are subnets, devices in different subnets cannot communicate directly without a router.
