@@ -468,3 +468,21 @@ Let's try to write down all the subnets we can create on a Class C network by bo
 
   - Number of Networks: 2^4 = 16
   - Number of Hosts per Network: 1048576 - 2 = 1048574
+
+## Subnetting Class C Network /25 (OB 1.7)
+
+Let's look at an example of subnetting a Class C network: `192.168.30.0/24`
+
+Let's subnet this network into two subnets by borrowing 1 bit from the host portion.
+
+`192.168.30.0/25`
+
+- Subnet Mask: `255.255.255.128`
+- Block Size: 256 - 128 = 128
+- Number of Networks: 2 (2^1)
+  - We raise 2 to the number of bits borrowed (1 bit) to get the number of networks.
+- Number of Hosts per Network: 126 (2^7 - 2)
+  - Why minus 2? Because we have to reserve 2 addresses in each subnet: one for the network address and one for the broadcast address.
+- IP Ranges:
+  - Subnet 1: `192.168.30.0 - 192.168.30.127`
+  - Subnet 2: `192.168.30.128 - 192.168.30.255`
