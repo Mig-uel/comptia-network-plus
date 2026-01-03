@@ -594,3 +594,23 @@ To quickly subnet a Class C network in your head, follow these steps:
 5. Calculate the number of hosts per network using the formula 2^(number of host bits remaining) - 2.
 
 By practicing these steps, you can quickly determine subnet information for Class C networks without needing to write everything down.
+
+## How to Subnet a Class A and Class B Network (OB 1.7)
+
+Subnetting Class A and Class B networks follows the same principles as subnetting Class C networks, but with more bits available for borrowing due to the larger address space.
+
+Let's look at an example of subnetting a Class B network: `172.16.0.0/16`
+
+We want to create 2 subnets, so we need to borrow 1 bit from the host portion.
+
+`172.16.0.0/17`
+
+- Subnet Mask: `255.255.128.0`
+- Number of Hosts per Network: 2^15 - 2 = `32,766`
+- Number of Networks: 2^1 = `2`
+- Block Size: 256 - 128 = `128`
+
+| Network ID   | First Usable IP | Last Usable IP | Broadcast Address |
+| ------------ | --------------- | -------------- | ----------------- |
+| 172.16.0.0   | 172.16.0.1      | 172.16.127.254 | 172.16.127.255    |
+| 172.16.128.0 | 172.16.128.1    | 172.16.255.254 | 172.16.255.255    |
