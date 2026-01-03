@@ -614,3 +614,20 @@ We want to create 2 subnets, so we need to borrow 1 bit from the host portion.
 | ------------ | --------------- | -------------- | ----------------- |
 | 172.16.0.0   | 172.16.0.1      | 172.16.127.254 | 172.16.127.255    |
 | 172.16.128.0 | 172.16.128.1    | 172.16.255.254 | 172.16.255.255    |
+
+## What is IPv6? (OB 1.7)
+
+IPv6, or Internet Protocol version 6, is the most recent version of the Internet Protocol (IP) designed to replace IPv4. It was developed to address the limitations of IPv4, particularly the exhaustion of available IP addresses.
+
+IPv6 Benefits:
+
+- More Addresses: An IPv6 address is **128 bits** long, compared to the 32 bits of an IPv4 address. This allows for a vastly larger number of unique IP addresses, accommodating the growing number of internet-connected devices.
+- IPSec: IPv6 has built-in support for IPSec (Internet Protocol Security), which provides enhanced security features for data transmission.
+- No Broadcasting: IPv6 eliminates the need for broadcasting, which can reduce network congestion and improve performance. It replaces it with Anycast and Multicast addressing.
+- Multicast Based: IPv6 uses multicast addressing to efficiently send data to multiple destinations, reducing the overall network load.
+- Plug-n-Play: An IPv6 LAN can be configured without the need for DHCP (Dynamic Host Configuration Protocol) servers, allowing devices to automatically configure their own IP addresses by using **Linked-Local Addresses**.
+- Auto-Configuration: IPv6 can use your MAC address as part of the IPv6 address, making it easier to configure devices on a network.
+- Simplified Header: The IPv6 header is designed to be more efficient than the IPv4 header, which can improve routing performance.
+- Improved Mobility: IPv6 includes features that enhance mobile device connectivity, allowing for seamless transitions between networks.
+- Elimination of NAT: IPv6 eliminates the need for Network Address Translation (NAT), allowing for direct end-to-end connectivity between devices. Recall that NAT is used in IPv4 to conserve IP addresses by allowing multiple devices on a local network to share a single public IP address.
+- Better Quality of Service (QoS): IPv6 includes improved support for Quality of Service, allowing for better handling of real-time data such as voice and video.
