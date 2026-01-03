@@ -542,3 +542,55 @@ We want to borrow 6 bits from the host portion.
 - Number of Hosts per Network: 2^2 - 2 = 2
 
 Why would we ever want to do this? This is useful for point-to-point links where only two devices need to communicate with each other, such as between two routers.
+
+## How to Subnet in Your Head (OB 1.7)
+
+Let's look at an example of subnetting a Class C network: `192.168.20.10/26`
+
+- Subnet Mask: `255.255.255.192`
+- Block Size: 256 - 192 = `64`
+- Number of Networks: 2^2 = `4`
+- Number of Hosts per Network: 2^6 - 2 = `62`
+
+Another example: `192.168.20.71/27`
+
+- Number of Subnets Needed: 2^3 = `8`
+- Subnet Mask: 128 + 64 + 32 = 224 = `255.255.255.224`
+- Block Size: 256 - 224 = `32`
+- Number of Hosts per Network: 2^(host bits remaining) = 2^5 - 2= `30`
+- Network ID of the IP Address:
+  - Find the closest multiple of the block size (32) that is less than or equal to the given IP address's last octet (71).
+  - 32 \* 2 = 64
+  - Therefore, the Network ID is `192.168.20.64`
+
+---
+
+What's the network ID for the IP address `192.168.20.119/28`?
+
+- Number of Subnets Needed: 2^4 = `16`
+- Subnet Masks: 128 + 64 + 32 + 16 = `240` = `255.255.255.240`
+- Block Size: 256 - 240 = `16`
+- Number of Hosts per Network: 2^4 - 2 = `14`
+- Network ID of the IP Address: `192.168.20.112`
+
+---
+
+What's the network ID for the IP address `192.168.20.213/29`?
+
+Number of Networks: `32`
+Subnet Mask: `255.255.255.248`
+Block Size: `8`
+Number of Hosts per Network: `6`
+Network ID of the IP Address: `192.168.20.208`
+
+---
+
+To quickly subnet a Class C network in your head, follow these steps:
+
+1. Determine the number of subnets needed and calculate how many bits to borrow from the host portion.
+2. Calculate the new subnet mask by adding the values of the borrowed bits in the last octet.
+3. Calculate the block size by subtracting the last octet of the subnet mask from 256.
+4. Find the network ID by locating the closest multiple of the block size that is less than or equal to the last octet of the given IP address.
+5. Calculate the number of hosts per network using the formula 2^(number of host bits remaining) - 2.
+
+By practicing these steps, you can quickly determine subnet information for Class C networks without needing to write everything down.
