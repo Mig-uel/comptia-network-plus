@@ -121,3 +121,33 @@ Overall, TFTP is a straightforward protocol for transferring files in specific s
 ---
 
 In summary, TFTP is a basic file transfer protocol used for simple file transfers within local networks, often for device configuration and firmware updates.
+
+## HTTP and HTTPS (OB 1.4)
+
+When you browse the web, you typically use **HTTP (Hypertext Transfer Protocol)** or **HTTPS (Hypertext Transfer Protocol Secure)** to access websites.
+
+### HTTP
+
+**Hypertext Transfer Protocol (HTTP)** is the foundation of data communication on the World Wide Web. It provides a **standard way for web browsers and servers to communicate** and exchange information.
+
+HTTP operates on TCP **Port 80** and is used to transfer **hypertext documents**, such as HTML pages, images, and videos. It follows a request-response model, where a client (web browser) sends a request to a server, and the server responds with the requested resource.
+
+HTTP is a **stateless protocol**, meaning that each request is independent, and the server does not retain any information about previous requests.
+
+One of the main drawbacks of HTTP is that it does not provide any security features, making it vulnerable to eavesdropping and man-in-the-middle attacks. It transmits data in plain text, which can be intercepted by malicious actors.
+
+### HTTPS
+
+**Hypertext Transfer Protocol Secure (HTTPS)** is an extension of HTTP that adds a layer of security by using **SSL/TLS (Secure Sockets Layer/Transport Layer Security)** to encrypt the data being transmitted.
+
+HTTPS operates on TCP **Port 443** and ensures that the communication between the client and server is secure and private. It does this by encrypting the data and ensuring the integrity and security of the data being exchanged.
+
+**TLS is the standard security technology for establishing an encrypted between web browsers and servers.**
+
+When you visit a website using HTTPS, you will often see a padlock icon in the address bar, indicating that the connection is secure.
+
+Overall, HTTPS is the preferred choice for secure web communication, especially for websites that handle sensitive information such as login credentials, financial transactions, and personal data.
+
+---
+
+In summary, while HTTP is used for general web communication, HTTPS provides a secure and encrypted way to access websites, ensuring the privacy and integrity of the data being transmitted.
