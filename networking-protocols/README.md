@@ -60,3 +60,15 @@ SSH provides a secure channel over an unsecured network in **client-server archi
 ---
 
 In summary, while Telnet allows for remote device management, SSH is the preferred choice due to its robust security features.
+
+## DNS (OB 1.4)
+
+When you want to visit a website, you usually type in a domain name like `www.example.com` into your web browser. However, computers and servers communicate using IP addresses, which are numerical labels assigned to each device connected to a network.
+
+We as humans find it easier to remember domain names than IP addresses. This is where the **Domain Name System (DNS)** comes into play.
+
+**Domain Name System (DNS)** is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network.
+
+It **associates various information with domain names** assigned to each of the participating entities and **uses port 53 queries**, which are typically transmitted over UDP (User Datagram Protocol) or TCP (Transmission Control Protocol).
+
+When you enter a domain name into your web browser, the DNS translates that domain name into its corresponding IP address through a process called **DNS resolution**. This allows your browser to locate and connect to the web server hosting the website.
