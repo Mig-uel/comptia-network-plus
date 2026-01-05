@@ -669,3 +669,25 @@ Can be simplified to:
 `2001::1:0:0:123:8329`
 
 Remember, IPv6 addresses are case-insensitive, so `A` and `a` are considered the same. Again, leading zeros in each group can be omitted, and consecutive groups of zeros can be replaced with a double colon (`::`), but only once per address.
+
+## Different Types of IPv6 Addresses (OB 1.7)
+
+Just like IPv4, IPv6 also has different types of addresses: unicast, multicast, and anycast.
+
+- **Unicast**: An IPv6 unicast address identifies a single network interface. Data sent to a unicast address is delivered to the specific interface identified by that address. Examples of unicast addresses include global unicast addresses (similar to public IPv4 addresses) and link-local addresses (used for communication within a local network segment).
+
+  - One to one, packet is sent to a single interface (device).
+  - **Global Unicast Address**: These are globally routable addresses that can be used on the public internet. They typically start with the prefix `2000::/3`.
+    - `2000::/3` was the original range for global unicast addresses, but now the range has been expanded to include all "non-defined" addresses.
+  - **Unique Local Address (ULA)**: These are similar to private IPv4 addresses and are used for local communication within a site or organization.
+    - They typically start with the prefix `FC00::/7` but the 8th bit is usually set to `1`, resulting in the range `FD00::/8`.
+  - **Link-Local Address**: These addresses are used for communication within a single network segment (link) and are not routable beyond that link. They typically start with the prefix `FE80::/10`.
+    - Every IPv6-enabled device automatically generates a link-local address for itself, which is used for local network communication and neighbor discovery.
+    - It is a replacement for APIPA in IPv4 (`169.254.x.x`).
+
+- **Multicast**: An IPv6 multicast address identifies a group of interfaces that typically belong to different nodes. Data sent to a multicast address is delivered to all interfaces identified by that address. In other words, one to many, packet is sent to multiple interfaces (devices).
+  - IPv6 multicast addresses start with the prefix `FF00::/8`.
+- **Loopback Address**: The IPv6 loopback address is `::1`. It is used by a device to send packets to itself for testing and troubleshooting purposes, similar to the IPv4 loopback address `127.0.0.1`.
+- **Anycast**: An IPv6 anycast address is assigned to multiple interfaces (typically on different nodes). Data sent to an anycast address is delivered to the nearest interface (in terms of routing distance) identified by that address. In other words, one to nearest, packet is sent to the nearest interface (device).
+  - Anycast addresses are typically allocated from the same address space as unicast addresses.
+  - Replaces broadcast in IPv4.
