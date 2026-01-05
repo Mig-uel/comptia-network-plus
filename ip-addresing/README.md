@@ -631,3 +631,41 @@ IPv6 Benefits:
 - Improved Mobility: IPv6 includes features that enhance mobile device connectivity, allowing for seamless transitions between networks.
 - Elimination of NAT: IPv6 eliminates the need for Network Address Translation (NAT), allowing for direct end-to-end connectivity between devices. Recall that NAT is used in IPv4 to conserve IP addresses by allowing multiple devices on a local network to share a single public IP address.
 - Better Quality of Service (QoS): IPv6 includes improved support for Quality of Service, allowing for better handling of real-time data such as voice and video.
+
+## IPv6 Address Format (OB 1.7)
+
+An IPv6 address is represented as eight groups of four hexadecimal digits, separated by colons. Each group represents 16 bits of the address, resulting in a total of 128 bits.
+
+> Note: An IPv4 address is represented as four decimal octets separated by periods, totaling 32 bits.
+
+For every single digit in hexadecimal, it goes from 0 to F (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F).
+
+Every hexadecimal digit (e.g. `A`) represents 4 bits in binary (e.g. `1010`).
+
+An example of a full IPv6 address is:
+
+`2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+
+- An IPv6 address consists of 128 bits, divided into eight groups of 16 bits each.
+- Prefix: The first 64 bits (the first four groups) represent the network portion of the address.
+  - The first three groups (48 bits) typically indicate the global routing prefix, while the fourth group (16 bits) is used for subnetting within the network.
+- Interface ID: The last 64 bits (the last four groups) represent the host portion of the address.
+  - This portion is typically assigned by your network administrator or generated automatically based on the device's MAC address.
+- The groups are separated by colons (`:`) and are written in hexadecimal format.
+
+To simplify the representation of IPv6 addresses, leading zeros in each group can be omitted, and consecutive groups of zeros can be replaced with a double colon (`::`). However, the double colon can only be used once in an address to avoid ambiguity.
+For example, the above address can be simplified to:
+
+`2001:db8:85a3::8a2e:370:7334`
+
+Another example:
+
+Full IPv6 Address:
+
+`2001:0000:0000:0001:0000:0000:0123:8329`
+
+Can be simplified to:
+
+`2001::1:0:0:123:8329`
+
+Remember, IPv6 addresses are case-insensitive, so `A` and `a` are considered the same. Again, leading zeros in each group can be omitted, and consecutive groups of zeros can be replaced with a double colon (`::`), but only once per address.
