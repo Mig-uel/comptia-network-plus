@@ -28,3 +28,35 @@ SFTP offers advanced features like file access, file transfer, and file manageme
 ---
 
 Remember, FTP is suitable for non-sensitive file transfers, while SFTP is the preferred choice for secure file transfers due to its encryption capabilities.
+
+## Telnet and SSH (OB 1.4)
+
+When you want to configure devices such as a switch or a router, or particular things like Unix servers, these devices are best configured using a command-line interface (CLI).
+
+You basically have to connect to them and type in commands to configure them.
+
+You have two options for connecting to these devices either serially (directly using a console cable) or over the network using protocols like **Telnet** or **SSH**.
+
+### Telnet
+
+**Telnet** is an older network protocol used on the Internet or local area networks to provide a bidirectional (two-way) interactive text-oriented communication facility using a **virtual terminal connection** (VTY) (a software emulation of a physical terminal).
+
+It operates on **Port 23** and is **known for being insecure** because it transmits data, including login credentials, in plain text without encryption. This makes it vulnerable to interception and eavesdropping.
+
+Telnet is great. It allows you to remotely access and manage devices without being in the actual console of the device. However, due to its **lack of security**, it is generally not recommended for use over untrusted networks.
+
+### SSH
+
+Instead of using Telnet, a more secure option is **SSH (Secure Shell)**.
+
+**Secure Shell (SSH)** is a **cryptographic** network protocol that provides a secure way to access a remote computer over an unsecured network.
+
+Port 22 is used for SSH connections.
+
+SSH provides a secure channel over an unsecured network in **client-server architecture**, allowing users to log into another computer over a network, execute commands, and transfer files securely (via SFTP or SCP), and port forwarding (tunneling).
+
+**SSH encrypts all traffic**, including login credentials, to effectively eliminate eavesdropping, connection hijacking, and network-level attacks.
+
+---
+
+In summary, while Telnet allows for remote device management, SSH is the preferred choice due to its robust security features.
