@@ -105,3 +105,19 @@ Overall, DHCP simplifies network management by automating the process of IP addr
 ---
 
 In summary, DHCP is like a dynamic address book for networks, automatically assigning IP addresses and configuration settings to devices as they connect.
+
+## TFTP (OB 1.4)
+
+When you need to transfer files within a local network, especially for tasks like updating firmware on network devices, **Trivial File Transfer Protocol (TFTP)** is often used.
+
+**Trivial File Transfer Protocol (TFTP)** is a simple, lightweight, lock-step (one operation at a time) file transfer protocol with **no authentication** used to transfer small files between devices on a local network.
+
+It uses **Port 69** and operates over UDP (User Datagram Protocol). TFTP is typically used for **transferring boot files or configuration files** to network devices like routers, switches, and IP phones.
+
+Due to its simplicity, TFTP does not provide advanced features like directory listing, file deletion, or authentication. This makes it less secure and less reliable than more robust protocols like FTP or SFTP. TFTP is generally used in controlled environments where security is not a primary concern.
+
+Overall, TFTP is a straightforward protocol for transferring files in specific scenarios, particularly in local networks where simplicity and speed are prioritized over security.
+
+---
+
+In summary, TFTP is a basic file transfer protocol used for simple file transfers within local networks, often for device configuration and firmware updates.
