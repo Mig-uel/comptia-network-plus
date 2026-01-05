@@ -72,3 +72,16 @@ We as humans find it easier to remember domain names than IP addresses. This is 
 It **associates various information with domain names** assigned to each of the participating entities and **uses port 53 queries**, which are typically transmitted over UDP (User Datagram Protocol) or TCP (Transmission Control Protocol).
 
 When you enter a domain name into your web browser, the DNS translates that domain name into its corresponding IP address through a process called **DNS resolution**. This allows your browser to locate and connect to the web server hosting the website.
+
+DNS operates through a distributed database system, with multiple DNS servers around the world that work together to resolve domain names. The main types of DNS servers include:
+
+- **Recursive Resolvers**: These servers receive DNS queries from clients and perform the necessary lookups to resolve the domain name.
+- **Root Name Servers**: These servers are at the top of the DNS hierarchy and direct queries to the appropriate top-level domain (TLD) name servers.
+- **TLD Name Servers**: These servers manage the top-level domains (like .com, .org, .net) and direct queries to the authoritative name servers.
+- **Authoritative Name Servers**: These servers hold the actual DNS records for domain names and provide the final answer to DNS queries.
+
+Overall, DNS is a crucial component of the Internet infrastructure, enabling users to access websites and services using human-friendly domain names instead of complex IP addresses.
+
+---
+
+Remember, DNS is like the phone book of the Internet, translating domain names into IP addresses so that computers can communicate effectively.
