@@ -151,3 +151,72 @@ Overall, HTTPS is the preferred choice for secure web communication, especially 
 ---
 
 In summary, while HTTP is used for general web communication, HTTPS provides a secure and encrypted way to access websites, ensuring the privacy and integrity of the data being transmitted.
+
+## Email Protocols (OB 1.4)
+
+When you send and receive emails, several protocols work together to ensure that your messages are delivered correctly.
+
+### SMTP
+
+**Simple Mail Transfer Protocol (SMTP)** is the standard protocol used for sending emails across the Internet.
+
+SMTP operates on **Port 25** (and sometimes Port 587 for secure submission) to transfer email messages from a client (email sender application) to a mail server or between mail servers. It is responsible for the **outgoing** email delivery process.
+
+It is used primarily for sending emails, not for receiving them. SMTP works in conjunction with other protocols like POP3 or IMAP that handle email retrieval and storage.
+
+SMTP is insecure by default, as it transmits data in plain text. However, it can be secured using TLS (Transport Layer Security) to encrypt the communication between email clients and servers.
+
+### SMTP Secure (SMTPS)
+
+**Simple Mail Transfer Protocol Over Transport Layer Security (SMTPS)** is a secure version of SMTP that uses TCP **Port 587** to encrypt email transmissions between email clients and servers.
+
+This protocol enhances the security of SMTP by encrypting the data transferred, protecting sensitive information such as login credentials and email content from interception and eavesdropping.
+
+Port 587 is the preferred port for secure email submission, as it supports the use of TLS for encryption.
+
+Overall, SMTPS is the recommended choice for sending emails securely, ensuring that your messages are protected during transmission.
+
+### POP3
+
+**Post Office Protocol version 3 (POP3)** is a standard mail protocol used to **retrieve emails from a remote server** to a local email client over a TCP/IP connection.
+
+POP3 operates on **Port 110** (and Port 995 for secure connections) and allows emails to be downloaded and stored locally on the user's device. Once emails are downloaded, they are typically deleted from the server, making them accessible only on the device where they were retrieved.
+
+It is designed for situations where the email client accesses the mail server infrequently, allowing users to read their emails offline.
+
+POP3 is a simple and efficient protocol but lacks advanced features like folder management and synchronization across multiple devices.
+
+POP3 does lack security by default, as it transmits data in plain text. However, it can be secured using SSL/TLS to encrypt the communication between the email client and server.
+
+### POP3 Secure (POP3S)
+
+**Post Office Protocol version 3 Over SSL/TLS (POP3S)** is a secure version of POP3 that uses TCP **Port 995** to securely retrieve emails from a remote server to a local email client over an SSL/TLS encrypted connection.
+
+This protocol ensures that email messages and authentication credentials are secure during transmission, protecting them from interception and eavesdropping.
+
+Port 995 is the designated port for secure POP3 connections, providing an added layer of security for email retrieval.
+
+### IMAP
+
+**Internet Message Access Protocol (IMAP)** is another standard mail protocol used to **retrieve emails from a remote server**, but it offers more advanced features compared to POP3.
+
+IMAP operates on **Port 143** (and Port 993 for secure connections) and allows users to access and manage their emails directly on the mail server. Unlike POP3, IMAP keeps the emails on the server, enabling users to synchronize their email across multiple devices.
+This means that actions such as reading, deleting, or organizing emails are reflected on all devices connected to the same email account.
+
+IMAP is ideal for users who need to access their emails from various locations and devices, providing greater flexibility and convenience.
+
+Overall, IMAP is the preferred choice for email retrieval when users require synchronization and access from multiple devices.
+
+However, like POP3, IMAP does not provide security by default, as it transmits data in plain text. It can be secured using SSL/TLS to encrypt the communication between the email client and server.
+
+### IMAP Secure (IMAPS)
+
+**Internet Message Access Protocol Over SSL/TLS (IMAPS)** is a secure version of IMAP that uses TCP **Port 993** to securely retrieve and manage emails from a remote server to a local email client over an SSL/TLS encrypted connection.
+
+This secure version of IMAP ensures that email messages and authentication credentials are protected during transmission, preventing interception and eavesdropping.
+
+Port 993 is the designated port for secure IMAP connections, providing an added layer of security for email retrieval and management.
+
+---
+
+In summary, SMTP is used for sending emails, while POP3 and IMAP are used for retrieving emails, with their secure versions (SMTPS, POP3S, and IMAPS) providing encryption to protect email communications.
