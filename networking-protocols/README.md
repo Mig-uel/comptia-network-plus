@@ -85,3 +85,23 @@ Overall, DNS is a crucial component of the Internet infrastructure, enabling use
 ---
 
 Remember, DNS is like the phone book of the Internet, translating domain names into IP addresses so that computers can communicate effectively.
+
+## DHCP (OB 1.4)
+
+When a device connects to a network, it needs an IP address to communicate with other devices. Manually assigning IP addresses can be time-consuming and prone to errors, especially in large networks. This is where **Dynamic Host Configuration Protocol (DHCP)** comes in.
+
+**Dynamic Host Configuration Protocol (DHCP)** is a network management protocol used on IP networks to automatically assign IP addresses and other network configuration parameters to devices (clients) on the network.
+
+DHCP operates on **Port 67** for the server and **Port 68** for the client, using UDP (User Datagram Protocol) for communication. It is automatic and centralized management of IP addresses.
+
+It allows devices to join a network and obtain valid IP addresses, subnet masks, default gateways, and DNS server information **without manual configuration**.
+
+When a device connects to a network, it sends a DHCPDISCOVER message to locate a DHCP server. The DHCP server responds with a DHCPOFFER message, offering an IP address and configuration parameters. The client then sends a DHCPREQUEST message to accept the offer, and the server responds with a DHCPACK message to confirm the assignment.
+
+DHCP also supports lease times, which define how long a device can use an assigned IP address before it must renew the lease or obtain a new one.
+
+Overall, DHCP simplifies network management by automating the process of IP address assignment, reducing configuration errors, and ensuring efficient use of IP address space.
+
+---
+
+In summary, DHCP is like a dynamic address book for networks, automatically assigning IP addresses and configuration settings to devices as they connect.
