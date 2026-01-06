@@ -412,3 +412,61 @@ TCP ensures that data packets are transmitted in the correct sequence and withou
 This protocol is used for applications where **data integrity and delivery assurance** are crucial, such as web browsing (HTTP/HTTPS), email (SMTP, IMAP, POP3), and file transfers (FTP).
 
 TCP is more reliable but has higher overhead due to its connection-oriented nature and error-checking mechanisms.
+
+## TCP and UDP In-Depth (OB 1.4)
+
+Remember, higher level protocols like HTTP, FTP, and DNS rely on TCP or UDP to transmit their data.
+
+### TCP (Transmission Control Protocol)
+
+Recall that **TCP is connection-oriented**. This means that before any data is transmitted, a connection must be established between the sender and receiver using a process called the **three-way handshake**. This handshake involves three steps:
+
+1. The sender sends a SYN (synchronize) packet to the receiver to initiate the connection.
+2. The receiver responds with a SYN-ACK (synchronize-acknowledge) packet to acknowledge the request.
+3. The sender sends an ACK (acknowledge) packet back to the receiver to confirm the connection is established.
+
+Once the connection is established, data can be transmitted. TCP breaks the data into smaller packets, each with a sequence number to ensure they are reassembled in the correct order at the destination.
+
+TCP also uses mechanisms like **acknowledgments** (ACKs) to confirm the receipt of packets, **retransmissions** for lost packets, and **flow control** to manage the rate of data transmission between sender and receiver.
+
+- **Acknowledgments (ACKs)**: Acknowledgments are exchanged between the sender and receiver to confirm the successful receipt of packets. When the receiver receives a packet, it sends an ACK back to the sender, indicating that the packet was received correctly.
+- **Flow Control**: Flow control is a mechanism used to prevent the sender from overwhelming the receiver with too much data at once. TCP uses a sliding window protocol to manage the amount of data that can be sent before receiving an acknowledgment.
+- **Windowing**: TCP uses a sliding window mechanism to control the flow of data between the sender and receiver. The window size determines how much data can be sent before waiting for an acknowledgment. The window size can be adjusted dynamically based on network conditions.
+- **Sequence Numbers**: Each byte of data sent over a TCP connection is assigned a unique sequence number. This allows the receiver to reassemble the data in the correct order, even if packets arrive out of order.
+
+Features of TCP include:
+
+- Reliable data transfer
+- Connection-oriented communication (establishment and termination of connections)
+- Acknowledgments and retransmissions
+- Flow control and congestion control
+- Ordered delivery of packets
+
+However, TCP has higher overhead (24 - 60 bytes) due to its connection management and error-checking mechanisms, which can lead to increased latency.
+
+### Connectionless vs. Connection-Oriented
+
+**Connection-oriented protocols**, like TCP, establish a connection before data transmission and ensure reliable delivery of data.
+
+In contrast, **connectionless protocols**, like UDP, do not establish a connection and do not guarantee the delivery of data.
+
+The choice between TCP and UDP depends on the specific requirements of the application, such as the need for reliability, speed, and data integrity.
+
+### UDP (User Datagram Protocol)
+
+**User Datagram Protocol (UDP)** is a connectionless protocol that provides a **faster but less reliable** method of data transmission between applications. It does this because it does not establish a connection before sending data and does not guarantee the delivery or order of packets.
+
+UDP is often used for applications where speed is more critical than reliability, such as video streaming, online gaming, and voice over IP (VoIP).
+
+UDP has lower overhead (8 bytes) compared to TCP, making it more efficient for applications that require fast data transmission without the need for error-checking or retransmissions.
+
+Features of UDP include:
+
+- Connectionless communication
+- Low overhead
+- No guarantees for delivery, order, or error-checking
+- Suitable for real-time applications
+
+---
+
+In summary, TCP and UDP are two essential transport layer protocols that serve different purposes based on the requirements of the applications using them. TCP is ideal for applications that require reliable data transfer, while UDP is suitable for applications that prioritize speed and efficiency.
