@@ -381,3 +381,34 @@ ICMP is utilized for **error reporting**, such as unreachable hosts or network s
 It operates at the network layer and does not use ports like TCP or UDP. Instead, ICMP messages are encapsulated within IP packets.
 
 Overall, ICMP is an essential protocol for network management and troubleshooting, providing valuable feedback about the status of network devices and connections.
+
+## What is TCP and UDP? (OB 1.4)
+
+**TCP (Transmission Control Protocol)** and **UDP (User Datagram Protocol)** are two fundamental transport layer protocols used for data transmission over IP networks.
+
+They operate at the OSI model's **Transport Layer (Layer 4)** and are responsible for delivering data between applications running on different devices.
+
+These two protocols are what other protocols use to send data over the network.
+
+Higher up in the OSI model, you have application layer protocols like HTTP, FTP, DNS, etc. These protocols rely on TCP or UDP to transmit their data.
+
+Let's take FTP as an example:
+
+- Application Layer: Data sent using FTP protocol
+- Presentation Layer: Data gets formatted
+- Session Layer: Session is established between client and server
+- Transport Layer:
+  - Application layer protocols like FTP will rely on protocols in the transport layer to send their data.
+  - FTP uses TCP to ensure reliable delivery of files.
+
+## TCP (Transmission Control Protocol)
+
+**Transmission Control Protocol (TCP)** is a connection-oriented protocol that provides **reliable, ordered, and error-checked delivery** of a stream of bytes (data) between applications running on hosts communicating via an IP network.
+
+TCP establishes a connection between the sender and receiver before data transmission begins, ensuring that all packets are delivered in the correct order and without errors. If any packets are lost or corrupted during transmission, TCP will retransmit them.
+
+TCP ensures that data packets are transmitted in the correct sequence and without errors, using mechanisms like **acknowledgments, retransmissions, and flow control**.
+
+This protocol is used for applications where **data integrity and delivery assurance** are crucial, such as web browsing (HTTP/HTTPS), email (SMTP, IMAP, POP3), and file transfers (FTP).
+
+TCP is more reliable but has higher overhead due to its connection-oriented nature and error-checking mechanisms.
