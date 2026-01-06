@@ -220,3 +220,29 @@ Port 993 is the designated port for secure IMAP connections, providing an added 
 ---
 
 In summary, SMTP is used for sending emails, while POP3 and IMAP are used for retrieving emails, with their secure versions (SMTPS, POP3S, and IMAPS) providing encryption to protect email communications.
+
+## NTP (OB 1.4)
+
+One of the most functions across the network is timestamping. Timestamping is basically when protocols or data left the device or arrived at the device. Event logging, error reporting, and many other functions rely on accurate timestamps.
+
+When you connect to a network, it's important that your device's clock is synchronized with other devices on the network. This is where the **Network Time Protocol (NTP)** comes into play.
+
+**Network Time Protocol (NTP)** is a networking protocol used to **synchronize the clocks** of computers over a network.
+
+In other words, it ensures that all devices on a network have the same accurate time.
+
+NTP operates over UDP **Port 123** and uses a hierarchical system of time sources to distribute accurate time information.
+
+It is designed to **mitigate the effects of variable network latency** over packet-switched (e.g., Internet), variable-latency data networks.
+
+It provides **high precision time correction** to networked devices, ensuring that their clocks are synchronized to within a few milliseconds of each other.
+
+NTP uses a system of time servers organized in a hierarchical structure, with **stratum levels** indicating the distance from the reference clock. Stratum 0 represents high-precision time sources like atomic clocks or GPS receivers, while higher stratum levels represent servers that synchronize their time from lower stratum servers.
+
+> Fun Fact: You can actually set up your own NTP server using a GPS receiver to get accurate time signals from satellites!
+
+Overall, NTP is a crucial protocol for maintaining accurate time synchronization across networked devices, which is essential for various applications and services.
+
+---
+
+In summary, NTP ensures that all devices on a network have synchronized clocks, which is vital for accurate timestamping and event logging.
