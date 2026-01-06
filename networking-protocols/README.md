@@ -340,3 +340,18 @@ Overall, SQL Server is a powerful database management system that provides robus
 ---
 
 In summary, SQL Server uses specific ports for communication, with Port 1433 being the primary port for client connections to the database server.
+
+## RDP (OB 1.4)
+
+When you need to remotely access a Windows computer, you can use the **Remote Desktop Protocol (RDP)**. RDP allows you to connect to another computer over a network and interact with its desktop as if you were sitting in front of it.
+
+**Remote Desktop Protocol (RDP)** is a proprietary protocol developed by Microsoft that provides a graphical interface to connect to another computer over a network connection.
+
+RDP operates over **Port 3389** and allows users to graphically access and control a
+remote computer's desktop environment.
+
+RDP is widely used for remote administration, technical support, and remote work scenarios. It enables users to access their work computers from home or other locations, providing flexibility and convenience.
+
+---
+
+In summary, RDP is a powerful protocol for remote desktop access, allowing users to connect to and
