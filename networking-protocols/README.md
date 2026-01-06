@@ -246,3 +246,23 @@ Overall, NTP is a crucial protocol for maintaining accurate time synchronization
 ---
 
 In summary, NTP ensures that all devices on a network have synchronized clocks, which is vital for accurate timestamping and event logging.
+
+## SNMP (OB 1.4)
+
+When it comes to managing the network, you're not going to have not just one device but multiple devices like routers, switches, servers, and more. To effectively monitor and manage these devices, network administrators use the **Simple Network Management Protocol (SNMP)**.
+
+**Simple Network Management Protocol (SNMP)** is an application-layer protocol used for **managing and monitoring network devices** on IP networks.
+
+SNMP operates over UDP **Port 161** for sending commands from the management station to the network devices and UDP **Port 162** for receiving notifications (traps) from the devices to the management station.
+
+SNMP enables network administrators to manage network performance, detect and troubleshoot network issues, and plan for network growth. It allows administrators to collect information about network devices, such as their status, performance metrics, and configuration settings.
+
+SNMP works by using a manager-agent model, where the SNMP manager (management station) communicates with SNMP agents (network devices) to retrieve or modify information stored in the devices' Management Information Base (MIB).
+
+SNMP has three main versions: SNMPv1, SNMPv2c, and SNMPv3. Each version introduces improvements in functionality and security.
+
+**Only use version 3 of SNMP** as it provides enhanced security features, including authentication and encryption, to protect against unauthorized access and data interception.
+
+---
+
+In summary, SNMP is a vital protocol for network management, allowing administrators to monitor and control network devices effectively.
