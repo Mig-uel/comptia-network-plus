@@ -470,3 +470,15 @@ Features of UDP include:
 ---
 
 In summary, TCP and UDP are two essential transport layer protocols that serve different purposes based on the requirements of the applications using them. TCP is ideal for applications that require reliable data transfer, while UDP is suitable for applications that prioritize speed and efficiency.
+
+## GRE (OB 1.4)
+
+**Generic Routing Encapsulation (GRE)** is a **tunneling protocol** developed by Cisco that encapsulates a wide variety of network layer protocols inside IP tunnels to create point-to-point connections.
+
+GRE operates at the network layer (Layer 3) of the OSI model and is used to transport packets from one network to another over an IP network. It creates a **virtual point-to-point link** (tunnel) to various brands of routers at remote points over an IP internetwork, enabling the encapsulation of packets from **different protocols**, making it versatile for various networking scenarios.
+
+It is commonly used for VPNs (Virtual Private Networks) and carrying network protocols that are not natively supported by the underlying network infrastructure.
+
+GRE uses **Protocol Number 47** in the IP header to identify GRE packets. Unlike TCP and UDP, GRE does not use port numbers, as it is not a transport layer protocol.
+
+Overall, GRE is a powerful tunneling protocol that enables the encapsulation and transport of various network layer protocols over IP networks, facilitating secure and flexible communication between remote networks.
