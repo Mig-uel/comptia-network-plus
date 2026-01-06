@@ -482,3 +482,31 @@ It is commonly used for VPNs (Virtual Private Networks) and carrying network pro
 GRE uses **Protocol Number 47** in the IP header to identify GRE packets. Unlike TCP and UDP, GRE does not use port numbers, as it is not a transport layer protocol.
 
 Overall, GRE is a powerful tunneling protocol that enables the encapsulation and transport of various network layer protocols over IP networks, facilitating secure and flexible communication between remote networks.
+
+## IPSec (OB 1.4)
+
+When it comes to securing data transmitted over a network, especially in VPNs (Virtual Private Networks), **IPsec (Internet Protocol Security)** is a widely used protocol suite that provides robust security features.
+
+**Internet Protocol Security (IPsec)** is a suite of protocols designed to **secure Internet Protocol (IP) communications** by authenticating and encrypting each IP packet in a communication session.
+
+It is widely used for **securing internet communications** and establishing secure VPNs.
+
+IPSec operates at the network layer (Layer 3) of the OSI model. It also operates in two modes:
+
+- **Transport Mode**: In this mode, only the payload (data) of the IP packet is encrypted and/or authenticated, while the original IP header remains intact. This mode is typically used for end-to-end communication between two hosts.
+- **Tunnel Mode**: In this mode, the entire IP packet (including the header) is encapsulated within a new IP packet with a new header. This mode is commonly used for VPNs, where packets are sent between two gateways (e.g., routers or firewalls) over an untrusted network.
+
+IPSec uses two main protocols to provide its security features:
+
+- **Authentication Header (AH)**: Provides data integrity, authentication, and anti-replay protection for IP packets. It is a used for providing **authentication, integrity, and non-repudiation through digital signatures**.
+- **Encapsulating Security Payload (ESP)**: Provides the same features as AH but also adds **confidentiality through encryption**. It is used for **encryption, authentication, and integrity** of IP packets.
+
+While AH provides authentication and integrity, ESP provides encryption for confidentiality in addition to authentication and integrity.
+
+IPSec commonly uses **UDP Port 500** for Internet Key Exchange (IKE) and **UDP Port 4500** for NAT traversal.
+
+Overall, IPSec is a comprehensive suite of protocols that provides robust security features for IP communications, making it a popular choice for securing data transmitted over networks, especially in VPNs.
+
+---
+
+In summary, IPSec is a powerful protocol suite that ensures secure communication over IP networks by providing authentication, integrity, and confidentiality for data transmissions.
