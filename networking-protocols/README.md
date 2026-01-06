@@ -322,3 +322,21 @@ Overall, Syslog is an essential protocol for managing and analyzing log data in 
 ---
 
 In summary, Syslog enables centralized logging and monitoring of network devices, facilitating effective network management and security auditing.
+
+## SQL Server (OB 1.4)
+
+When dealing with databases, especially in enterprise environments, **SQL Server** is a popular choice for managing and storing data. SQL Server uses specific ports for communication between clients and the database server.
+
+Other than SQL Server, there are other database management systems like MySQL, PostgreSQL, and Oracle Database, each with its own default ports.
+
+**SQL Server** is a **relational database management system (RDBMS)** developed by Microsoft. It is used to store, manage, and retrieve data for various applications.
+
+SQL Server primarily uses **Port 1433** for client connections to the database server. This port is used for communication between SQL Server instances and client applications.
+
+In addition to Port 1433, SQL Server also uses **Port 1434** for the SQL Server Browser service, which helps clients locate SQL Server instances on the network.
+
+Overall, SQL Server is a powerful database management system that provides robust features for data storage, retrieval, and management in enterprise environments.
+
+---
+
+In summary, SQL Server uses specific ports for communication, with Port 1433 being the primary port for client connections to the database server.
