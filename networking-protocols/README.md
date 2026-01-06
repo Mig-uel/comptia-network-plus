@@ -369,3 +369,15 @@ It operates at the application layer and can work over various transport protoco
 ---
 
 In summary, SIP is a crucial protocol for enabling real-time communication services over IP networks, facilitating voice and video calls, messaging, and other multimedia interactions.
+
+## ICMP (OB 1.4)
+
+When you want to check if a device on a network is reachable, you can use the **Internet Control Message Protocol (ICMP)**. ICMP is commonly used for diagnostic purposes, such as the well-known "ping" command.
+
+**Internet Control Message Protocol (ICMP)** is a network layer protocol used for sending diagnostic or control messages between network devices, helping to **manage and troubleshoot network issues**.
+
+ICMP is utilized for **error reporting**, such as unreachable hosts or network segments, and for operational queries, like echo requests and replies (used in the ping command).
+
+It operates at the network layer and does not use ports like TCP or UDP. Instead, ICMP messages are encapsulated within IP packets.
+
+Overall, ICMP is an essential protocol for network management and troubleshooting, providing valuable feedback about the status of network devices and connections.
