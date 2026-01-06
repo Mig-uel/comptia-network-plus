@@ -354,4 +354,4 @@ RDP is widely used for remote administration, technical support, and remote work
 
 ---
 
-In summary, RDP is a powerful protocol for remote desktop access, allowing users to connect to and
+In summary, RDP is a powerful protocol for remote desktop access, allowing users to connect to and control remote Windows computers over a network.
