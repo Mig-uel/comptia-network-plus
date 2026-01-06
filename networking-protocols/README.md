@@ -294,3 +294,13 @@ This secure version of LDAP ensures that sensitive information, such as user cre
 ---
 
 In summary, LDAP is a crucial protocol for accessing and managing directory services, enabling efficient user and resource management in large networks.
+
+## SMB (OB 1.4)
+
+In networking, you'd often want to share files and printers between computers. We talked about FTP and SFTP for file transfers, but within a local network, especially in Windows environments, the **Server Message Block (SMB)** protocol is commonly used for this purpose.
+
+**Server Message Block (SMB)** is a network protocol used for **network file sharing, printer sharing, and inter-process communication** between computers on a local network.
+
+SMB operates over TCP **Port 445** and is used primarily in Windows environments for file and printer sharing and inter-process communication.
+
+The use of port 445 allows SMB to function without the need for the older NetBIOS layer, which used ports 137-139.
