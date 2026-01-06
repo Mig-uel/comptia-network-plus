@@ -355,3 +355,17 @@ RDP is widely used for remote administration, technical support, and remote work
 ---
 
 In summary, RDP is a powerful protocol for remote desktop access, allowing users to connect to and control remote Windows computers over a network.
+
+## SIP (OB 1.4)
+
+When it comes to voice and video communication over the Internet, the **Session Initiation Protocol (SIP)** is a key protocol that enables these services.
+
+**Session Initiation Protocol (SIP)** is a **signaling protocol** used for initiating, maintaining, modifying, and terminating real-time sessions that involve video, voice, messaging, and other communications applications and services.
+
+SIP is fundamental to the operation of Voice over IP (VoIP) and multimedia communication systems. It is used to establish and manage communication sessions between endpoints, such as IP phones, video conferencing systems
+
+It operates at the application layer and can work over various transport protocols, including UDP, TCP, and TLS. Port numbers commonly associated with SIP include **Port 5060** for non-encrypted signaling and **Port 5061** for encrypted signaling using TLS.
+
+---
+
+In summary, SIP is a crucial protocol for enabling real-time communication services over IP networks, facilitating voice and video calls, messaging, and other multimedia interactions.
