@@ -266,3 +266,31 @@ SNMP has three main versions: SNMPv1, SNMPv2c, and SNMPv3. Each version introduc
 ---
 
 In summary, SNMP is a vital protocol for network management, allowing administrators to monitor and control network devices effectively.
+
+## LDAP (OB 1.4)
+
+If you work in a big company, a company that has thousands of employees, managing all the different user accounts, passwords, and permissions can become quite complex. Microsoft knew this back in 1990s when they created Active Directory.
+
+What exactly is Active Directory? Active Directory is basically a directory (a database) that stores information about users, computers, and other resources on a network. It helps administrators manage and organize these resources efficiently. Administrators can create user accounts, assign permissions, and enforce security policies across the network.
+
+To interact with Active Directory, Microsoft uses a protocol called **Lightweight Directory Access Protocol (LDAP)**.
+
+**Lightweight Directory Access Protocol (LDAP)** is an application protocol used to **access and manage directory information services** over a network.
+
+LDAP operates on **Port 389** for standard communication.
+
+It provides a way to query and modify directory services, allowing users and applications to retrieve information about users, groups, computers, and other resources stored in the directory.
+
+LDAP is widely used in various applications, including email clients, web applications, and network operating systems, to authenticate users and manage access to resources.
+
+However, LDAP does not provide encryption by default, making it vulnerable to interception and eavesdropping.
+
+## LDAP Secure (LDAPS)
+
+**Lightweight Directory Access Protocol Over SSL/TLS (LDAPS)** is a secure version of LDAP that uses TCP **Port 636** to encrypt the communication between clients and directory servers using SSL/TLS.
+
+This secure version of LDAP ensures that sensitive information, such as user credentials and directory data, is protected during transmission, preventing interception and eavesdropping.
+
+---
+
+In summary, LDAP is a crucial protocol for accessing and managing directory services, enabling efficient user and resource management in large networks.
