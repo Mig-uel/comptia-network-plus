@@ -510,3 +510,35 @@ Overall, IPSec is a comprehensive suite of protocols that provides robust securi
 ---
 
 In summary, IPSec is a powerful protocol suite that ensures secure communication over IP networks by providing authentication, integrity, and confidentiality for data transmissions.
+
+## Summary of Ports (OB 1.4)
+
+- FTP: Ports 20 (data) and 21 (control)
+- SFTP: Port 22
+- Telnet: Port 23
+- SSH: Port 22
+- DNS: Port 53
+- DHCP: Ports 67 (server) and 68 (client)
+- TFTP: Port 69
+- HTTP: Port 80
+- HTTPS: Port 443
+- SMTP: Port 25 (and 587 for secure submission)
+- SMTPS: Port 587
+- POP3: Port 110 (and 995 for secure connections)
+- POP3S: Port 995
+- IMAP: Port 143 (and 993 for secure connections)
+- IMAPS: Port 993
+- NTP: Port 123
+- SNMP: Ports 161 (commands) and 162 (traps)
+- LDAP: Port 389
+- LDAPS: Port 636
+- SMB: Port 445
+- Syslog: Port 514
+- SQL Server: Ports 1433 (client connections) and 1434 (SQL Server Browser)
+- RDP: Port 3389
+- SIP: Ports 5060 (non-encrypted) and 5061 (encrypted)
+- ICMP: No ports (operates at the network layer)
+- TCP: Connection-oriented, reliable, ordered delivery
+- UDP: Connectionless, faster, no guarantee of delivery
+- GRE: Protocol Number 47
+- IPSec: No specific ports (operates at the network layer)
