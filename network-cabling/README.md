@@ -51,3 +51,28 @@ Key factors affecting cable speed include cable quality, installation practices,
   - Attenuation refers to the loss of signal strength as it travels through a cable.
   - It is measured in decibels (dB) and increases with distance.
   - Higher quality cables have lower attenuation rates, allowing for longer transmission distances without signal degradation.
+
+## Coaxial Cable
+
+Coaxial cable, or coax, consists of a central conductor surrounded by an insulating layer, a metallic shield, and an outer insulating layer. It is commonly used for cable television and broadband internet connections.
+
+Coaxial cables is a type of electrical cable consisting of a central conductor, an insulating layer, a metallic shield, and an outer insulating layer. The design of coaxial cables helps to reduce electromagnetic interference (EMI) and allows for high-frequency signal transmission. It is commonly used for cable television, broadband internet connections, satellite communication, and other applications requiring reliable data transmission over longer distances.
+
+**RG-6** and **RG-59** are common types of coaxial cables used in networking and television applications. RG-6 is thicker and has better shielding, making it suitable for longer distances and higher frequencies compared to RG-59.
+
+Coax is thicker and has better shielding compared to twisted pair cables, making it suitable for longer distances and higher frequencies. However, it is less flexible and more expensive than twisted pair cables.
+
+It is commonly used in residential and commercial settings for its durability and high-quality signal transmission.
+
+### Coaxial Cable/RG-6
+
+- **BNC Connector**:
+
+  - Bayonet Neill-Concelman (BNC) connectors are commonly used with coaxial cables for secure and reliable connections.
+  - They feature a twist-lock mechanism that ensures a tight fit, reducing the risk of signal loss or interference.
+  - Commonly used in the old bus and ring network topologies.
+
+- **F Connector**:
+  - F connectors are widely used for cable television and broadband internet connections.
+  - They screw onto the coaxial cable, providing a secure connection that minimizes signal loss.
+  - F connectors are commonly used in residential and commercial settings for their ease of installation and reliable performance.
