@@ -1,6 +1,6 @@
 # Networking Cabling
 
-## Intro to Network Cabling
+## Intro to Network Cabling (OB 1.5)
 
 Wireless networking has become increasingly popular and easy to set up, but wired networking remains the most reliable and fastest option for many applications.
 
@@ -52,7 +52,7 @@ Key factors affecting cable speed include cable quality, installation practices,
   - It is measured in decibels (dB) and increases with distance.
   - Higher quality cables have lower attenuation rates, allowing for longer transmission distances without signal degradation.
 
-## Coaxial Cable
+## Coaxial Cable (OB 1.5)
 
 Coaxial cable, or coax, consists of a central conductor surrounded by an insulating layer, a metallic shield, and an outer insulating layer. It is commonly used for cable television and broadband internet connections.
 
@@ -76,3 +76,80 @@ It is commonly used in residential and commercial settings for its durability an
   - F connectors are widely used for cable television and broadband internet connections.
   - They screw onto the coaxial cable, providing a secure connection that minimizes signal loss.
   - F connectors are commonly used in residential and commercial settings for their ease of installation and reliable performance.
+
+## Fiber Optic Cable (OB 1.5)
+
+Fiber optic cables use light to transmit data, allowing for high-speed and long-distance communication with minimal signal loss. They consist of a core made of glass or plastic fibers, surrounded by cladding that reflects light back into the core, and an outer protective jacket.
+
+Fiber optic cabling uses light to transmit data, offering significantly higher speeds and greater bandwidth compared to traditional copper cables.
+
+It consists of a core made of glass or plastic fibers that carry light signals over long distances with minimal signal loss, making it ideal for high-speed data transmission in telecommunications and internet backbone infrastructures.
+
+Unlike Coax cables, fiber optic cables consist of an outer jacket, strengthening layer, coating, cladding, and the fiber strands themselves.
+
+There are two main types of fiber optic cables: single-mode and multi-mode.
+
+### Single-Mode Fiber
+
+Single mode fiber optic cables are designed for **long-distance** communication, using a single strand of glass fiber with a small diameter that allows only one mode of light to propagate. This minimizes signal loss and allows for higher bandwidth over longer distances.
+
+This design minimizes signal attenuation and dispersion over long distances, making it suitable for high speed, high bandwidth transmissions over lengths of up to 40 kilometers (24.85 miles) or more.
+
+Single mode fiber typically is commonly used in telecommunications and cable tv networks.
+
+### Multi-Mode Fiber
+
+Multi-mode fiber optic cables use larger core diameters that allow multiple modes of light to propagate simultaneously. This design is suitable for **shorter distance** communication, such as within buildings or campuses, where high bandwidth is required over shorter distances.
+
+This type of fiber is commonly used within buildings or on campuses, supporting data rates at shorter distances, usually up to 500 meters for data applications and up to 2 kilometers for telecom applications.
+
+Multi-mode fiber is generally more cost-effective and easier to work with compared to single-mode fiber, making it a popular choice for local area networks (LANs) and other short-distance applications.
+
+### Advantages and Disadvantages
+
+**Advantages** of fiber optic cables include:
+
+- Not susceptible to electromagnetic interference (EMI)
+- Longest transmission distances
+- Fastest speeds into the Tbps range
+- High bandwidth capacity
+- Lightweight and thin
+
+**Disadvantages** of fiber optic cables include:
+
+- More expensive than copper cables
+- Most fragile and can be difficult to install
+- Difficult to troubleshoot without specialized equipment
+- Expensive tools needed for installation and repair
+- Can't easily repair cable breaks in the field
+
+### Fiber Connectors
+
+- **ST Connector**:
+
+  - Straight Tip (ST) connectors are one of the earliest types of fiber optic connectors.
+  - They use a bayonet-style coupling mechanism for secure connections.
+  - ST connectors are commonly used in network environments and are known for their durability and ease of use.
+
+- **SC Connector**:
+
+  - Subscriber Connector (SC) connectors are widely used in fiber optic networks.
+  - They feature a push-pull coupling mechanism that provides a secure and reliable connection.
+  - SC connectors are known for their low insertion loss and high return loss, making them suitable for high-performance applications.
+
+- **LC Connector**:
+
+  - Lucent Connector (LC) connectors are small form-factor connectors commonly used in high-density fiber optic applications.
+  - They use a latch mechanism for secure connections and are known for their compact size.
+  - LC connectors are widely used in data centers and telecommunications networks due to their high performance and reliability.
+
+- **Dual LC Connector**:
+
+  - Dual LC connectors combine two LC connectors into a single unit, allowing for higher density fiber optic connections.
+  - They are commonly used in data centers and high-density networking environments where space is limited.
+  - Dual LC connectors provide efficient and reliable connections for high-speed data transmission.
+
+- **Multi-Fiber Push On (MPO) Connector**:
+  - MPO connectors are designed to connect multiple fiber optic strands in a single connector, typically used for high-density applications.
+  - They can accommodate 12 or more fibers in a compact form factor, making them ideal for data centers and telecommunications networks.
+  - MPO connectors enable efficient and high-speed data transmission by allowing multiple channels to be connected simultaneously.
