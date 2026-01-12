@@ -281,3 +281,21 @@ There two main wiring standards for twisted pair cabling: T568A and T568B. These
   - Similar to T568A, it is crucial to use the same wiring standard on both ends of a cable to ensure proper communication between devices.
 
 Both T568A and T568B wiring standards are widely used, and the choice between them often depends on existing infrastructure or personal preference. However, it is essential to maintain consistency within a network to avoid connectivity issues.
+
+## Twisted Pair Wiring Standards (OB 1.5)
+
+When wiring twisted pair cables, it is essential to follow specific wiring standards to ensure proper connectivity and performance. The two main wiring standards for twisted pair cabling are T568A and T568B. These standards define the pinout configurations for RJ-45 connectors, specifying how the individual wires within the cable should be arranged.
+
+Most organizations use the T568B standard, but either is acceptable as long as both ends of the cable are wired the same way.
+
+When following either standard, it is called a **straight-through cable** if both ends are wired the same way.
+
+However, mixing the two standards on either end of a cable will result in a crossover cable, which is used for specific applications like connecting two computers directly without a switch.
+
+### Straight-Through Cable
+
+**Straight-through cables** are used to connect different types of devices, such as a computer to a switch or a router to a modem. In a straight-through cable, both ends are wired using the same standard (either T568A or T568B).
+
+### Crossover Cable
+
+**Crossover cables** are used to connect similar devices directly, such as connecting two computers or two switches together. In a crossover cable, one end is wired using the T568A standard, while the other end is wired using the T568B standard. This configuration allows for proper communication between the devices by crossing over the transmit and receive pairs.
