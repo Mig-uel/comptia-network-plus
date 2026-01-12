@@ -342,3 +342,15 @@ Well, let's break it down: `[Speed][Base][Medium]`
   - **SW**: Short Wavelength (fiber optic)
   - **LW**: Long Wavelength (fiber optic)
   - **EW**: Extended Wavelength (fiber optic)
+
+## Plenum Rated (OB 1.5)
+
+When installing network cabling in buildings, it is essential to consider the type of environment where the cables will be placed. One important factor is whether the cables need to be plenum rated.
+
+Plenum rating describes the fire resistance and low smoke production of cables used in plenum spaces, which are areas in buildings that facilitate air circulation for heating, ventilation, and air conditioning (HVAC) systems. Examples of plenum spaces include the space above a dropped ceiling or below a raised floor.
+
+Plenum rated cables are designed to meet strict fire safety standards, ensuring that they produce minimal smoke and toxic fumes in the event of a fire. This is crucial for maintaining air quality and safety in buildings.
+
+Non-plenum rated cables, on the other hand, are less expensive but do not meet the same fire safety standards. They are typically used in non-plenum spaces, such as within walls or conduits.
+
+When selecting cables for a network installation, it is important to determine whether plenum rated cables are required based on the building's design and local fire codes. Using the appropriate type of cable helps ensure the safety and compliance of the network infrastructure.
