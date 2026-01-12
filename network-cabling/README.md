@@ -202,3 +202,63 @@ Disadvantages of twinaxial cables include:
   - Quad Small Form-Factor Pluggable 28 (QSFP28) connectors are used for ultra-high-speed data transmission with DAC cables.
   - They support speeds of up to 100 Gbps and are widely used in data centers and telecommunications networks.
   - QSFP28 connectors provide a compact and efficient solution for high-speed networking applications.
+
+## Twisted Pair Cable (OB 1.5)
+
+When it comes to cabling up your network, the most common type of cable you will encounter is twisted pair cabling. This type of cabling is widely used for Ethernet networks and telephone systems.
+
+**Twisted pair cabling** consists of eight individual wires twisted into four pairs. The twisting helps to reduce electromagnetic interference (EMI) and crosstalk between the pairs, improving signal quality.
+
+This is the most used network cabling type for LANs (Local Area Networks) due to its cost-effectiveness and ease of installation.
+
+Advantages of twisted pair cabling include:
+
+- Easier to install and manage than coax or fiber optic cables
+- STP (Shielded Twisted Pair) protects against EMI
+- UTP (Unshielded Twisted Pair) is more affordable and flexible
+- Least expensive type of network cabling
+
+Disadvantages of twisted pair cabling include:
+
+- Transmission distances are shorter compared to coax and fiber optic cables (330 feet/100 meters for standard Ethernet)
+- More susceptible to EMI, especially UTP cables
+- Lower maximum speeds compared to fiber optic cables
+
+### Twisted Pair Types
+
+- **Unshielded Twisted Pair (UTP)**:
+
+  - UTP cables consist of twisted pairs of wires without any additional shielding.
+  - They are commonly used in Ethernet networks and telephone systems due to their affordability and ease of installation.
+  - UTP cables are suitable for environments with low electromagnetic interference (EMI).
+
+- **Shielded Twisted Pair (STP)**:
+  - STP cables have an additional shielding layer that protects against electromagnetic interference (EMI).
+  - They are used in environments with high EMI, such as industrial settings or areas with heavy machinery.
+  - STP cables provide better signal quality and reduced crosstalk compared to UTP cables.
+
+### Twisted Pair Connectors
+
+- **RJ-45 Connector**:
+
+  - The Registered Jack 45 (RJ-45) connector is the most common connector used with twisted pair cabling for Ethernet networks.
+  - It features eight pins that correspond to the eight wires in a twisted pair cable, allowing for reliable data transmission.
+  - RJ-45 connectors are widely used in residential and commercial networking applications.
+
+- **RJ-11 Connector**:
+  - The Registered Jack 11 (RJ-11) connector is commonly used for telephone connections.
+  - It typically has four or six pins, depending on the application, and is smaller than the RJ-45 connector.
+  - RJ-11 connectors are widely used in residential and commercial telephone systems.
+
+### Twisted Pair Categories
+
+Twisted pair cables are categorized based on their performance characteristics, including maximum data rates and frequency capabilities. Common categories include:
+
+- **Cat5**: Supports speeds up to 100 Mbps and frequencies up to 100 MHz. Suitable for basic Ethernet networks.
+- **Cat5e**: An enhanced version of Cat5, supporting speeds up to 1 Gbps and frequencies up to 100 MHz. It reduces crosstalk and is widely used in modern Ethernet networks.
+- **Cat6**: Supports speeds up to 10 Gbps for distances up to 55 meters and frequencies up to 250 MHz. It provides better performance and reduced crosstalk compared to Cat5e.
+- **Cat6a**: An augmented version of Cat6, supporting speeds up to 10 Gbps for distances up to 100 meters and frequencies up to 500 MHz. It offers improved shielding and performance for high-speed networks.
+- **Cat7**: Supports speeds up to 10 Gbps for distances up to 100 meters and frequencies up to 600 MHz. It features enhanced shielding for reduced interference.
+- **Cat8**: The latest category, supporting speeds up to 25 Gbps or 40 Gbps for distances up to 30 meters and frequencies up to 2000 MHz. It is designed for data centers and high-performance computing environments.
+
+Each category of twisted pair cable is designed to meet specific networking requirements, and selecting the appropriate category is essential for ensuring optimal network performance.
