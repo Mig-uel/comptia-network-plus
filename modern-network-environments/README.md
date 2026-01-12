@@ -69,3 +69,35 @@ This encapsulation allows VXLAN to create a logical network for virtual machines
 ### DCI (Data Center Interconnect)
 
 VXLAN is commonly used in **Data Center Interconnect (DCI)** scenarios, where multiple data centers need to be connected while maintaining isolated networks for different tenants or departments. VXLAN allows for the extension of Layer 2 networks across geographically dispersed data centers, enabling seamless connectivity for virtual machines and applications.
+
+## Zero Trust (OB 1.8)
+
+In traditional network security models, once a user or device is inside the network perimeter, they are often trusted by default. However, with the increasing complexity of modern networks and the rise of sophisticated cyber threats, this approach is no longer sufficient.
+
+One way of preventing unauthorized access is by implementing a **Zero Trust** security model.
+
+**Zero Trust** is a security model that operates on the principle of "never trust, always verify." In a Zero Trust architecture, no user or device is trusted by default, regardless of whether they are inside or outside the network perimeter. Instead, every access request is thoroughly verified before granting access to resources.
+
+It requires **strict identity verification** for every person and device trying to access resources on a private network, regardless of whether they are located inside or outside the network perimeter.
+
+Zero Trust minimizes attack surfaces by treating all network traffic as potentially hostile, thereby reducing the risk of data breaches and unauthorized access.
+
+### Policy-Based Authentication
+
+In a Zero Trust model, access to resources is granted based on **policy-based authentication**. This means that access decisions are made based on a set of predefined policies that consider various factors, such as the user's identity, device health, location, and the sensitivity of the requested resource. Access is granted only if the request meets the criteria defined in the policies.
+
+Authentication policies can include multi-factor authentication (MFA), biometric verification, and behavioral analysis to ensure that only authorized users and devices can access specific resources.
+
+### Authorization in Zero Trust Architecture
+
+While authentication verifies the identity of users and devices, **authorization** determines what resources they are allowed to access once authenticated.
+
+Authorization in a Zero Trust architecture is dynamic and strictly enforced before access to any resource is granted. This means that even after a user or device has been authenticated, they are only allowed to access resources that they have explicit permission for, based on their role, the context of the request, and the sensitivity of the resource.
+
+This process is **context-aware**, taking into account the user's identity, location, device status, service or workload, data classification, and anomalies before granting access to resources.
+
+Access to resources is granted on a **per-session basis**, meaning that each access request is evaluated independently, and permissions can be adjusted dynamically based on real-time conditions.
+
+### Least Privilege Access
+
+A key principle of Zero Trust is **least privilege access**, which means that users and devices are granted the minimum level of access necessary to perform their tasks. This reduces the risk of unauthorized access and limits the potential damage that can be caused by compromised accounts or devices.
