@@ -169,3 +169,31 @@ This centralization facilitates collaboration, ensures consistency across deploy
 Source control systems help identify conflicts that may arise when multiple team members make changes to the same infrastructure code simultaneously. These conflicts can lead to inconsistencies and errors if not properly managed.
 
 By using source control, teams can detect and resolve conflicts early in the development process, ensuring that changes are integrated smoothly and that the infrastructure remains stable and reliable.
+
+## IPv6 Mitigation
+
+As the world transitions from IPv4 to IPv6, many organizations face challenges related to compatibility and interoperability between the two protocols. To address these challenges, various **IPv6 mitigation** techniques have been developed to facilitate the coexistence of IPv4 and IPv6 networks.
+
+IPv6 addresses the limitations of IPv4, such as address exhaustion, by providing a vastly larger address space. However, IPv6 introduces several new concepts and changes that can complicate network management and interoperability with existing IPv4 infrastructure.
+
+Transitioning to IPv6 involves compatibility strategies to ensure that both IPv4 and IPv6 can operate simultaneously during the migration period.
+
+This is necessary because the internet will operate in a mixed IPv4 and IPv6 environment for the foreseeable future, requiring mechanisms to ensure seamless communication between the two protocols.
+
+### Tunneling
+
+**Tunneling** is a technique used to encapsulate IPv6 packets within IPv4 packets (or vice versa) to enable communication between IPv4 and IPv6 networks. This allows devices on an IPv6 network to communicate with devices on an IPv4 network by creating a "tunnel" through the IPv4 infrastructure.
+
+Tunneling works by wrapping the IPv6 packet inside an IPv4 packet, allowing it to traverse IPv4 networks. Once the packet reaches its destination, it is decapsulated to retrieve the original IPv6 packet.
+
+### Dual Stack
+
+**Dual stack** is a strategy that involves configuring network devices to support both IPv4 and IPv6 protocols simultaneously. This allows devices to communicate using either protocol, depending on the capabilities of the destination device.
+
+In a dual stack environment, devices can send and receive both IPv4 and IPv6 traffic, enabling a smooth transition between the two protocols. This approach allows for gradual migration to IPv6 while maintaining compatibility with existing IPv4 infrastructure.
+
+### NAT64
+
+**NAT64** is a network address translation technique that enables communication between IPv6-only and IPv4-only networks. It translates IPv6 addresses to IPv4 addresses and vice versa, allowing devices on an IPv6 network to access resources on an IPv4 network.
+
+NAT64 works by using a translation gateway that performs the address translation, allowing IPv6 clients to communicate with IPv4 servers seamlessly. This technique is particularly useful in environments where IPv6 adoption is high, but access to IPv4 resources is still required.
