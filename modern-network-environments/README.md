@@ -49,3 +49,23 @@ Network devices can automatically obtain their configuration from a central cont
 SDNs are **transport agnostic**, meaning they can operate over various types of network transport technologies (like Ethernet, MPLS, Wi-Fi, etc.) without being tied to a specific one. This flexibility allows organizations to choose the most appropriate transport technology for their needs while still benefiting from the centralized control and management provided by SDN.
 
 This means that SDN can work over different types of network infrastructures without being dependent on any specific transport technology, allowing for greater flexibility and adaptability in network design.
+
+## VXLAN (OB 1.9)
+
+When you are working with the cloud or large data centers, you may need to create many isolated networks for different customers or different departments within an organization. The service that one customer or department uses should not be accessible by another customer or department. What needs to be done is separate these networks from each other while still allowing them to share the same physical infrastructure.
+
+We typically use VLANs (Virtual Local Area Networks) to separate networks within a physical network. However, VLANs have a limitation of 4096 unique IDs, which can be insufficient in large-scale environments like data centers or cloud infrastructures.
+
+To overcome this limitation, we use VXLAN (Virtual Extensible LAN).
+
+**VXLAN (Virtual Extensible LAN)** is a **network virtualization technology** that allows for the creation of **logical (virtual) Layer 2 networks** over a Layer 3 (IP) network infrastructure. It extends Layer 2 segments over an underlying Layer 3 network, enabling the creation of large numbers of isolated virtual networks.
+
+### Layer 2 Encapsulation
+
+VXLAN encapsulates Layer 2 Ethernet frames within Layer 3 UDP packets. This encapsulation allows VXLAN to transport Layer 2 traffic over a Layer 3 network, effectively creating a virtual Layer 2 network that can span across different physical locations.
+
+This encapsulation allows VXLAN to create a logical network for virtual machines (VMs) that can be spread across multiple physical servers and data centers, while still maintaining the appearance of being on the same Layer 2 network.
+
+### DCI (Data Center Interconnect)
+
+VXLAN is commonly used in **Data Center Interconnect (DCI)** scenarios, where multiple data centers need to be connected while maintaining isolated networks for different tenants or departments. VXLAN allows for the extension of Layer 2 networks across geographically dispersed data centers, enabling seamless connectivity for virtual machines and applications.
