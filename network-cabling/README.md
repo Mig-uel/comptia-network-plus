@@ -262,3 +262,22 @@ Twisted pair cables are categorized based on their performance characteristics, 
 - **Cat8**: The latest category, supporting speeds up to 25 Gbps or 40 Gbps for distances up to 30 meters and frequencies up to 2000 MHz. It is designed for data centers and high-performance computing environments.
 
 Each category of twisted pair cable is designed to meet specific networking requirements, and selecting the appropriate category is essential for ensuring optimal network performance.
+
+### Wiring Standards
+
+There two main wiring standards for twisted pair cabling: T568A and T568B. These standards define the pinout configurations for RJ-45 connectors, specifying how the individual wires within the cable should be arranged.
+
+- **T568A**:
+
+  - The T568A wiring standard is one of the two main configurations for terminating twisted pair cables with RJ-45 connectors.
+  - It specifies the arrangement of the eight wires within the cable, ensuring proper connectivity and performance.
+  - T568A is commonly used in residential installations and is recognized by the Telecommunications Industry Association (TIA).
+  - It is important to use the same wiring standard on both ends of a cable to ensure proper communication between devices.
+
+- **T568B**:
+  - The T568B wiring standard is the second main configuration for terminating twisted pair cables with RJ-45 connectors.
+  - It specifies a different arrangement of the eight wires compared to T568A, while still ensuring proper connectivity and performance.
+  - T568B is widely used in commercial installations and is also recognized by the Telecommunications Industry Association (TIA).
+  - Similar to T568A, it is crucial to use the same wiring standard on both ends of a cable to ensure proper communication between devices.
+
+Both T568A and T568B wiring standards are widely used, and the choice between them often depends on existing infrastructure or personal preference. However, it is essential to maintain consistency within a network to avoid connectivity issues.
