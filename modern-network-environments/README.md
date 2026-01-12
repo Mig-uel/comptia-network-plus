@@ -101,3 +101,21 @@ Access to resources is granted on a **per-session basis**, meaning that each acc
 ### Least Privilege Access
 
 A key principle of Zero Trust is **least privilege access**, which means that users and devices are granted the minimum level of access necessary to perform their tasks. This reduces the risk of unauthorized access and limits the potential damage that can be caused by compromised accounts or devices.
+
+## SASE/SSE (OB 1.8)
+
+As organizations increasingly adopt cloud services and remote work, traditional network security models that rely on perimeter-based defenses are becoming less effective. To address these challenges, a new approach called **Secure Access Service Edge (SASE)** has emerged.
+
+**Secure Access Service Edge (SASE)** and **Security Service Edge (SSE)** are modern network security frameworks that combine wide-area networking (WAN) capabilities with comprehensive security services delivered from the cloud. SASE integrates various security functions, such as secure web gateways (SWG), cloud access security brokers (CASB), firewall-as-a-service (FWaaS), and zero trust network access (ZTNA), into a single, unified service.
+
+In other words, SASE and SSE provide secure access to applications and data regardless of the user's location, device, or network.
+
+SASE integrates comprehensive WAN services and security functions directly into the network fabric, enabling secure and optimized access to applications and data from any location.
+
+SSE focuses specifically on delivering security services from the cloud, providing protection for users and devices accessing cloud applications and services. On the other hand, SASE encompasses both networking and security services, offering a more holistic approach to secure access.
+
+SSE focuses more on the security aspects, centralizing various security services like secure web gateways, cloud access security brokers, and zero trust network access into a unified cloud-delivered service.
+
+These services are provided in the cloud to ensure secure access and data protection for users and devices, regardless of their location.
+
+In other other words, SASE is a SaaS-based architecture that combines networking and security functions into a single cloud-delivered service, while SSE focuses specifically on delivering security services from the cloud. It also removes the need for VPNs by providing secure access directly from the cloud and removes the need for traditional on-premises security appliances.
