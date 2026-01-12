@@ -354,3 +354,40 @@ Plenum rated cables are designed to meet strict fire safety standards, ensuring 
 Non-plenum rated cables, on the other hand, are less expensive but do not meet the same fire safety standards. They are typically used in non-plenum spaces, such as within walls or conduits.
 
 When selecting cables for a network installation, it is important to determine whether plenum rated cables are required based on the building's design and local fire codes. Using the appropriate type of cable helps ensure the safety and compliance of the network infrastructure.
+
+## Transceivers (OB 1.5)
+
+In today's networking environments, you are going to be dealing with various types of cables and speeds. To connect different types of cables and achieve the desired speeds, you will often need to use transceivers.
+
+For example, what if you have a electrical connection on one end (like copper) and a fiber optic connection on the other end? This is where transceivers come in. A transceiver will convert the electrical signal to a light signal (or vice versa) so that the two different types of cables can communicate with each other.
+
+**Transceivers** are devices that can **both transmit and receive data**, often used in networking to interface different types of cabling, such as converting electrical signals to optical signals for fiber optic communication.
+
+They are commonly used in switches, routers, and network interface cards (NICs) to enable connectivity between different media types and support various data rates.
+
+### Common Transceiver Types
+
+- **SFP (Small Form-Factor Pluggable)**:
+
+  - Is an optical module transceiver used for data and telecommunication.
+  - SFP transceivers are compact, hot-swappable devices used in networking equipment to connect different types of cabling.
+  - They support various data rates, typically ranging from 100 Mbps to 4 Gbps, and can accommodate both copper and fiber optic connections.
+  - SFP transceivers are widely used in switches and routers for their versatility and ease of use.
+  - SFP+ is an enhanced version that supports data rates up to 10 Gbps.
+
+- **QSFP (Quad Small Form-Factor Pluggable)**:
+  - Is a connector that is used for fiber optic or electrical copper connections.
+  - Supports data rates of up to 28 Gbps
+  - Commonly used in high-performance computing and data center applications for aggregating multiple data streams.
+  - QSFP+ is an enhanced version that supports data rates up to 40 Gbps.
+
+### Media Converters
+
+In addition to transceivers, **media converters** are a type of transceiver that specifically convert signals between different media types, such as from copper to fiber optic.
+
+- Single-mode Fiber to Ethernet
+- Multi-mode Fiber to Ethernet
+- Fiber to Coaxial
+- Single-mode to Multi-mode Fiber
+
+Media converters are commonly used in networking environments to extend the reach of a network by converting signals to a medium that can cover longer distances, such as fiber optic cables. They are essential for integrating different types of cabling within a network infrastructure.
