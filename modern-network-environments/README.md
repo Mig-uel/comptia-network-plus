@@ -119,3 +119,53 @@ SSE focuses more on the security aspects, centralizing various security services
 These services are provided in the cloud to ensure secure access and data protection for users and devices, regardless of their location.
 
 In other other words, SASE is a SaaS-based architecture that combines networking and security functions into a single cloud-delivered service, while SSE focuses specifically on delivering security services from the cloud. It also removes the need for VPNs by providing secure access directly from the cloud and removes the need for traditional on-premises security appliances.
+
+## Infrastructure as Code (IaC) (OB 1.8)
+
+In traditional network management, configuring and managing network devices often involves manual processes, which can be time-consuming, error-prone, and difficult to scale. To address these challenges, the concept of **Infrastructure as Code (IaC)** has been introduced.
+
+**Infrastructure as Code (IaC)** is a practice that involves managing and provisioning computing infrastructure through machine-readable configuration files, rather than through manual processes. This approach allows for the automation of infrastructure deployment and management, making it easier to scale, replicate, and maintain network environments.
+
+It enables IT infrastructure to be automatically managed, monitored, and provisioned through code, rather than through manual processes, improving efficiency and reducing the potential for human error.
+
+### Playbooks, Templates, Reusable Tasks
+
+IaC often utilizes **playbooks, templates, and reusable tasks** to define and manage infrastructure configurations.
+
+- **Playbooks** are sets of instructions that define how to configure and deploy infrastructure components. They can include tasks such as installing software, configuring network settings, and deploying applications.
+- **Templates** are pre-defined configurations that can be reused across multiple deployments. They provide a standardized way to define infrastructure components, making it easier to maintain consistency across environments.
+- **Reusable tasks** are modular components that can be used across different playbooks and templates. This modularity allows for greater efficiency and consistency in infrastructure management.
+
+### Configuration Drift and Compliance
+
+IaC helps to mitigate **configuration drift**, which occurs when the actual state of infrastructure diverges from the desired state defined in code due to manual changes or updates. By using IaC, organizations can ensure that infrastructure configurations remain consistent and aligned with the defined code, reducing the risk of errors and inconsistencies.
+
+IaC also facilitates **compliance** by enabling organizations to define and enforce infrastructure policies through code. This ensures that infrastructure configurations adhere to regulatory requirements and organizational standards, making it easier to audit and maintain compliance over time.
+
+### Upgrades
+
+With IaC, upgrading infrastructure components becomes more manageable. Since the infrastructure is defined in code, updates and upgrades can be automated through version-controlled scripts. This allows for consistent and repeatable upgrades across multiple environments, reducing downtime and minimizing the risk of errors during the upgrade process.
+
+### Dynamic Inventories
+
+IaC supports the use of **dynamic inventories**, which are automatically generated lists of infrastructure components based on the current state of the environment. Dynamic inventories allow for real-time tracking of resources, making it easier to manage and provision infrastructure as needed.
+
+This flexibility is essential for managing environments that need to scale up or down based on demand, ensuring that resources are allocated efficiently and effectively.
+
+### Source Control
+
+Source control is a fundamental aspect of IaC, as it allows for versioning and tracking of infrastructure code. By storing infrastructure configurations in source control systems (like Git), organizations can maintain a history of changes, collaborate on code development, and roll back to previous versions if needed.
+
+This practice enhances collaboration among team members, improves code quality, and ensures that infrastructure changes are well-documented and auditable.
+
+### Central Repository
+
+A central repository in source control systems acts as the **single source of truth** for all infrastructure code. It provides a centralized location where all team members can access, contribute to, and manage infrastructure configurations.
+
+This centralization facilitates collaboration, ensures consistency across deployments, and simplifies the management of infrastructure code by providing a unified platform for version control and code review.
+
+### Conflict Identification
+
+Source control systems help identify conflicts that may arise when multiple team members make changes to the same infrastructure code simultaneously. These conflicts can lead to inconsistencies and errors if not properly managed.
+
+By using source control, teams can detect and resolve conflicts early in the development process, ensuring that changes are integrated smoothly and that the infrastructure remains stable and reliable.
