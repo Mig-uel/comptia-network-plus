@@ -153,3 +153,52 @@ Multi-mode fiber is generally more cost-effective and easier to work with compar
   - MPO connectors are designed to connect multiple fiber optic strands in a single connector, typically used for high-density applications.
   - They can accommodate 12 or more fibers in a compact form factor, making them ideal for data centers and telecommunications networks.
   - MPO connectors enable efficient and high-speed data transmission by allowing multiple channels to be connected simultaneously.
+
+## DAC Cables (OB 1.5)
+
+When you are building a network, you are going to want to make sure your backbone (the main cabling that connects all your switches and routers) is as fast as possible.
+
+Instead of using fiber optic cables, which can be expensive and require special transceivers, you can use Direct Attach Copper (DAC) cables.
+
+**Direct Attach Copper (DAC)** cables are used for short-range connections between networking devices, such as switches and servers. They consist of twinax (twinaxial) copper cables with integrated transceivers on each end, allowing for high-speed data transmission over short distances.
+
+They offer a cost-effective, low-power alternative for close-range connections, typically up to 7 meters (about 23 feet).
+
+DAC cables are typically used in data centers and high-performance computing environments where low latency and high bandwidth are required for short-distance connections. They are ideal for connecting switches, servers, and storage devices within racks or across adjacent racks.
+
+### Twinaxial Cables
+
+More specifically, DAC cables use **twinaxial** cabling, which consists of two inner conductors surrounded by a shield. This design helps to reduce electromagnetic interference (EMI) and allows for high-speed data transmission over short distances.
+
+Twinaxial cables are used in data enters for high-speed short-distance connections. Various speeds are supported, including 10 Gbps, 25 Gbps, 40 Gbps, 50 Gbps, and 100 Gbps.
+
+Advantages of twinaxial cables include:
+
+- Shielding against EMI
+- Lower latency compared to fiber optic cables
+- Cost-effective for short-distance connections
+
+Disadvantages of twinaxial cables include:
+
+- More expensive than traditional coax and twisted pair cables
+- Limited to short distances (typically up to 7 meters)
+- Less flexible than other cable types
+
+### DAC Connectors
+
+- **SFP+ Connector**:
+
+  - Small Form-Factor Pluggable Plus (SFP+) connectors are commonly used with DAC cables for high-speed data transmission.
+  - They support speeds of up to 10 Gbps and are widely used in data centers and enterprise networks.
+  - SFP+ connectors provide a compact and versatile solution for connecting networking devices.
+
+- **QSFP+ Connector**:
+
+  - Quad Small Form-Factor Pluggable Plus (QSFP+) connectors are designed for high-speed data transmission using DAC cables.
+  - They support speeds of up to 40 Gbps and are commonly used in data centers and high-performance computing environments.
+  - QSFP+ connectors provide a high-density solution for connecting multiple channels in a single connector.
+
+- **QSFP28 Connector**:
+  - Quad Small Form-Factor Pluggable 28 (QSFP28) connectors are used for ultra-high-speed data transmission with DAC cables.
+  - They support speeds of up to 100 Gbps and are widely used in data centers and telecommunications networks.
+  - QSFP28 connectors provide a compact and efficient solution for high-speed networking applications.
