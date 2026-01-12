@@ -299,3 +299,46 @@ However, mixing the two standards on either end of a cable will result in a cros
 ### Crossover Cable
 
 **Crossover cables** are used to connect similar devices directly, such as connecting two computers or two switches together. In a crossover cable, one end is wired using the T568A standard, while the other end is wired using the T568B standard. This configuration allows for proper communication between the devices by crossing over the transmit and receive pairs.
+
+## Ethernet Specs (OB 1.5)
+
+When setting up a networks, you are going to encounter different Ethernet specifications that define the speed and distance capabilities of various cabling types. It can also be called Ethernet at the Physical Layer (Layer 1) of the OSI model.
+
+Here are some common Ethernet specifications:
+
+- 10Base2
+- 10Base5
+- 10BaseT
+- 100BaseTX
+- 100BaseFX
+- 1000BaseCX
+- 1000BaseT
+- 1000BaseSX
+- 1000BaseLX
+- 10GBaseT
+- 10GBaseSR
+- 10GBaseLR
+- 10GBaseER
+- 10GBaseSW
+- 10GBaseLW
+- 10GBaseEW
+- 40GBaseT
+
+But what do these names mean?
+
+Well, let's break it down: `[Speed][Base][Medium]`
+
+- **Speed**: The first part indicates the maximum data transfer rate of the Ethernet standard. For example, "10" means 10 Mbps, "100" means 100 Mbps, "1000" means 1 Gbps, and "10G" means 10 Gbps.
+- **Base**: The second part, "Base," stands for baseband signaling, which means that the entire bandwidth of the medium is used for a single data channel.
+  - Baseband is the most common signaling method for Ethernet networks.
+  - Broadband, on the other hand, allows multiple channels to share the same medium simultaneously.
+- **Type of Medium**: The last part indicates the type of cabling or medium used for the Ethernet connection. Common mediums include:
+  - **T**: Twisted Pair (e.g., Cat5, Cat6 cables)
+  - **FX**: Fiber Optic (Fast Ethernet over fiber)
+  - **CX**: Copper (short-range copper connections)
+  - **SR**: Short Range (fiber optic)
+  - **LR**: Long Range (fiber optic)
+  - **ER**: Extended Range (fiber optic)
+  - **SW**: Short Wavelength (fiber optic)
+  - **LW**: Long Wavelength (fiber optic)
+  - **EW**: Extended Wavelength (fiber optic)
