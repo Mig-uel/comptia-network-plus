@@ -139,6 +139,70 @@ The metric is a value used by routing protocols to determine the best path to a 
 - Uses TCP as its transport protocol, ensuring reliable communication between BGP peers.
 
 **Advantages**:
+
 - Highly scalable and flexible, making it suitable for the vast and complex nature of the internet.
 - Manages large routing tables and complex routing policies effectively.
 - Crucial for ISPs and large organizations that connect to multiple networks.
+
+## Route Selection (OB 2.1)
+
+**Route selection** is a critical process in network routing that **determines the best path** for data packets to travel from the source to the destination. Routers use various criteria and metrics to evaluate and select the most efficient route among multiple available paths.
+
+It uses specific criteria such as administrative distance, prefix length (specificity), and metric values to make informed decisions about which route to prioritize.
+
+### Administrative Distance (AD)
+
+**Administrative Distance (AD)** is a metric used by routers to **rank the trustworthiness** of different routing protocols. It is a value assigned to each routing protocol, indicating its reliability and preference when multiple routes to the same destination are available.
+
+**Lower values indicate higher trustworthiness**, helping routers decide which routes to use when multiple paths to the same destination exist from different routing protocols.
+
+| Routing Protocol                                   | Default Administrative Distance |
+| -------------------------------------------------- | ------------------------------- |
+| Directly connected interface                       | 0                               |
+| Static route                                       | 1                               |
+| Enhanced Interior Gateway Routing Protocol (EIGRP) | 5                               |
+| External Border Gateway Protocol (eBGP)            | 20                              |
+| Open Shortest Path First (OSPF)                    | 110                             |
+| Routing Information Protocol (RIP)                 | 120                             |
+| Unknown/Untrusted                                  | 255                             |
+
+### Prefix Length (Specificity)
+
+The **prefix length**, also known as **specificity**, specifies the **number of contiguous bits** of the network portion of an IP address in a subnet mask. It is represented in CIDR notation as a slash (/) followed by the number of bits.
+
+This notation is an integral part of CIDR (Classless Inter-Domain Routing) and helps in defining network boundaries and available hosts within those networks, enabling both routing efficiency and IP address allocation.
+
+When multiple routes to the same destination exist, routers prioritize the route with the **longest prefix length** (most specific match). This means that a route with a longer subnet mask (more bits in the network portion) is preferred over a route with a shorter subnet mask.
+
+For example, consider the following two routes to the same destination network:
+Route 1: 192.168.1.0/24
+Route 2: 192.168.1.0/25
+
+In this case, Route 2 (/25) is more specific than Route 1 (/24) because it has a longer prefix length. Therefore, the router will choose Route 2 for routing traffic to the destination network
+
+### VRRP/FHRP
+
+When dealing with multiple routers, protocols like **VRRP (Virtual Router Redundancy Protocol)** and **FHRP (First Hop Redundancy Protocol)** are used to ensure high availability and redundancy for the default gateway.
+
+**First Hop Redundancy Protocols (FHRP)** are used to achieve high availability with multiple physical redundant routers by creating a virtual router that acts as the default gateway for hosts on a LAN.
+
+- **HSRP (Hot Standby Router Protocol)**: A Cisco proprietary protocol that allows multiple routers to work together to present the appearance of a single virtual router to the hosts on the LAN. One router is elected as the active router, while others remain in standby mode, ready to take over if the active router fails.
+- **VRRP (Virtual Router Redundancy Protocol)**: An open standard protocol similar to HSRP that allows multiple routers to form a virtual router. One router is elected as the master, while others are backups, ready to take over if the master fails.
+
+### Virtual IP (VIP)
+
+A **Virtual IP (VIP)** address is an IP address that is **not tied to a specific physical network interface** on a device. Instead, it is shared among multiple devices, such as routers or servers, to provide redundancy and load balancing.
+
+It is used to **provide redundancy and load balancing for services hosted on multiple servers or devices**, allowing servers to share the same IP address while distributing incoming traffic among them.
+
+VIPs are **commonly used in network load balancers and failover configurations** to ensure continuous availability and scalability of critical applications and services.
+
+When a client sends a request to the VIP, the load balancer or failover mechanism directs the traffic to one of the available servers or devices associated with that VIP, based on predefined rules or algorithms.
+
+### Subinterface
+
+A **subinterface** in networking is a virtual interface created by **dividing** a single physical interface into multiple logical interfaces. Each subinterface can be assigned its own IP address, VLAN (Virtual Local Area Network) ID, and other configuration parameters.
+
+This is commonly used in scenarios where multiple VLANs exist on a **single router or switch port** to manage traffic segregation and support various services or protocols over a single physical link.
+
+Subinterfaces are often used in **router-on-a-stick** configurations, where a single physical interface on a router is connected to a switch port that carries traffic for multiple VLANs. Each subinterface is configured to handle traffic for a specific VLAN, allowing the router to route traffic between different VLANs while using only one physical interface.
