@@ -66,3 +66,79 @@ When it comes to IGPs, there are two main categories:
 | --------------- | --------- | --------- | ----------------- |
 | Distance Vector | Hop Count | 15 hops   | RIP, IGRP         |
 | Link State      | Bandwidth | Unlimited | OSPF, IS-IS       |
+
+## Routing Protocols
+
+### Routing Information Protocol (RIP)
+
+**Routing Information Protocol (RIP)** is one of the oldest distance-vector routing protocols. It uses hop count as its primary metric for determining the best path to a destination network. RIP has a maximum hop count limit of 15, meaning that any destination beyond 15 hops is considered unreachable.
+
+**Versions**:
+
+- **RIP v1**: Classful routing protocol that does not support subnetting or variable-length subnet masks (VLSM).
+- **RIP v2**: Classless routing protocol that supports subnetting and VLSM, allowing for more efficient use of IP address space. Multicast updates (224.0.0.9) are used for routing information exchange. Simple authentication is also supported.
+
+**Use Cases**:
+
+- Suitable for small to medium-sized networks with simple topologies.
+- Limited scalability and slower convergence (the time it takes for routers to update their routing tables after a change in the network) time compared to modern like OSPF or EIGRP.
+
+### Open Shortest Path First (OSPF)
+
+**Open Shortest Path First (OSPF)** is a widely used link-state routing protocol that operates within an autonomous system (AS). OSPF uses the Dijkstra algorithm to calculate the shortest path to each destination network based on various metrics, primarily bandwidth.
+
+**Key Features**:
+
+- **Hierarchical Design**: OSPF supports a hierarchical network design using areas, which helps reduce routing overhead and improves scalability.
+- Updates are sent only when there is a change in the network topology, leading to faster convergence times compared to distance-vector protocols.
+- Supports Variable Length Subnet Masking (VLSM) and Classless Inter-Domain Routing (CIDR).
+
+**Advantages**:
+
+- Efficient, scalable, and flexible.
+- Provides load balancing and fault tolerance through multiple equal-cost paths.
+- Suitable for large and complex networks.
+
+### Enhanced Interior Gateway Routing Protocol (EIGRP)
+
+**Enhanced Interior Gateway Routing Protocol (EIGRP)** is an advanced distance-vector routing protocol developed by Cisco Systems. It combines the features of both distance-vector and link-state protocols, making it a hybrid routing protocol.
+
+**Key Features**:
+
+- Supports VLSM and CIDR.
+- Sends partial updates only when there are changes in the network, reducing bandwidth usage.
+- Uses metrics like bandwidth, delay, load, and reliability to determine the best path to a destination.
+- Rapid convergence and loop-free routing through the use of the Diffusing Update Algorithm (DUAL).
+
+**Advantages**:
+
+- Highly efficient, scalable, and quick converging.
+- Provides loop-free routing and supports unequal-cost load balancing.
+- Suitable for medium to large-sized networks, especially those using Cisco equipment.
+
+### Metric
+
+The metric is a value used by routing protocols to determine the best path to a destination network. Different routing protocols use different metrics based on various factors, such as hop count, bandwidth, delay, load, and reliability.
+
+**Lower metric values typically indicate more desirable paths.**
+
+| Routing Protocol | Metric Used                                            |
+| ---------------- | ------------------------------------------------------ |
+| RIP              | Hop Count                                              |
+| OSPF             | Cost (based on bandwidth)                              |
+| EIGRP            | Composite metric (bandwidth, delay, load, reliability) |
+
+### Border Gateway Protocol (BGP)
+
+**Border Gateway Protocol (BGP)** is the primary exterior gateway protocol (EGP) used to route traffic between different autonomous systems (AS) on the internet. It is essential for inter-domain routing on the global internet and uses path attributes to determine the best path for data packets.
+
+**Key Features**:
+
+- Supports CIDR for efficient IP address allocation.
+- Employs policies for route selection and advertisement, allowing network administrators to control routing behavior.
+- Uses TCP as its transport protocol, ensuring reliable communication between BGP peers.
+
+**Advantages**:
+- Highly scalable and flexible, making it suitable for the vast and complex nature of the internet.
+- Manages large routing tables and complex routing policies effectively.
+- Crucial for ISPs and large organizations that connect to multiple networks.
