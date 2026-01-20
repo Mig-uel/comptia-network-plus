@@ -40,7 +40,7 @@ In theory, switches have no collisions because each port on a switch represents 
 
 There is a problem with switches, though. It is called **broadcast domains**.
 
-Let's say you have a switch with multiple devices connected to it. Before computer A can send data to computer C, it needs to know the MAC address of computer C. How does it find out? It sends a **broadcast** message to all devices in the network, asking "Who has this IP address?" This broadcast message is sent to all devices connected to the switch, which means that all devices in the network receive the message, even if they are not the intended recipient. This creates a broadcast domain, where all devices can hear each other's broadcast messages. Computer C will respond with its MAC address, and computer A can then send the data directly to computer C.
+Let's say you have a switch with multiple devices connected to it. Before computer A can send data to computer C, it needs to know the MAC address of computer C. How does it find out? It sends a **broadcast** message to all devices in the network, asking "Who has this MAC address?" This broadcast message is sent to all devices connected to the switch, which means that all devices in the network receive the message, even if they are not the intended recipient. This creates a broadcast domain, where all devices can hear each other's broadcast messages. Computer C will respond with its MAC address, and computer A can then send the data directly to computer C.
 
 This works with a protocol called **Address Resolution Protocol (ARP)**, which is used to map IP addresses to MAC addresses in a local network.
 
