@@ -206,3 +206,37 @@ A **subinterface** in networking is a virtual interface created by **dividing** 
 This is commonly used in scenarios where multiple VLANs exist on a **single router or switch port** to manage traffic segregation and support various services or protocols over a single physical link.
 
 Subinterfaces are often used in **router-on-a-stick** configurations, where a single physical interface on a router is connected to a switch port that carries traffic for multiple VLANs. Each subinterface is configured to handle traffic for a specific VLAN, allowing the router to route traffic between different VLANs while using only one physical interface.
+
+## Network Address Translation (NAT) (OB 2.1)
+
+**Network Address Translation (NAT)** translates on IP address to another IP address.
+It is commonly used to allow multiple devices on a private network to share a single public IP address when accessing the internet.
+
+NAT works by modifying the source or destination IP addresses in the IP packet headers as they pass through a router or firewall. This allows devices on a private network to communicate with external networks while hiding their internal IP addresses.
+
+**Advantages**:
+
+- Conserves public IP addresses by allowing multiple devices to share a single public IP.
+- Eliminates address overlap events with other LANs.
+- Makes it easier to connect to the internet from a private network.
+- Eliminates address renumbering if your network changes.
+
+**Disadvantages**:
+
+- Translation delays the forwarding of packets as in some cases the router has to keep track of many translations.
+- Causes loss of end-to-end IP traceability since the original IP addresses are hidden.
+- Certain application will not function properly with NAT, especially those that embed IP address information within the payload of the packet.
+
+### Types of NAT
+
+1. **Static NAT (One-to-One)**: Maps a single private IP address to a single public IP address. This is useful for hosting services that need to be accessible from the internet.
+
+- Only required if an internal device needs to be accessed from the outside.
+
+2. **Dynamic NAT (Many-to-Many)**: Maps a private IP address to a public IP address from a pool of available public IP addresses. The mapping is temporary and changes over time.
+
+- Not commonly used since it can limit internet access if the pool of public IPs is exhausted.
+
+3. **Port Address Translation (PAT) (Many-to-One)**: Also known as NAT overload, PAT maps multiple private IP addresses to a single public IP address by using different port numbers. This is the most common form of NAT used in home and small business networks.
+
+- Allows multiple devices to share a single public IP address by differentiating them using port numbers.
