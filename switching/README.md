@@ -103,3 +103,125 @@ A **Switch Virtual Interface (SVI)** is a **virtual interface** on a switch that
 
 It allows the switch to route traffic between different VLANs without the need for an external router. An IP address is assigned VLAN interfaces, enabling inter-VLAN routing on layer 2 switches that have layer 3 capabilities.
 
+## Advanced Switch Configurations
+
+### Interface Configuration
+
+**Interface configuration** involves **setting up and managing the individual ports** on a network switch to control how they handle data traffic. Remember, an interface is just another word for a port on a switch. Each port can be configured with specific settings to optimize network performance, enhance security, and ensure proper communication between devices.
+
+For example, you can configure a port to operate in access mode (for end devices) or trunk mode (for connecting to other switches). You can also set speed and duplex settings, enable or disable ports, and apply security features like port security.
+
+More settings like VLAN assignments, link aggregation (bonding multiple ports together for increased bandwidth), physical properties like speed and duplex settings, and security features such as port security can also be configured on switch interfaces.
+
+### Native VLAN
+
+The **Native VLAN** is the default VLAN on a **trunk port** (a port that carries traffic for multiple VLANs) that **carries untagged traffic** (traffic without a VLAN tag). By default, the native VLAN is VLAN 1, but it can be changed to any other VLAN as needed.
+
+When a switch receives an untagged frame on a trunk port, it assigns that frame to the native VLAN. This is important for compatibility with devices that do not support VLAN tagging, as they will send and receive untagged frames.
+
+It's a good practice to change the native VLAN to a different VLAN than the default (VLAN 1) for security reasons, as VLAN 1 is often targeted in network attacks. By using a different native VLAN, you can help protect your network from potential vulnerabilities associated with the default VLAN.
+
+### Voice VLAN
+
+A **Voice VLAN** is a special type of VLAN that is specifically designed to carry voice traffic, such as VoIP (Voice over Internet Protocol) calls. Voice VLANs are used to separate voice traffic from regular data traffic on a network, ensuring that voice communications receive the necessary quality of service (QoS) for clear and uninterrupted conversations.
+
+When a device, such as an IP phone, connects to a switch port configured for a voice VLAN, the switch can prioritize voice traffic over other types of traffic. This is important because voice traffic is sensitive to delays and interruptions, which can lead to poor call quality.
+
+By using a voice VLAN, network administrators can ensure that voice traffic is given higher priority, reducing latency and jitter, and improving the overall quality of voice communications on the network. Additionally, separating voice traffic into its own VLAN can enhance security by isolating it from other types of data traffic.
+
+### Speed
+
+When you are configuring a switch port, you may need to set the **speed** of the ports.
+**Speed** refers to the **data transfer rate** of a network connection, typically measured in megabits per second (Mbps) or gigabits per second (Gbps).
+
+Configuring the speed of a switch port ensures compatibility between connected devices and optimizes network performance. Common speed settings for switch ports include 10 Mbps, 100 Mbps, 1 Gbps (1000 Mbps), and 10 Gbps.
+
+When configuring a switch port, you can set the speed to either a specific value (e.g., 100 Mbps) or to "auto" mode, which allows the switch and the connected device to negotiate the best possible speed automatically. It's important to ensure that both the switch port and the connected device support the same speed settings to avoid connectivity issues.
+
+### Duplex
+
+**Duplex** refers to the ability of a network device to send and receive data simultaneously. There are two types of duplex settings: **half-duplex** and **full-duplex**.
+
+**Full-duplex** allows for **simultaneous two-way communication**, meaning that data can be sent and received at the same time without any collisions. This is the preferred mode for most modern network devices, as it maximizes network efficiency and performance.
+
+**Half-duplex**, on the other hand, allows for **one-way communication at a time**. In half-duplex mode, a device can either send or receive data, but not both simultaneously. This can lead to collisions if two devices attempt to communicate at the same time, which can degrade network performance. Half-duplex is typically used in older network technologies, such as traditional Ethernet hubs.
+
+When configuring switch ports, it's important to set the duplex mode correctly to match the capabilities of the connected devices. Mismatched duplex settings (e.g., one device set to full-duplex and the other to half-duplex) can lead to performance issues, such as collisions and reduced throughput. Most modern switches and devices support auto-negotiation, which allows them to automatically determine the best duplex setting for optimal communication.
+
+### Spanning Tree Protocol (STP)
+
+Let's talk about when you take a switch and start connecting multiple switches together and have redundant links between them. This is a common practice in network design to ensure high availability and fault tolerance. However, having multiple switches connected with redundant links can create loops in the network.
+
+These loops can cause broadcast storms, where broadcast packets are continuously circulated in the network, leading to network congestion and degraded performance.
+
+Why you would want to create redundant links? Well, if one link fails, the other link can take over, ensuring that network connectivity is maintained. However, without a mechanism to manage these loops, the network can become unstable.
+
+There is a protocol used to prevent switching loops called the **Spanning Tree Protocol (STP)**. STP helps prevent network loops in a network's Ethernet topology by creating a spanning tree that selectively blocks redundant paths while allowing a single active path between any two network devices.
+
+STP works by electing a root bridge (the central switch in the network) and then determining the shortest path from the root bridge to all other switches in the network. It then blocks any redundant paths that could create loops, ensuring that there is only one active path between any two devices.
+
+If a network link fails, STP recalculates the spanning tree and unblocks the necessary paths to restore connectivity. This process helps maintain network stability and prevents broadcast storms caused by switching loops.
+
+### Link Aggregation
+
+**Link/Port Aggregation** is a technique used to combine multiple physical network links into a single logical link. This provides increased bandwidth and redundancy between network devices, such as switches, servers, or routers. It involves combining multiple network ports to function as a single connection, increasing the bandwidth and providing redundancy for higher data throughput and reliability.
+
+It allows for the consolidation of multiple links between switches or between a switch and a server into a single logical link. This logical link can provide higher bandwidth than a single physical link and can also offer redundancy in case one of the physical links fails.
+
+Link aggregation can be configured using protocols such as **LACP (Link Aggregation Control Protocol)**, which is part of the IEEE 802.3ad standard. LACP allows devices to automatically negotiate and manage the aggregation of links, ensuring that the aggregated link operates efficiently and effectively.
+
+By using link aggregation, network administrators can improve network performance, increase fault tolerance, and optimize resource utilization in their networks.
+
+### Port Security
+
+**Port Security** is a feature available on network switches that allows administrators to control access to individual switch ports based on MAC addresses. This helps enhance network security by restricting which devices can connect to specific ports on the switch.
+
+Port security allows us to control which devices can be connected to a switch port based on their MAC addresses. By configuring port security, we can specify a list of allowed MAC addresses for each port. If a device with a MAC address that is not on the allowed list attempts to connect to the port, the switch can take various actions, such as shutting down the port, sending an alert, or simply dropping the unauthorized traffic.
+
+This feature is particularly useful in environments where physical access to network ports is possible, such as in offices or public spaces. By limiting access to known devices, port security helps prevent unauthorized access to the network and mitigates the risk of attacks such as MAC flooding or unauthorized device connections.
+
+Port security can be configured with different modes, such as:
+
+- **Static MAC Addressing:** Manually specifying allowed MAC addresses for a port.
+- **Dynamic MAC Addressing:** Allowing the switch to learn and store MAC addresses dynamically, up to a specified limit.
+- **Sticky MAC Addressing:** Allowing the switch to learn MAC addresses dynamically and then save them to the running configuration, making them persistent across reboots.
+
+By implementing port security, network administrators can enhance the overall security posture of their networks and protect against unauthorized access.
+
+### Port Mirroring/Spanning
+
+**Port Mirroring**, also known as **SPAN (Switched Port Analyzer)**, is a feature on network switches that allows the copying of network traffic from one or more source ports to a designated destination port. This is commonly used for network monitoring and analysis.
+
+When port mirroring is configured, the switch duplicates the traffic from the specified source ports and sends it to the destination port, where a network analyzer or monitoring device can capture and analyze the data. This is useful for troubleshooting network issues, monitoring performance, and detecting security threats.
+
+Allows you to redistribute traffic from one port to another for monitoring purposes. For example, you can configure a switch to mirror all traffic from a specific port (source port) to another port (destination port) where a network analyzer or intrusion detection system is connected. This allows you to monitor and analyze the traffic without interrupting the normal flow of data on the network.
+
+- SPAN (Switch Port Analyzer)/RSPAN (Remote SPAN) are protocols used for port mirroring.
+- This feature is commonly used to monitor network traffic for troubleshooting, performance analysis, and security monitoring.
+- Commonly used to monitor network traffic with a packet sniffer or an intrusion detection system (IDS).
+
+By using port mirroring, network administrators can gain valuable insights into network behavior and performance, helping them to maintain a secure and efficient network environment.
+
+### Maximum Transmission Unit (MTU)
+
+The **Maximum Transmission Unit (MTU)** is the largest size of a data packet that can be transmitted over a network medium. It is typically measured in bytes. The MTU size can vary depending on the type of network technology being used.
+
+MTU sizes are variable, dependent on the physical medium and network protocol, with a common default of 1500 bytes for Ethernet networks. Configuring the MTU size appropriately is important for optimizing network performance and avoiding fragmentation of packets.
+
+When a data packet exceeds the MTU size of the network, it may need to be fragmented into smaller packets for transmission. Fragmentation can lead to increased overhead and reduced performance, so it is generally desirable to set the MTU size to accommodate the largest expected packet size without fragmentation.
+
+Network administrators may need to adjust the MTU size on network devices, such as switches and routers, to optimize performance for specific applications or network conditions. For example, certain applications, such as video streaming or large file transfers, may benefit from a larger MTU size to reduce overhead and improve throughput.
+
+By understanding and configuring the MTU size appropriately, network administrators can help ensure efficient data transmission and optimal network performance.
+
+### Jumbo Frames
+
+**Jumbo Frames** are Ethernet frames that exceed the standard maximum transmission unit (MTU) size of 1500 bytes. Jumbo frames can typically carry up to 9000 bytes of payload, although the exact size can vary depending on the network equipment and configuration.
+
+Using jumbo frames can improve network performance by reducing the overhead associated with processing a large number of smaller frames. When larger frames are used, fewer frames need to be processed, which can lead to lower CPU utilization on network devices and improved throughput.
+
+However, all devices on the network path must support jumbo frames for them to be used effectively. If a device that does not support jumbo frames is encountered, it may lead to fragmentation or dropped packets.
+
+When configuring jumbo frames, it is important to ensure that the MTU settings on all network devices, including switches, routers, and end devices, are consistent. Mismatched MTU settings can lead to connectivity issues and degraded performance.
+
+By utilizing jumbo frames in a network environment where supported, administrators can achieve better performance for applications that require high bandwidth, such as video streaming, large file transfers, and data backups.
