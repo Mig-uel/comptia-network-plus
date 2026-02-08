@@ -131,3 +131,14 @@ There are so many different wireless standards, each with its own characteristic
 | 802.11ac (WiFi 5) | 2.4 GHz, 5 GHz        | 3.5 Gbps      | 802.11a/b/g/n/ax  | 2012            |
 | 802.11ax (WiFi 6) | 2.4 GHz, 5 GHz, 6 GHz | 9.6 Gbps      | 802.11a/b/g/n/ac  | 2019            |
 
+## Understanding SSID (OB 2.3)
+
+**SSID (Service Set Identifier)** is the name assigned to a wireless network. It is used to identify and differentiate between different wireless networks in the same area. Devices use the SSID to connect to the correct network.
+
+In the world of networking, there are additional terms related to wireless networks, such as BSS, SSID, BSSID, ESS, and ESSID.
+
+- **BSS (Basic Service Set)**: A BSS is a group of devices that are connected to the same wireless network and communicate with each other. It typically consists of an access point and the associated client devices.
+- **BSSID (Basic Service Set Identifier)**: The BSSID is the unique identifier for a BSS. It is usually the MAC address of the access point in the BSS and is included in the packets transmitted by the access point.
+- **SSID (Service Set Identifier)**: The SSID is the name assigned to a wireless network. It is unique character string that identifies an Access Point (AP) or a group of APs in an Extended Service Set (ESS).
+- **ESS (Extended Service Set)**: An ESS is a set of connected BSSs that share the same SSID and allow seamless roaming for clients.
+- **ESSID (Extended Service Set Identifier)**: The ESSID is the identifier for an ESS. It is the same as the SSID for the network and is used to identify the network across multiple BSSs.
