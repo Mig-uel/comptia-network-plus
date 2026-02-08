@@ -115,3 +115,19 @@ By optimizing the distribution of devices across the available frequency bands, 
 - **Transmit Power Control (TPC)**: This feature allows wireless devices to adjust their transmit power based on the distance to the receiving device and the surrounding environment. By reducing transmit power when possible, TPC helps minimize interference with other wireless systems and conserves energy.
 
 Overall, 802.11h enhances the performance and reliability of wireless networks by improving spectrum management and coexistence with other wireless systems, particularly in the 5 GHz frequency band.
+
+## Wireless Standards
+
+When it comes to setting up wireless networks, understanding wireless standards is crucial. Wireless standards define the specifications for wireless communication, including data rates, frequency bands, and security protocols.
+
+There are so many different wireless standards, each with its own characteristics and use cases.
+
+| Standard          | Frequency Band        | Max Data Rate | Compatibility     | Year Introduced |
+| ----------------- | --------------------- | ------------- | ----------------- | --------------- |
+| 802.11a (WiFi 1)  | 5 GHz                 | 54 Mbps       | 802.11n/ac/ax     | 1999            |
+| 802.11b (WiFi 2)  | 2.4 GHz               | 11 Mbps       | 802.11g/n/ac/ax   | 1999            |
+| 802.11g (WiFi 3)  | 2.4 GHz               | 54 Mbps       | 802.11n/ac/ax     | 2003            |
+| 802.11n (WiFi 4)  | 2.4 GHz, 5 GHz        | 600 Mbps      | 802.11a/b/g/ac/ax | 2009            |
+| 802.11ac (WiFi 5) | 2.4 GHz, 5 GHz        | 3.5 Gbps      | 802.11a/b/g/n/ax  | 2012            |
+| 802.11ax (WiFi 6) | 2.4 GHz, 5 GHz, 6 GHz | 9.6 Gbps      | 802.11a/b/g/n/ac  | 2019            |
+
