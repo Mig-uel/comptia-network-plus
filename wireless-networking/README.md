@@ -249,3 +249,55 @@ An **Infrastructure Network** is a type of wireless network topology where devic
 Infrastructure networks rely on fixed routers or access to manage traffic to and from wireless devices.
 
 This is the most common type of network setup used in homes, businesses, and public WiFi hotspots. It provides centralized management, security, and scalability for wireless networks.
+
+## Securing Wireless Networks (OB 2.3)
+
+Securing wireless networks is crucial to protect sensitive data and prevent unauthorized access.
+
+How do we secure wireless networks? There are two main security protocols that we should be setting up on our wireless networks: **WPA2** and **WPA3**.
+
+### WPA2 (Wi-Fi Protected Access 2)
+
+**WPA2 (Wi-Fi Protected Access 2)** is a security protocol for wireless networks that provides strong encryption and authentication mechanisms to protect against unauthorized access.
+
+- It uses AES (Advanced Encryption Standard) for encryption, which is considered highly secure.
+- It supports both personal (WPA2-Personal) and enterprise (WPA2-Enterprise) modes for authentication.
+- WPA2-Personal uses a pre-shared key (PSK) for authentication, while WPA2-Enterprise uses a RADIUS server for authentication.
+- Users authenticate using an alphanumeric passphrase (PSK) via CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol) encryption.
+- It is widely supported by most wireless devices and is considered a standard for securing WiFi networks.
+
+### WPA3 (Wi-Fi Protected Access 3)
+
+**WPA3 (Wi-Fi Protected Access 3)** is the latest security protocol for wireless networks that provides enhanced security features compared to WPA2.
+
+- WPA3 was introduced to address vulnerabilities in WPA2 and provide stronger protection against password guessing attacks and other security threats.
+- Users authenticate using a more secure method called Simultaneous Authentication of Equals (SAE), which provides better protection against offline password guessing attacks.
+- It also includes features like forward secrecy, which ensures that even if a password is compromised, previous communications remain secure.
+- WPA3 is designed to be more resistant to brute-force attacks and provides improved security for open networks (networks without a password) through the use of Opportunistic Wireless Encryption (OWE).
+- While WPA3 offers enhanced security, it may not be supported by all devices, especially older ones. Therefore, it is important to check device compatibility before implementing WPA3 on a wireless network.
+
+### Pre-Shared Key (PSK) vs. Enterprise Authentication
+
+**Pre-Shared Key (PSK)** and **Enterprise Authentication** are two different methods of securing wireless networks.
+
+- **Pre-Shared Key (PSK)**: This method uses a shared password or passphrase that is entered on both the wireless access point and the client devices. It is commonly used in home networks and small businesses. The PSK is typically a string of characters that must be kept secret to prevent unauthorized access to the network.
+
+- **Enterprise Authentication**: This method uses a centralized authentication server, such as a **RADIUS (Remote Authentication Dial-In User Service)** server, to authenticate users. It is commonly used in larger organizations and provides more robust security features compared to PSK. In enterprise authentication, each user has a unique username and password, and the authentication process is more secure against unauthorized access.
+
+In summary, PSK is a simpler method suitable for smaller networks, while enterprise authentication offers enhanced security and is more appropriate for larger organizations with multiple users.
+
+### Guest Networks
+
+A **Guest Network** is a separate wireless network that is created specifically for visitors or guests to use when they are on the premises. It allows guests to access the internet without having access to the main network and its resources.
+
+- Provides internet access to visitors without exposing the main network.
+- Isolated from the primary network to enhance security.
+- Often has its own SSID and password.
+- Can have different security settings and restrictions compared to the main network.
+- Helps protect sensitive data and resources on the primary network by limiting guest access.
+- Can be configured to limit bandwidth or access to certain websites or services.
+- Commonly used in businesses, hotels, cafes, and other public places to provide internet access to customers or visitors.
+
+### Captive Portals
+
+A **Captive Portal** is a web page that users are redirected to when they connect to a wireless network, typically used in public WiFi hotspots. The captive portal requires users to take some action before they can access the internet, such as agreeing to terms of service, entering a password, or providing payment information.
