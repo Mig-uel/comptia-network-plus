@@ -142,3 +142,66 @@ In the world of networking, there are additional terms related to wireless netwo
 - **SSID (Service Set Identifier)**: The SSID is the name assigned to a wireless network. It is unique character string that identifies an Access Point (AP) or a group of APs in an Extended Service Set (ESS).
 - **ESS (Extended Service Set)**: An ESS is a set of connected BSSs that share the same SSID and allow seamless roaming for clients.
 - **ESSID (Extended Service Set Identifier)**: The ESSID is the identifier for an ESS. It is the same as the SSID for the network and is used to identify the network across multiple BSSs.
+
+## Wireless Hardware (OB 2.3)
+
+When setting up a wireless network, various hardware components are involved to ensure proper connectivity and performance.
+
+### Wireless NIC (Network Interface Card)
+
+A **Wireless NIC (Network Interface Card)** is a hardware component that allows a device to connect to a wireless network. It can be integrated into the device (like in laptops and smartphones) or can be an external adapter (like USB WiFi adapters) that can be added to desktops or other devices.
+
+- Required to connect to a wireless network or host.
+- Defines the capabilities of the wireless connection (e.g., supported standards, frequency bands).
+- Can be internal (built-in) or external (USB adapters, PCIe cards).
+- Most devices today come with built-in wireless NICs.
+
+### Wireless Access Point (WAP)
+
+A **Wireless Access Point (WAP)** is a networking device that allows wireless devices to connect to a wired network using WiFi or related standards. It acts as a bridge between the wireless devices and the wired network, enabling communication and data transfer.
+
+- Uses Radio Frequency (RF) to provide connections to wireless clients.
+- Creates a wireless star topology.
+- Uses CSMA/CA to manage collisions.
+  - Compared to CSMA/CD used in wired networks, CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) is used in wireless networks to minimize collisions by using acknowledgments and waiting periods before transmitting data.
+  - Clients send a test signal to check if the channel is clear before transmitting data.
+- It is a layer 2 device (Data Link Layer) that operates within the OSI model.
+- Creates a single collision domain and a single broadcast domain.
+  - Compared to switches that create separate collision domains for each port, a WAP creates a single collision domain for all connected wireless clients.
+- Requires an IP address for management and configuration.
+- Can support multiple SSIDs to create separate virtual networks.
+- Can be standalone or integrated into a wireless router or other networking device.
+
+### Autonomous Access Points
+
+An **Autonomous Access Point** is a standalone wireless access point that operates independently and is configured individually. Each autonomous access point has its own management interface and settings.
+
+- Configured and managed individually.
+- Suitable for small networks with a limited number of access points.
+- Each access point operates independently without centralized control.
+- Ideal for straightforward, smaller network environments where individual management is sufficient.
+
+### Lightweight Access Points
+
+A **Lightweight Access Point** is a type of wireless access point that relies on a centralized controller for management and configuration. Lightweight access points are designed to work in larger networks where multiple access points need to be managed collectively. They are managed via a Wireless LAN Controller (WLC).
+
+- Managed centrally through a Wireless LAN Controller (WLC).
+- Suitable for large networks with multiple access points.
+- Allows for easier management, configuration, and monitoring of multiple access points.
+- Supports features like seamless roaming, load balancing, and centralized security policies.
+- Cannot be managed directly; all configurations are done through the WLC.
+
+### Wireless Antennas
+
+Wireless antennas are essential components of wireless networking devices that facilitate the transmission and reception of radio signals. Different types of antennas are used based on the specific requirements of the wireless network.
+
+- **Omnidirectional Antennas**: These antennas radiate signals in all directions (360 degrees) and are commonly used in environments where coverage is needed in multiple directions, such as in homes or offices. They are ideal for general-purpose wireless networking.
+  - These are the most common type of antennas used in consumer and business wireless access points.
+  - Shorter range compared to directional antennas.
+
+- **Directional Antennas**: These antennas focus the signal in a specific direction, providing a longer range and stronger signal in that direction. They are used in point-to-point connections or when coverage is needed in a specific area, such as connecting two buildings.
+  - Used for long-distance communication or point-to-point links.
+  - Longer range compared to omnidirectional antennas.
+  - Examples include Yagi, parabolic, and panel antennas.
+    - Yagi-Uda antennas are highly directional and focus the signal for up to a mile or more.
+    - Parabolic antennas use a parabolic reflector to focus the signal into a narrow beam for up to 8 miles or more.
