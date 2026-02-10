@@ -205,3 +205,47 @@ Wireless antennas are essential components of wireless networking devices that f
   - Examples include Yagi, parabolic, and panel antennas.
     - Yagi-Uda antennas are highly directional and focus the signal for up to a mile or more.
     - Parabolic antennas use a parabolic reflector to focus the signal into a narrow beam for up to 8 miles or more.
+
+## Wireless Setups (OB 2.3)
+
+When setting up a wireless network, there are a few wireless topologies and configurations to consider.
+
+### Point-to-Point
+
+A **Point-to-Point** wireless setup involves a direct connection between two wireless devices, typically two access points or bridges. This setup is often used to connect two separate locations, such as two buildings on a campus or two offices in different locations.
+
+Point-to-Point networks establish a **direct connection** between two wireless devices, allowing them to communicate directly with each other without the need for an intermediary device.
+
+This type of setup is commonly used for **linking two locations** in a WAN (Wide Area Network) or providing a dedicated pathway for data transmission between two points.
+
+We consumers do not typically use Point-to-Point setups in our homes, but businesses like ISPs or large enterprises may use them to connect different sites.
+
+### Mesh Network
+
+A **Mesh Network** is a type of wireless network topology where multiple access points or nodes are interconnected to provide seamless coverage and redundancy. In a mesh network, each node can communicate with multiple other nodes, creating a web-like structure that allows for efficient data routing and improved reliability.
+
+Mesh networks consist of nodes that connect directly and dynamically to as many other nodes as possible. This creates multiple pathways for data to travel, enhancing network resilience and coverage.
+
+This configuration creates multiple pathways for data to travel between devices, improving reliability and coverage. If one node fails or experiences interference, data can be rerouted through other nodes in the network.
+
+Mesh networks are self-healing and scalable, making them ideal for large areas like smart cities and IoT applications.
+
+### Ad-Hoc Network
+
+An **Ad-Hoc Network** is a type of wireless network topology where devices communicate directly with each other without the need for a central access point or router. In an ad-hoc network, each device can act as both a client and a router, allowing for peer-to-peer communication.
+
+Ad-hoc networks are decentralized and not rely on a pre-existing infrastructure.
+
+Nodes within an ad-hoc network communicate directly with each other without the need for a central access point or router. Each device can act as both a client and a router, allowing for peer-to-peer communication.
+
+Ad-hoc networks are typically used in situations where a temporary network is needed, such as during emergencies, outdoor events, or in remote areas where traditional infrastructure is not available. They are also commonly used for file sharing and gaming among devices in close proximity.
+
+If you ever want to connect two devices like two laptops with a cable, you can use a crossover cable.
+
+### Infrastructure Network
+
+An **Infrastructure Network** is a type of wireless network topology where devices communicate through a central access point or router. In an infrastructure network, all devices connect to the access point, which manages the communication and data transfer between devices.
+
+Infrastructure networks rely on fixed routers or access to manage traffic to and from wireless devices.
+
+This is the most common type of network setup used in homes, businesses, and public WiFi hotspots. It provides centralized management, security, and scalability for wireless networks.
