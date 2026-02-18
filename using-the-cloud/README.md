@@ -109,3 +109,43 @@ Some common cloud connectivity options include:
 2. **Private-Direct Connection to Cloud Provider**: A private-direct connection, such as AWS Direct Connect or Azure ExpressRoute, refers to a **dedicated network link** between an organization's on-premises infrastructure and the cloud provider's network. This type of connection provides a more reliable and consistent network experience compared to VPNs, as it bypasses the public internet and offers higher bandwidth and lower latency.
    - This direct connection **bypasses the public internet**, providing a more reliable, secure, and faster connection for accessing cloud resources.
    - It is ideal for organizations that require high performance and low latency when accessing cloud services, such as for data transfer, hybrid cloud deployments, or connecting to cloud-based applications.
+
+## Cloud Deployment Models (OB 1.3)
+
+When it comes to cloud computing, you have to know how we deploy our applications and services in the cloud.
+
+There are three main cloud deployment models: **Public Cloud**, **Private Cloud**, and **Hybrid Cloud**.
+
+### Deployment Models
+
+**Deployment models** in networking and cloud computing refer to the different ways in which network resources and services can be deployed and accessed. These models define how network infrastructure is set up, managed, and utilized to provide connectivity and services to users.
+
+**Public Cloud**: In a public cloud deployment model, the cloud infrastructure is owned and operated by a third-party cloud service provider, and resources are shared among multiple customers. Users can access and utilize these resources over the internet on a pay-as-you-go basis. Examples of public cloud providers include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).
+
+- Multi-tenant environment where resources are shared among multiple customers.
+- Hardware resources are shared with other customers, but each customer's data and applications are isolated and secure.
+- Most affordable and least secure option, as resources are shared and managed by a third-party provider.
+
+**Private Cloud**: In a private cloud deployment model, the cloud infrastructure is dedicated to a single organization and is not shared with other customers. The organization can either host the private cloud on-premises or use a third-party provider to manage it. Private clouds offer greater control, security, and customization options compared to public clouds.
+
+- Single-tenant environment where resources are dedicated to a single organization.
+- No hardware resources are shared with other customers, providing greater control and security.
+- First-party or third-party management options available, allowing for more customization and control over the cloud environment.
+- Most secure and expensive option, as resources are dedicated and managed by the organization or a trusted provider.
+- Can be hosted by the organization on-premises or by a third-party provider.
+
+**Community Cloud**: A community cloud is a cloud deployment model where the cloud infrastructure is shared by several organizations that have common concerns, such as security requirements, compliance needs, or specific industry regulations. The community cloud can be managed by the organizations themselves or by a third-party provider. It allows for collaboration and resource sharing among the participating organizations while maintaining a level of isolation from other users.
+
+- Shared environment where resources are shared among a specific community of users with common concerns.
+- Can be managed by the organizations themselves or by a third-party provider.
+- Provides a balance between the cost-effectiveness of public clouds and the security and control of private clouds.
+- Suitable for organizations that have similar requirements and want to collaborate while maintaining some level of isolation from other users.
+
+**Hybrid Cloud**: A hybrid cloud deployment model combines elements of both public and private clouds, allowing organizations to leverage the benefits of both. In a hybrid cloud, an organization can keep sensitive data and critical applications in a private cloud while utilizing the public cloud for less sensitive workloads or for scalability. This model provides flexibility and allows organizations to optimize their cloud resources based on their specific needs.
+
+- Combines elements of both public and private clouds also being hosted on-premises or by a third-party provider.
+- Bounded together using standardized or proprietary technology that enables data and application portability.
+- Enables data and application portability, allowing organizations to move workloads between public and private clouds as needed.
+  - i.e., load balancing, failover, or data migration.
+
+In summary, cloud deployment models define how network resources and services are deployed and accessed in the cloud. Public clouds offer shared resources and are cost-effective but less secure, while private clouds provide dedicated resources and greater control at a higher cost. Community clouds allow for collaboration among organizations with common concerns, while hybrid clouds combine elements of both public and private clouds to provide flexibility and optimize resource utilization based on specific needs.
