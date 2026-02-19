@@ -149,3 +149,47 @@ There are three main cloud deployment models: **Public Cloud**, **Private Cloud*
   - i.e., load balancing, failover, or data migration.
 
 In summary, cloud deployment models define how network resources and services are deployed and accessed in the cloud. Public clouds offer shared resources and are cost-effective but less secure, while private clouds provide dedicated resources and greater control at a higher cost. Community clouds allow for collaboration among organizations with common concerns, while hybrid clouds combine elements of both public and private clouds to provide flexibility and optimize resource utilization based on specific needs.
+
+## Cloud Service Models (OB 1.3)
+
+Cloud service models refer to the different levels of abstraction and responsibility in cloud computing.
+
+**Service models** in cloud computing refer to the different levels of abstraction and responsibility that cloud providers offer to customers. These models define how cloud services are delivered and consumed, and they determine the level of control and management that customers have over their resources.
+
+### Software as a Service (SaaS)
+
+**Software as a Service (SaaS)** is a cloud service model where applications are hosted and managed by a third-party provider and made available to customers over the internet. In this model, customers do not have to worry about the underlying infrastructure, software updates, or maintenance, as these responsibilities are handled by the service provider.
+
+Examples of SaaS include email services like Gmail, customer relationship management (CRM) software like Salesforce, and collaboration tools like Microsoft Office 365.
+
+It allows users to access software applications on a subscription basis, providing a convenient and cost-effective way to use software without the need for installation or maintenance.
+
+### Infrastructure as a Service (IaaS)
+
+Let's say you develop your own in-house custom application and you want to deploy it but you don't want to manage the underlying infrastructure. In this case, you can use **Infrastructure as a Service (IaaS)**. IaaS is a cloud service model where customers can rent virtualized computing resources such as servers, storage, and networking from a cloud provider. Customers have control over the operating systems, applications, and data running on the infrastructure, while the cloud provider manages the underlying hardware and virtualization.
+
+Examples of IaaS providers include Amazon Web Services (AWS) EC2, Microsoft Azure Virtual Machines, and Google Cloud Compute Engine.
+
+IaaS allows customers to quickly provision and scale resources as needed, providing flexibility and cost savings compared to traditional on-premises infrastructure. It is ideal for organizations that want to have more control over their infrastructure while still benefiting from the scalability and flexibility of the cloud.
+
+### Platform as a Service (PaaS)
+
+What if you want to develop and deploy your application without worrying about the underlying infrastructure or the software stack? This is where **Platform as a Service (PaaS)** comes in. PaaS is a cloud service model that provides a platform for developers to build, deploy, and manage applications without having to worry about the underlying infrastructure or software stack. In this model, the cloud provider manages the infrastructure, operating system, and runtime environment, while developers focus on writing code and developing applications.
+
+Examples of PaaS providers include Heroku, Google App Engine, and Microsoft Azure App Service.
+
+This model provides a higher level of abstraction compared to IaaS, allowing developers to focus on application development rather than infrastructure management. PaaS is ideal for developers who want to quickly build and deploy applications without the need for extensive infrastructure management or configuration. It also provides features such as scalability, load balancing, and integrated development tools, making it easier for developers to create and manage their applications in the cloud.
+
+In summary, cloud service models define the different levels of abstraction and responsibility in cloud computing. SaaS provides fully managed applications, IaaS offers virtualized infrastructure resources, and PaaS provides a platform for application development and deployment. Each model offers different levels of control and management, allowing organizations to choose the one that best fits their needs and requirements.
+
+### Service Models Comparison
+
+|                       | SaaS     | PaaS     | IaaS     |
+| --------------------- | -------- | -------- | -------- |
+| User                  | Customer | Customer | Customer |
+| Application           | Provider | Customer | Customer |
+| Operating System      | Provider | Provider | Customer |
+| Hardware              | Provider | Provider | Provider |
+| Network               | Provider | Provider | Provider |
+| Facility              | Provider | Provider | Provider |
+| Regulatory Compliance | Provider | Provider | Customer |
