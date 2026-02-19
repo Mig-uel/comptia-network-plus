@@ -193,3 +193,25 @@ In summary, cloud service models define the different levels of abstraction and 
 | Network               | Provider | Provider | Provider |
 | Facility              | Provider | Provider | Provider |
 | Regulatory Compliance | Provider | Provider | Customer |
+
+## Cloud Traits (OB 1.3)
+
+Cloud traits refer to the characteristics and features that define cloud computing.
+
+**Multi-tenancy**:
+
+- Multiple customers share the same physical resources while maintaining logical isolation.
+- Cost-effective and efficient resource utilization.
+- Examples: Public cloud services like AWS, Azure, and Google Cloud.
+
+**Elasticity**:
+
+- The ability to scale resources up or down based on demand.
+- Provides flexibility and cost savings by allowing users to pay only for what they use.
+- Examples: Auto-scaling in AWS, Azure Scale Sets.
+
+**Scalability**:
+
+- The ability to handle increasing workloads by adding resources.
+- Can be vertical (adding more power to existing resources) or horizontal (adding more resources).
+- Examples: Load balancing in AWS, Azure Load Balancer.
