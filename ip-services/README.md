@@ -206,3 +206,19 @@ NS records are essential for ensuring that DNS queries for a domain are directed
 **PTR Record**: A PTR record (Pointer Record) is used in reverse DNS lookups to map an IP address to a domain name. It is the opposite of an A or AAAA record, which maps a domain name to an IP address. PTR records are typically used for verifying the identity of a server or for troubleshooting purposes. For example, a PTR record for the IP address `192.0.2.1` might point to `www.example.com`.
 
 > Recall: Reverse DNS lookups are used to determine the domain name associated with an IP address. PTR records are essential for ensuring that reverse DNS lookups return the correct domain name, which can be important for email delivery, network troubleshooting, and security purposes.
+
+## Host File (OB 3.4)
+
+A **host file** is a local file on a computer that maps domain names to IP addresses. It is used to override the DNS system and provide custom mappings for specific domain names.
+
+The host file is typically located in the operating system's file system and is used by the computer's networking stack to resolve domain names before querying DNS servers.
+
+When a user enters a domain name into their web browser or any other application that requires network access, the operating system first checks the host file to see if there is a mapping for that domain name. If a mapping is found, the corresponding IP address is used to establish the connection. If no mapping is found, the operating system will then query the configured DNS servers to resolve the domain name.
+
+### Hosts File
+
+The **hosts file** is a plain text file used by an operating system to **map hostnames to IP addresses**.
+
+It serves as a **simple form of local DNS resolution**, which the system checks before querying external DNS servers. The hosts file allows users to manually define mappings between domain names and IP addresses, which can be useful for testing, development, or overriding DNS settings.
+
+This file is commonly used for testing website deployments and blocking access to unwanted sites by redirecting domain names to specific IP addresses, such as `127.0.0.1` for localhost.
