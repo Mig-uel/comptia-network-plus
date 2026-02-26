@@ -173,3 +173,36 @@ It does not encrypt the DNS data, but it provides a way to verify the authentici
 **DNS over TLS (DoT)**, on the other hand, uses the TLS protocol to encrypt DNS queries and responses. It establishes a secure TLS connection between the client and the DNS server, ensuring that all DNS traffic is encrypted and protected from eavesdropping and tampering. DoT is typically used in environments where there is a need for strong security and privacy, such as in corporate networks or when using public Wi-Fi networks.
 
 Both DoH and DoT provide enhanced security for DNS communications, but they have different use cases and implementation requirements. DoH is more widely supported and can be used with existing DNS infrastructure, while DoT may require additional configuration and support from the DNS server. Ultimately, the choice between DoH and DoT depends on the specific needs and requirements of the network environment.
+
+## DNS Records (OB 3.4)
+
+DNS records are the building blocks of the DNS system. They contain information about domain names and their corresponding IP addresses, as well as other configuration information.
+
+A **DNS record** is nothing more than an entry in a DNS zone file that provides information about a specific domain name. Each DNS record has a specific type that indicates the kind of information it contains and how it should be used.
+
+Some common types of DNS records include:
+
+**A Record**: An A record (Address Record) maps a domain name to an IPv4 address. It is used to associate a domain name with the IP address of a server hosting a website or service. For example, an A record for www.example.com might point to the IP address `192.0.2.1`.
+This is one of the most common types of DNS records and is stored in a forward lookup zone.
+
+**AAAA Record**: An AAAA record (Quad-A Record) maps a domain name to an IPv6 address. It serves the same purpose as an A record but is used for IPv6 addresses. For example, an AAAA record for www.example.com might point to the IPv6 address `2001:0db8:85a3:0000:0000:8a2e:0370:7334`.
+
+**CNAME Record**: A CNAME record (Canonical Name Record) is used to create an alias for a domain name. It allows you to point one domain name to another domain name. For example, you could have a CNAME record that points www.example.com to example.com, so that both domain names resolve to the same IP address.
+
+**MX Record**: An MX record (Mail Exchange Record) specifies the mail servers responsible for receiving email on behalf of a domain. It includes the priority of the mail server, which determines the order in which mail servers should be used when delivering email to the domain. For example, an MX record for example.com might specify that mail should be delivered to mail.example.com with a priority of 10.
+
+> Recall: IMAP and POP3 are protocols used for retrieving email from a mail server, while SMTP is used for sending email. MX records are essential for ensuring that email is delivered to the correct mail servers for a domain.
+
+**TXT Record**: A TXT record (Text Record) is used to store arbitrary text data associated with a domain name. It can be used for various purposes, such as providing information about the domain, verifying domain ownership, or implementing security measures like SPF (Sender Policy Framework) and DKIM (DomainKeys Identified Mail). For example, a TXT record might contain information about the domain's SPF policy, which specifies which mail servers are authorized to send email on behalf of the domain.
+
+TXT records are often used for security and authentication purposes, as they allow domain owners to specify policies and provide additional information about their domain.
+
+**NS Record**: An NS record (Name Server Record) specifies the authoritative name servers for a domain. It indicates which DNS servers are responsible for managing the DNS records for the domain. For example, an NS record for example.com might specify that the authoritative name servers are ns1.example.com and ns2.example.com.
+
+NS records are essential for ensuring that DNS queries for a domain are directed to the correct name servers that have the authoritative information for that domain.
+
+> Recall: Name servers are responsible for translating domain names into IP addresses, allowing users to access websites and services using human-readable domain names instead of having to remember complex IP addresses. NS records are crucial for the proper functioning of the DNS system, as they ensure that DNS queries are directed to the correct name servers that have the authoritative information for a domain.
+
+**PTR Record**: A PTR record (Pointer Record) is used in reverse DNS lookups to map an IP address to a domain name. It is the opposite of an A or AAAA record, which maps a domain name to an IP address. PTR records are typically used for verifying the identity of a server or for troubleshooting purposes. For example, a PTR record for the IP address `192.0.2.1` might point to `www.example.com`.
+
+> Recall: Reverse DNS lookups are used to determine the domain name associated with an IP address. PTR records are essential for ensuring that reverse DNS lookups return the correct domain name, which can be important for email delivery, network troubleshooting, and security purposes.
