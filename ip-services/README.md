@@ -222,3 +222,33 @@ The **hosts file** is a plain text file used by an operating system to **map hos
 It serves as a **simple form of local DNS resolution**, which the system checks before querying external DNS servers. The hosts file allows users to manually define mappings between domain names and IP addresses, which can be useful for testing, development, or overriding DNS settings.
 
 This file is commonly used for testing website deployments and blocking access to unwanted sites by redirecting domain names to specific IP addresses, such as `127.0.0.1` for localhost.
+
+## Time Protocols (OB 3.4)
+
+When it comes to network authentication security, one of the most important things we must have across the network is **time synchronization**. Time synchronization is crucial for ensuring that all devices on a network have the same time, which is essential for various security protocols and authentication mechanisms.
+
+**Time synchronization protocols** are essential for ensuring consistent and accurate time across all devices in a network.
+
+They play a critical role in maintaining the integrity and security of network communications, as many security protocols rely on accurate timestamps to prevent replay attacks and ensure proper authentication.
+
+### Network Time Protocol (NTP)
+
+**Network Time Protocol (NTP)** is one of the **oldest and most commonly used time synchronization protocols**. It is designed to synchronize the clocks of computers and other devices over a network.
+
+It uses a **hierarchical system of time sources**, with each level referred to as a "stratum". Stratum 0 devices are highly accurate time sources, such as atomic clocks or GPS receivers, while stratum 1 servers are directly connected to stratum 0 devices and provide time to lower-stratum servers and clients.
+
+### Network Time Security (NTS)
+
+One thing that we want to make sure of when we are using NTP is that the time synchronization is secure. This is where **Network Time Security (NTS)** comes in.
+
+**Network Time Security (NTS)** is an extension to the NTP protocol that provides **authentication and integrity** for time synchronization messages.
+
+It adds security features like encryption and authentication to ensure that the time data exchanged between NTP clients and servers is protected from tampering and spoofing. NTS helps to prevent attacks that could manipulate the time on a device, which could lead to security vulnerabilities and authentication issues.
+
+### Precision Time Protocol (PTP)
+
+While NTP is widely used for general time synchronization, some applications require even higher precision. This is where the **Precision Time Protocol (PTP)** comes in.
+
+**Precision Time Protocol (PTP)** is a time synchronization protocol defined in the IEEE 1588 standard. It is designed to provide **sub-microsecond accuracy** for time synchronization in local area networks, making it suitable for applications that require extremely precise timing, such as industrial automation, telecommunications, and financial trading systems.
+
+Unlike NTP, which is typically used for general-purpose time synchronization, PTP is specifically designed for environments where precise timing is critical. It achieves this by using hardware timestamping and specialized network equipment to minimize latency and jitter in time synchronization.
