@@ -105,3 +105,55 @@ Heat maps identify the **optimal placement of access points** and help in planni
 Heat maps visually represent the **wireless signal strength** and coverage across different areas of a building or campus, allowing network administrators to identify dead zones, areas of interference, and potential improvements in the wireless infrastructure.
 
 They are **generated from data collected during the wireless survey** and provide a color-coded map that indicates signal intensity, helping in the design and optimization of wireless networks for better performance and user experience.
+
+## Network Devices End-of-Life (EOL) Management
+
+Throughout your career in network management, you will see many devices reach their **End-of-Life (EOL)** status. EOL refers to the point at which a manufacturer **stops producing, selling, or supporting a device**.
+
+### Lifecycle Management in Networking
+
+**Lifecycle management** involves overseeing the **entire lifespan** of network devices, from acquisition to disposal.
+
+This process includes planning for device upgrades, replacements, and decommissioning, ensuring that the network remains secure, efficient, and up-to-date with current technologies.
+
+### End-of-Life (EOL)
+
+**End-of-Life (EOL)** refers to the stage in a product's lifecycle when the manufacturer **ceases production, support, and updates** for that product.
+
+Understanding and planning for EOL is crucial for network administrators to avoid security vulnerabilities, performance issues, and compatibility problems that may arise from using outdated hardware or software.
+
+### End-of-Support (EOS)
+
+**End-of-Support (EOS)** is the point at which a manufacturer **stops providing technical support, updates, and patches** for a product.
+
+When a device reaches EOS, it may become vulnerable to security risks and may not be compatible with newer technologies. Network administrators must plan for replacements or upgrades to maintain network integrity and performance.
+
+### Software Management in Network Lifecycle
+
+**Software management** is a critical aspect of network lifecycle management, involving the maintaining, updating, and optimizing of software applications and operating systems used in network devices.
+
+Effective software management ensures that systems remain secure, functional, and in compliance with organizational policies and industry standards. It includes tasks such as patch management, version control, license management, and monitoring for vulnerabilities.
+
+### Patch and Bug Fixes
+
+Regular application of **patches and bug fixes** is essential for addressing vulnerabilities, improving performance, and preventing security breaches in network devices and software.
+
+A **structured patch management process** involves identifying, testing, and deploying patches in a timely manner to ensure that all network components remain secure and up-to-date while minimizing downtime and disruptions to network operations.
+
+### Operating System (OS) Management
+
+**Operating System (OS) management** involves regular updates and maintenance to ensure that the OS running on network devices is secure, stable, and compatible with other software and hardware components.
+
+**OS updates** may include security patches, performance improvements, and new features that enhance the functionality of network devices. Proper OS management is crucial for maintaining the overall health and security of the network infrastructure.
+
+### Firmware Updates
+
+Firmware is the low-level software that controls the hardware of network devices. Firmware within hardware devices is responsible for the device's basic functions and operations. It requires updates to fix bugs, close security vulnerabilities, and sometimes enhance the device's capabilities.
+
+Managing firmware updates is a critical for the hardware's reliability and performance. It involves monitoring for new firmware releases from manufacturers, testing updates in a controlled environment, and deploying them across the network devices while minimizing downtime and ensuring compatibility with existing systems.
+
+### Decommissioning of Network Devices
+
+**Decommissioning** involves the process of **safely retiring and removing network devices** that are no longer needed or have reached their end-of-life.
+
+This process includes securely wiping data, disconnecting devices from the network, and properly disposing of or recycling hardware in accordance with environmental and regulatory guidelines.
