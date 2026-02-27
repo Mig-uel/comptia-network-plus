@@ -157,3 +157,41 @@ Managing firmware updates is a critical for the hardware's reliability and perfo
 **Decommissioning** involves the process of **safely retiring and removing network devices** that are no longer needed or have reached their end-of-life.
 
 This process includes securely wiping data, disconnecting devices from the network, and properly disposing of or recycling hardware in accordance with environmental and regulatory guidelines.
+
+## Change and Configuration Management
+
+### Change Management in Networking
+
+**Change management** is a **systematic approach** to handling all changes made to a network's configuration and environment, ensuring that **standardized methods** and procedures are used for efficient and prompt handling of all changes.
+
+It minimizes the impact of change-related incidents upon service quality and consequently **improves the day-to-day operations of the network**. Change management involves planning, testing, implementing, and reviewing changes to ensure they are executed smoothly and do not disrupt network services.
+
+Basically every change is audited and documented for future reference. This includes changes to network configurations, software updates, hardware replacements, and any modifications that could affect the network's performance or security.
+
+### Request Process Tracking/Service Request
+
+The **request process tracking** or **service request management** is a key component of change management in networking. It involves **tracking, logging, progressing, and analyzing service requests** related to network changes, ensuring that they are handled efficiently and effectively.
+
+This system helps in **maintaining control and documentation** of all change requests, providing a clear audit trail for accountability and future reference. It also allows network administrators to prioritize requests, allocate resources appropriately, and ensure that changes are implemented in a timely manner while minimizing disruptions to network services.
+
+### Configuration Management
+
+**Configuration management** in networking involves the **maintenance and control** of all hardware and software configurations within the network infrastructure.
+
+It ensures that the network operates consistently and reliably by keeping track of configuration settings, versions, and changes across all devices and systems.
+
+### Production Configuration
+
+**Production configuration** refers to the settings and setups that are **actively used** in the live network environment.
+
+It includes the configurations of routers, switches, firewalls, servers, and other network devices that are currently in operation. Maintaining accurate production configurations is essential for ensuring network stability, performance, and security.
+
+### Backup Configuration
+
+**Backup configuration** involves creating and maintaining copies of the network device configurations to ensure that they can be restored in case of failure, misconfiguration, or other issues. Regular backups of configurations are critical for disaster recovery and business continuity, allowing network administrators to quickly restore services and minimize downtime.
+
+### Baseline/Golden Configuration
+
+A **baseline or golden configuration** is a **standardized configuration** or **template of approved settings** that serves as a standard for deploying new devices or restoring existing ones.
+
+This standardization ensures consistency across the network, reduces configuration errors, and simplifies troubleshooting and maintenance. It acts as a reference point for comparing current configurations and identifying deviations that may affect network performance or security.
