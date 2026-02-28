@@ -50,3 +50,19 @@ When you configure a device as an SNMP agent, you will typically set up both a p
 ### Authentication in SNMPv3
 
 SNMPv3 introduces a more robust authentication mechanism compared to the previous versions. It uses user-based security models (USM) to provide strong authentication and privacy for SNMP messages. It verifies the identity of the source (SNMP manager) and destination (SNMP agent) of the SNMP messages, ensuring that only authorized users can access the SNMP data.
+
+## Capturing Packets (OB 3.2)
+
+As a network administrator, one of the most fundamental thing you must learn is how to capture packets on the network and analyze them. Packet capturing is a crucial skill for troubleshooting network issues, monitoring network traffic, and ensuring the security of your network.
+
+### Flow Data
+
+**Flow data** is a type of network data that provides information about the traffic flowing through a network. It includes details such as the **source and destination IP addresses, port numbers, protocol types, and the amount of data transferred**.
+
+It is typically collected by network devices such as routers and switches, which can generate flow records based on the traffic they observe. Flow data is useful for understanding network usage patterns, bandwidth utilization, and identifying potential security threats. It can also help network administrators optimize network performance and plan for future capacity needs.
+
+### Packet Capturing
+
+**Packet capturing (pcap)** is the process of **intercepting and logging** network traffic that passes through a network interface. It allows network administrators to analyze the contents of packets, including headers and payloads, to troubleshoot issues, monitor performance, and detect security threats.
+
+As a diagnostic tool, packet capturing is invaluable for understanding how data flows through a network and identifying potential problems. By capturing packets, administrators can gain insights into the behavior of applications, protocols, and devices on the network.
