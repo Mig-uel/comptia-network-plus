@@ -118,3 +118,51 @@ The syslog collector receives these messages, organizes them, and stores them in
 An **Application Programming Interface (API)** is a set of rules and protocols that allows different software applications to communicate with each other. In the context of network monitoring, APIs enable network administrators to interact with monitoring tools, retrieve data, and automate tasks.
 
 APIs facilitate automated network configuration, data extraction, and integration with other systems. They allow administrators to programmatically access monitoring data, perform actions on network devices, and create custom dashboards or reports.
+
+## Monitoring a Network (OB 3.2)
+
+As you work as a network administrator, you will be responsible for monitoring the health and performance of your organization's network. There are so many ways to monitor a network, and the tools you use will depend on the specific requirements of your organization and the devices you are monitoring.
+
+### Network Solutions
+
+**Network solutions** encompass various tools and techniques used to monitor, manage, and secure computer networks.
+
+These solutions can include network monitoring software, intrusion detection systems, firewalls, and other security measures. They help administrators ensure the availability, performance, and security of their networks.
+
+They ensure optimal network performance, security, and reliability by providing real-time oversight and proactive management of network resources. Network solutions can also help organizations comply with regulatory requirements and industry standards.
+
+### Network Discovery
+
+**Network discovery** is the process of **identifying and mapping all the devices and resources** on a network. It involves scanning the network to detect devices such as routers, switches, servers, printers, and other connected devices.
+
+There are two ways to perform network discovery: **active discovery** and **passive discovery**.
+
+- **Active discovery** involves sending probes or requests to devices on the network to elicit responses and gather information about their presence and characteristics. This method can provide detailed information about devices but may generate additional network traffic.
+
+- **Passive discovery** involves monitoring network traffic to identify devices based on the packets they send and receive. This method is less intrusive and does not generate additional traffic, but it may not provide as much detail about the devices.
+
+Other methods of network discovery include **ad-hoc discovery** and **scheduled discovery**.
+
+- **Ad-hoc discovery** is a method of network discovery that is performed on an as-needed basis, rather than continuously. It involves scanning the network for devices and resources when there is a specific need to do so, such as during troubleshooting or when adding new devices to the network. Ad-hoc discovery can be useful for quickly identifying devices and resources without the overhead of continuous monitoring.
+
+- **Scheduled discovery** is a method of network discovery that is performed at regular intervals, according to a predefined schedule. It involves scanning the network for devices and resources on a recurring basis, such as daily, weekly, or monthly. Scheduled discovery can help maintain an up-to-date inventory of network devices and resources, ensuring that administrators have accurate information for monitoring and management purposes.
+
+**Angry IP Scanner** is a popular tool for network discovery that allows administrators to quickly identify devices on a network and gather information about their IP addresses, hostnames, and open ports. It can perform both active and passive discovery, making it a versatile tool for network monitoring and management.
+
+### Traffic Analysis
+
+**Traffic analysis** involves **examining the flow of data packets** across a network to understand the behavior of applications, protocols, and devices. It helps administrators identify performance bottlenecks, security threats, and unusual patterns in network traffic.
+
+It provides insights into how data is transmitted, the volume of traffic, and the types of protocols being used. By analyzing traffic patterns, administrators can optimize network performance, detect anomalies, and ensure that resources are being used efficiently.
+
+### Monitoring
+
+There are many different ways to monitor a network, and the tools you use will depend on the specific requirements of your organization and the devices you are monitoring.
+
+**Performance monitoring** involves tracking various metrics related to the performance of network devices and applications. This can include monitoring response times, throughput, latency, and error rates. Performance monitoring helps administrators identify issues that may affect the user experience and take corrective actions to maintain optimal performance.
+
+**Availability monitoring** focuses on ensuring that network devices and services are accessible and operational. It involves checking the status of devices, services, and applications to ensure they are available to users. Availability monitoring helps administrators detect outages and take steps to restore services quickly.
+
+- It detects when a device or service is down and can trigger alerts to notify administrators of the issue. This allows for prompt response and resolution, minimizing downtime and ensuring that users can access the resources they need.
+
+**Configuration monitoring** involves tracking changes to the configuration of network devices and systems. It helps administrators ensure that configurations are consistent, compliant with policies, and free from unauthorized changes. Configuration monitoring can help prevent misconfigurations that may lead to security vulnerabilities or performance issues.
