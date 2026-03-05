@@ -66,3 +66,21 @@ It is typically collected by network devices such as routers and switches, which
 **Packet capturing (pcap)** is the process of **intercepting and logging** network traffic that passes through a network interface. It allows network administrators to analyze the contents of packets, including headers and payloads, to troubleshoot issues, monitor performance, and detect security threats.
 
 As a diagnostic tool, packet capturing is invaluable for understanding how data flows through a network and identifying potential problems. By capturing packets, administrators can gain insights into the behavior of applications, protocols, and devices on the network.
+
+## Baseline Metric (OB 3.2)
+
+When managing a network, it is essential to establish what the minimum performance metrics are for your network. This is known as the **baseline metric**. It represents the normal operating conditions of your network and serves as a reference point for identifying anomalies or performance issues.
+
+### Baseline Metrics
+
+**Baseline metrics** are the **standard levels of normal performance** for your network. They are established by monitoring the network over a period of time and collecting data on various performance indicators, such as bandwidth usage, latency, packet loss, and error rates. By analyzing this data, network administrators can determine what constitutes normal behavior for their network and set thresholds for acceptable performance.
+
+Establishing these metrics is crucial for effective network management, as it allows administrators to quickly identify when the network is operating outside of its normal parameters. When performance metrics deviate from the established baseline, it may indicate a problem that requires investigation and resolution.
+
+The baseline metrics vary depending on the type of network, the devices being monitored, and the specific requirements of the organization. For example, a high-traffic data center may have different baseline metrics compared to a small office network. It is important to regularly review and update baseline metrics to ensure they remain relevant as the network evolves.
+
+### Anomaly/Alerting Notification
+
+**Anomaly detection and notification systems** are designed to **automatically identify deviations from established baseline metrics** and alert network administrators when performance issues arise. These systems use algorithms and statistical models to analyze network data in real-time, comparing current performance against the baseline metrics.
+
+When an anomaly is detected, the system generates an alert, which can be sent via email, SMS, or other notification methods. This allows administrators to quickly respond to potential issues before they escalate into more significant problems.
