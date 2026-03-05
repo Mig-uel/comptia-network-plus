@@ -112,3 +112,9 @@ Splunk is a widely used SIEM platform that offers advanced features for log mana
 A **syslog collector** is a dedicated tool used for **collecting and storing syslog messages** from various network devices and servers. Syslog is a standard protocol used for sending log messages in an IP network, allowing devices to send event notifications to a centralized logging server.
 
 The syslog collector receives these messages, organizes them, and stores them in a structured format for easy access and analysis. It enables network administrators to monitor the health and performance of their network devices, troubleshoot issues, and maintain security.
+
+### API (OB 3.2)
+
+An **Application Programming Interface (API)** is a set of rules and protocols that allows different software applications to communicate with each other. In the context of network monitoring, APIs enable network administrators to interact with monitoring tools, retrieve data, and automate tasks.
+
+APIs facilitate automated network configuration, data extraction, and integration with other systems. They allow administrators to programmatically access monitoring data, perform actions on network devices, and create custom dashboards or reports.
