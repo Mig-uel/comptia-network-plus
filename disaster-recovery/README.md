@@ -64,3 +64,24 @@ You have to be prepared for disasters before they happen. High-availability appr
 
 - **Active-Passive Clustering**: In this approach, one server is designated as the primary server, while the other servers are designated as secondary servers. If the primary server fails, one of the secondary servers can take over and provide services. This approach provides high availability, but may result in some downtime during failover.
 
+## Testing Disaster Recovery Plans (OB 3.3)
+
+Testing disaster recovery plans is crucial to ensure that they will work effectively in the event of a real disaster. Regular testing helps identify gaps and weaknesses in the plan, allowing organizations to make necessary improvements.
+
+Testing is a critical component of disaster recovery planning. It ensures that recovery procedures are effective and that personnel are familiar with their roles and responsibilities during a disaster.
+
+Regular testing helps organizations prepare for and manage potential disasters, minimizing downtime and data loss. It also helps organizations identify areas for improvement in their disaster recovery plans, ensuring that they are always up-to-date and effective.
+
+There are two exercises that organizations can use to test their disaster recovery plans: tabletop exercises and full-scale exercises.
+
+### Tabletop Exercises
+
+**Tabletop exercises** are discussion-based exercises that simulate a disaster scenario. During a tabletop exercise, participants review the disaster recovery plan and discuss how they would respond to the scenario. This type of exercise is useful for identifying gaps in the plan and ensuring that all personnel understand their roles and responsibilities.
+
+The key thing about tabletop exercises is that they are low-cost and low-risk. They do not require any actual system downtime or data loss, making them a safe way to test the disaster recovery plan.
+
+### Validation Tests
+
+**Validation tests** are more comprehensive exercises that simulate a real disaster scenario. During a validation test, the organization will actually implement the disaster recovery plan and test its effectiveness. This type of exercise is useful for identifying any issues with the plan and ensuring that it can be executed successfully in a real disaster scenario.
+
+These tests are crucial for confirming the practical applicability of the disaster recovery plan. They help ensure that all systems, processes, and personnel are prepared to respond effectively to a disaster.
