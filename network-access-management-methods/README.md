@@ -1,6 +1,6 @@
 # Network Access and Management Methods
 
-## VPN Access
+## VPN Access (OB 3.5)
 
 In today's world, Virtual Private Networks (VPNs) are essential for secure remote access to a network. VPNs create an encrypted tunnel between the user's device and the network, ensuring that data transmitted over the internet remains private and secure.
 
@@ -30,7 +30,7 @@ When it comes to setting up a VPN, there are two common configurations: **Split 
 
 - **Full Tunnel**: In a full tunnel configuration, all traffic from the user's device is routed through the VPN, providing a higher level of security. However, this can lead to increased latency and bandwidth usage, as all internet traffic must pass through the corporate network.
 
-## Connecting to Network Devices
+## Connecting to Network Devices (OB 3.5)
 
 When managing network devices, there are various methods to connect and configure them. The choice of method often depends on the device type, network architecture, and security requirements.
 
@@ -59,3 +59,31 @@ SSH is a **cryptographic network protocol** that provides secure access to devic
 It provides a secure channel over an unsecured network, replacing older protocols like Telnet, which transmit data in plaintext. SSH is widely used for managing routers, switches, and servers, offering strong authentication and encryption to protect sensitive information.
 
 Typically, SSH cannot be used to initially configure a device, as it requires the device to be set up with an IP address and SSH service enabled. However, once configured, SSH is a preferred method for remote management due to its security features.
+
+## Network Management (OB 3.5)
+
+Let's say you are a network administrator and you have to access some of the devices in your network. There are a couple terms that you should be familiar with when it comes to network management.
+
+### Jump Box/Host
+
+A **Jump Box** (or Jump Host) is a secure computer/server that all administrators must connect to before accessing other devices in the network. It acts as a gateway, providing an additional layer of security by isolating the management network from the rest of the network.
+
+It acts as a stepping stone from one security zone to another, providing a controlled access point for administrators to manage devices in different network segments. By using a jump box, organizations can enforce strict access controls, monitor administrative activities, and reduce the attack surface of their network.
+
+If a jump box is not used, administrators may have to connect to each device directly, which can increase the risk of unauthorized access and make it harder to monitor and audit administrative actions. A jump box centralizes access, making it easier to implement security policies and track user activity.
+
+### In-Band Management
+
+**In-Band Management** refers to managing network devices using the same network that carries regular data traffic. This means that management traffic shares the same network infrastructure as user data, which can simplify network design and reduce costs.
+
+This method allows administrators to manage devices without requiring a separate management network. However, it can also introduce security risks, as management traffic may be exposed to potential threats on the same network.
+
+An example of in-band management is using SSH or web-based interfaces to manage devices over the same network that users are accessing.
+
+### Out-of-Band Management
+
+**Out-of-Band Management** involves using a dedicated management network or channel that is separate from the regular data traffic. This method provides a higher level of security and reliability, as management traffic is isolated from user data.
+
+Out-of-band management is often used for critical network devices, such as routers and switches, where uninterrupted access is essential. It allows administrators to manage devices even if the primary network is down or experiencing issues.
+
+An example of out-of-band management is using a dedicated console server or management interface that connects to devices through a separate network, ensuring that administrators can access and manage devices regardless of the state of the main network.
