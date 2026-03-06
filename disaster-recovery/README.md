@@ -52,6 +52,15 @@ When a disaster occurs, it may not be possible to continue operations at the pri
 
 **Hot Sites**: Hot sites are the most expensive option for disaster recovery. They are fully equipped data centers that have all the necessary hardware, software, and configurations to run operations. In the event of a disaster, organizations can move their operations to a hot site and resume operations almost immediately. However, hot sites require significant investment and ongoing maintenance.
 
-- Fully equipped with all necessary hardware, software, and configurations
+- Fully equipped with all necessary hardware, software, and configurationsBrother HL-L2405DW
 - Requires minimal time to set up and restore operations, often within minutes or hours
 - Most expensive option for disaster recovery
+
+## High-Availability Approaches (OB 3.3)
+
+You have to be prepared for disasters before they happen. High-availability approaches are strategies that organizations can use to minimize downtime and ensure that critical systems and services remain available during a disaster. Some common high-availability approaches include:
+
+- **Active-Active Clustering**: In this approach, multiple servers are configured to work together as a cluster. If one server fails, the other servers in the cluster can take over and continue to provide services without interruption. This approach provides high availability and fault tolerance.
+
+- **Active-Passive Clustering**: In this approach, one server is designated as the primary server, while the other servers are designated as secondary servers. If the primary server fails, one of the secondary servers can take over and provide services. This approach provides high availability, but may result in some downtime during failover.
+
