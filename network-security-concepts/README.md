@@ -105,3 +105,17 @@ Before we get into risk management, we need to understand some key terms related
   - Attack and breach are often used interchangeably, but an attack refers to the attempt to exploit a vulnerability, while a breach refers to the successful exploitation of that vulnerability.
 
 Keep in mind, everything we do in IT security is based on risk. We should not be doing anything in IT security we have not done a risk assessment for. We need to understand the risks we are facing and make informed decisions about how to manage those risks effectively.
+
+## Authentication
+
+When working on a system, you're going to want to make sure that three main concepts are applied: authentication, authorization, and accounting (AAA). These concepts are crucial for ensuring the security of a system and controlling access to resources.
+
+When a user logs into a system, you want to make sure they have the right password, in other words, that they are authenticated, they have access to the correct resources, and that their actions are being logged for accountability. This is where **AAA** comes into play.
+
+### AAA
+
+**AAA** stands for Authentication, Authorization, and Accounting. It is a framework used to manage and control access to resources in a secure manner.
+
+- **Authentication**: The process of verifying the identity of a user or system. This can be done through various methods such as passwords, biometrics, or multi-factor authentication (MFA). The goal of authentication is to ensure that the person or system accessing the resource is who they claim to be.
+- **Authorization**: Once the identity of the user or system has been authenticated, authorization determines what resources they are allowed to access and what actions they can perform. This is typically managed through access control lists (ACLs) or role-based access control (RBAC).
+- **Accounting or Auditing**: This involves tracking and recording the actions of users or systems to ensure accountability. It allows organizations to monitor access to resources, detect unauthorized activities, and maintain logs for compliance and forensic purposes.
