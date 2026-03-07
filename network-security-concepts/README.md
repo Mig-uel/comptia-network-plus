@@ -106,7 +106,7 @@ Before we get into risk management, we need to understand some key terms related
 
 Keep in mind, everything we do in IT security is based on risk. We should not be doing anything in IT security we have not done a risk assessment for. We need to understand the risks we are facing and make informed decisions about how to manage those risks effectively.
 
-## Authentication
+## Authentication (OB 4.1)
 
 When working on a system, you're going to want to make sure that three main concepts are applied: authentication, authorization, and accounting (AAA). These concepts are crucial for ensuring the security of a system and controlling access to resources.
 
@@ -119,3 +119,27 @@ When a user logs into a system, you want to make sure they have the right passwo
 - **Authentication**: The process of verifying the identity of a user or system. This can be done through various methods such as passwords, biometrics, or multi-factor authentication (MFA). The goal of authentication is to ensure that the person or system accessing the resource is who they claim to be.
 - **Authorization**: Once the identity of the user or system has been authenticated, authorization determines what resources they are allowed to access and what actions they can perform. This is typically managed through access control lists (ACLs) or role-based access control (RBAC).
 - **Accounting or Auditing**: This involves tracking and recording the actions of users or systems to ensure accountability. It allows organizations to monitor access to resources, detect unauthorized activities, and maintain logs for compliance and forensic purposes.
+
+## Multi-Factor Authentication (MFA) (OB 4.1)
+
+**Multi-Factor Authentication (MFA)** is a security mechanism that requires users to provide two or more forms of authentication before granting access to a system or resource. This adds an extra layer of security by requiring multiple pieces of evidence to verify the user's identity.
+
+### Types of Authentication Factors
+
+MFA factors can be categorized into four main categories:
+
+1. **Something You Know**: This includes passwords, PINs, or security questions. It is the most common form of authentication but can be vulnerable to attacks such as phishing or brute force.
+
+- Example: Passwords, PINs, security questions
+
+2. **Something You Have**: This includes physical devices such as smart cards, tokens, or mobile phones. These factors are more secure than something you know because they require possession of a specific item.
+
+- Example: Mobile devices with authentication apps, hardware tokens, smart cards
+
+3. **Something You Are**: This includes biometric factors such as fingerprints, facial recognition, or iris scans. These factors are unique to each individual and are difficult to replicate.
+
+- Example: Fingerprints, facial recognition, iris scans
+
+4. **Somewhere You Are (Location-Based Authentication)**: This factor uses the user's location as a form of authentication and adds contextual security restricting access based on geographic location or network.
+
+- Example: Authentication based on the user's geographic location or network
