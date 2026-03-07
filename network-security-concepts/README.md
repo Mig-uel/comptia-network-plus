@@ -71,3 +71,37 @@ In summary, the CIA Triad (Confidentiality, Integrity, and Availability) is a fu
 - **Confidentiality** ensures that sensitive information is kept secret and protected from unauthorized access.
 - **Integrity** ensures that information is accurate and reliable, preventing unauthorized modifications.
 - **Availability** ensures that information and resources are accessible to authorized users when needed, preventing downtime and ensuring continuity of operations.
+
+## Risk Terms (OB 4.1)
+
+Everything we do in life has some level of risk. What exactly do we mean by risk?
+
+### Risk
+
+In the context of IT security, **risk** refers to the probability of a threat exploiting a vulnerability to cause harm to an asset. It is a measure of the potential loss or damage that could occur as a result of a security incident.
+
+$Risk= \text{Threat} \times \text{Vulnerability}$
+
+This formula indicates that risk is a function of both the likelihood of a threat occurring and the vulnerability of the system to that threat.
+
+When it comes to risk management, we have to ensure that we manage threats and the vulnerabilities that exist in our systems in order to reduce or eliminate risk.
+
+Security is known to be risk-based, which means that we have to make decisions based on the level of risk that we are willing to accept. We cannot eliminate all risks, but we can take steps to mitigate them and reduce their impact.
+
+Before we get into risk management, we need to understand some key terms related to risk:
+
+- **Asset**: An asset is anything of value to an organization, such as data, hardware, software, or intellectual property. Assets can be tangible (e.g., physical devices) or intangible (e.g., reputation).
+- **Asset Valuation**: Asset valuation is the process of determining the value of an asset, which can help organizations prioritize their security efforts and allocate resources effectively.
+- **Threats**: A threat is any potential danger that could exploit a vulnerability to cause harm to an asset. Threats can be intentional (e.g., cyber attacks) or unintentional (e.g., natural disasters).
+- **Threat Agent/Actor**: A threat agent or actor is an individual, group, or entity that has the capability and intent to carry out a threat. This can include hackers, insiders, competitors, or even natural forces.
+- **Threat Event**: A threat event is an occurrence that has the potential to cause harm to an asset. This can include a cyber attack, a data breach, or a natural disaster.
+- **Threat Vector**: A threat vector is the path or method used by a threat agent to exploit a vulnerability and carry out a threat event. This can include phishing emails, malware, or physical access to a facility.
+
+- **Vulnerability**: A vulnerability is a weakness or flaw in a system that can be exploited by a threat agent to cause harm to an asset. Vulnerabilities can exist in software, hardware, or even in organizational processes.
+- **Exposure**: Exposure refers to the extent to which an asset is vulnerable to a threat. It is a measure of how much risk an organization is exposed to based on the vulnerabilities present in their systems.
+- **Safeguards/Controls**: Safeguards or controls are measures implemented to reduce or mitigate the risk associated with a threat. These can include technical controls (e.g., firewalls, encryption), administrative controls (e.g., policies, training), and physical controls (e.g., locks, security guards).
+- **Attack**: An attack is an intentional act by a threat agent to exploit a vulnerability and cause harm to an asset. This can include cyber attacks, physical attacks, or social engineering attacks.
+- **Breach**: A breach is a successful attack that results in unauthorized access to an asset, leading to potential harm or damage. A breach can involve the theft of data, disruption of services, or damage to systems.
+  - Attack and breach are often used interchangeably, but an attack refers to the attempt to exploit a vulnerability, while a breach refers to the successful exploitation of that vulnerability.
+
+Keep in mind, everything we do in IT security is based on risk. We should not be doing anything in IT security we have not done a risk assessment for. We need to understand the risks we are facing and make informed decisions about how to manage those risks effectively.
