@@ -143,3 +143,15 @@ MFA factors can be categorized into four main categories:
 4. **Somewhere You Are (Location-Based Authentication)**: This factor uses the user's location as a form of authentication and adds contextual security restricting access based on geographic location or network.
 
 - Example: Authentication based on the user's geographic location or network
+
+## Authorization (OB 4.1)
+
+When a user logs into a system, they are authenticated to verify their identity. Once authenticated, the system needs to determine what resources the user is allowed to access and what actions they can perform. This is where **authorization** comes into play.
+
+**Authorization** is all about what a user is allowed to do after they have been authenticated. It involves granting or denying access to specific resources based on the user's identity and the permissions associated with that identity.
+
+It determines what a user is allowed to do by establishing their rights and privileges within the system. This can be managed through various methods:
+
+- **Permissions and Privileges**: This involves granting permissions to access specific resources. Permissions define the actions a user can perform on a resource, such as read, write, or execute. Privileges are higher-level permissions that may allow users to perform administrative tasks or access sensitive data.
+- **Access Control Lists (ACLs)**: Authorization is enforce through access control mechanisms such as ACLs, which specify which users or groups have access to specific resources and what actions they can perform on those resources.
+- **Authorization Models**: There are different models of authorization, such as **Role-Based Access Control (RBAC)**, where users are assigned roles that have specific permissions, and **Attribute-Based Access Control (ABAC)**, where access is granted based on attributes of the user, resource, and environment. **Discretionary Access Control (DAC)** allows users to control access to their own resources, while **Mandatory Access Control (MAC)** enforces access based on predefined policies set by the system administrator.
