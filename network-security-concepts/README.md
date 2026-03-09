@@ -155,3 +155,17 @@ It determines what a user is allowed to do by establishing their rights and priv
 - **Permissions and Privileges**: This involves granting permissions to access specific resources. Permissions define the actions a user can perform on a resource, such as read, write, or execute. Privileges are higher-level permissions that may allow users to perform administrative tasks or access sensitive data.
 - **Access Control Lists (ACLs)**: Authorization is enforce through access control mechanisms such as ACLs, which specify which users or groups have access to specific resources and what actions they can perform on those resources.
 - **Authorization Models**: There are different models of authorization, such as **Role-Based Access Control (RBAC)**, where users are assigned roles that have specific permissions, and **Attribute-Based Access Control (ABAC)**, where access is granted based on attributes of the user, resource, and environment. **Discretionary Access Control (DAC)** allows users to control access to their own resources, while **Mandatory Access Control (MAC)** enforces access based on predefined policies set by the system administrator.
+
+## IAM (OB 4.1)
+
+When you work for an organization, you will most likely not be given access to all the resources you need to do your job. Instead, you will be given access to specific resources based on your role and responsibilities within the organization.
+
+It is super important to ensure that users only have access to the resources they need to do their job and nothing more. This is called the **Principle of Least Privilege**. It is a security principle that states that users should only be granted the minimum level of access necessary to perform their job functions. This helps to reduce the risk of unauthorized access and potential damage to the system.
+
+The framework that is used to manage user identities and access to resources is called **Identity and Access Management (IAM)**. IAM is a set of policies, processes, and technologies that enable organizations to manage digital identities and control access to resources.
+
+By controlling user access to critical resources, IAM ensures that the right individuals have the appropriate access to technology resources, while preventing unauthorized access.
+
+This system is crucial for maintaining security and compliance within an organization, as it helps to protect sensitive data and resources from unauthorized access and potential breaches. IAM solutions typically include features such as user provisioning, authentication, authorization, and auditing to ensure that access is granted appropriately and monitored effectively.
+
+For example, let's say Mary works in the accounting department. We want to build a system that Mary only has access to the accounting files and within a certain time frame. We can use IAM to set up permissions that allow Mary to access the accounting files during her working hours, but restrict access outside of those hours. This way, we can ensure that Mary has the access she needs to do her job while also maintaining security and preventing unauthorized access.
