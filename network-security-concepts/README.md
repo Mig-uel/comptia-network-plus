@@ -169,3 +169,53 @@ By controlling user access to critical resources, IAM ensures that the right ind
 This system is crucial for maintaining security and compliance within an organization, as it helps to protect sensitive data and resources from unauthorized access and potential breaches. IAM solutions typically include features such as user provisioning, authentication, authorization, and auditing to ensure that access is granted appropriately and monitored effectively.
 
 For example, let's say Mary works in the accounting department. We want to build a system that Mary only has access to the accounting files and within a certain time frame. We can use IAM to set up permissions that allow Mary to access the accounting files during her working hours, but restrict access outside of those hours. This way, we can ensure that Mary has the access she needs to do her job while also maintaining security and preventing unauthorized access.
+
+## Access Control Models (OB 4.1)
+
+When you login to a system, what kind of access do you have? Are you able to access all the resources on the system, or are you restricted to certain resources? This is where access control models come into play. Access control models define how access to resources is granted and managed within a system.
+
+### Access Controls
+
+**Access controls** are mechanisms and policies used to **manage and restrict access** to resources within a system. They are essential for ensuring that only authorized users can access specific resources and perform certain actions.
+
+Various types of access controls exist to help organizations implement security measures effectively: **DAC**, **MAC**, **RBAC**, and **ABAC**. Each of these models has its own approach to managing access and permissions, and they can be used in different scenarios based on the organization's needs and security requirements.
+
+Effective implementation of access controls required **balancing security, complexity, and usability**. Organizations must carefully design their access control policies to ensure that they provide sufficient security while also allowing users to perform their tasks efficiently. Regular reviews and updates to access control policies are necessary to adapt to changing security threats and organizational needs.
+
+### DAC and MAC
+
+The most restrictive access control models are **Discretionary Access Control (DAC)** and **Mandatory Access Control (MAC)**.
+
+- **Mandatory Access Control (MAC)** is a security model where access to resources is determined by a **central authority** based on different levels of security. In MAC, access decisions are made based on the classification of the resource and the clearance level of the user. Users cannot change access permissions; only administrators can modify them.
+  - Use Case: MAC is commonly used in government and military environments where strict access controls are necessary to protect sensitive information.
+  - Key Aspects: Centralized control, strict access policies, and high security.
+  - Example: In a MAC system, a document classified as "Top Secret" can only be accessed by users with a clearance level of "Top Secret" or higher. Even if a user has the necessary clearance, they cannot access the document unless the central authority grants them permission.
+
+- **Discretionary Access Control (DAC)** is a security model where access to resources is determined by the **owner** of the resource. In DAC, users have the discretion to grant or deny access to their resources. This model allows for more flexibility but can also lead to security risks if not managed properly.
+  - Use Case: DAC is often used in commercial and enterprise environments where users need more control over their resources.
+  - Key Aspects: User-controlled access, flexibility, and potential security risks if not managed properly.
+  - Example: In a DAC system, a user who owns a file can decide who else can read, write, or execute that file. For instance, if Alice creates a document, she can choose to share it with Bob and grant him read access while denying access to Charlie.
+
+### RBAC
+
+The most commonly and widely used access control model is **Role-Based Access Control (RBAC)**. In RBAC, access to resources is based on the roles assigned to users within an organization. Each role has specific permissions associated with it, and users are granted access to resources based on their assigned roles.
+
+- Use Case: RBAC is widely used in organizations of all sizes and industries, as it provides a scalable and efficient way to manage access to resources based on job functions and responsibilities.
+- Key Aspects: Role-based access, scalability, and efficient management of permissions.
+- Example: In a company, employees may be assigned roles such as "Manager," "HR," or "IT Support," each with specific permissions to access certain resources. For instance, a Manager may have access to financial reports, while HR may have access to employee records, and IT Support may have access to system configurations.
+
+### RBAC
+
+Another access control model with similar acronym is **Rule-Based Access Control (RBAC)**. In Rule-Based Access Control, access to resources is determined by a set of rules that evaluate attributes of the user, resource, and environment. This model allows for more dynamic access control decisions based on specific conditions.
+
+- Use Case: Rule-Based Access Control is often used in environments where access decisions need to be made based on specific conditions, such as time of day, location, or device being used.
+- Key Aspects: Dynamic access control, attribute evaluation, and flexibility in access decisions.
+- Example: A firewall that allows or blocks traffic based on specific rules, such as allowing traffic from certain IP addresses or blocking traffic during specific hours.
+
+### ABAC
+
+**Attribute-Based Access Control (ABAC)** is an access control model that uses attributes of users, resources, and the environment to make access decisions. In ABAC, access is granted or denied based on a combination of attributes rather than predefined roles or rules.
+
+- Use Case: ABAC is often used in complex environments where access decisions need to be made based on a wide range of attributes and conditions.
+- Key Aspects: Attribute-based access control, fine-grained access decisions, and flexibility in managing permissions.
+- Example: In an ABAC system, access to a document may be granted based on attributes such as the user's department, the sensitivity level of the document, and the time of access. For instance, a user from the Finance department may be granted access to a financial report during business hours, while a user from another department may be denied access regardless of the time.
