@@ -231,3 +231,82 @@ Applications:
 - **User Access Control**: Implementing the principle of least privilege ensures that users only have access to the resources they need to perform their job functions. This minimizes the risk of accidental or intentional misuse of sensitive information.
 - **Administrative Accounts**: System administrators should have elevated privileges only when necessary and should use standard user accounts for routine tasks. This reduces the risk of accidental changes or security breaches.
 - **Software and Processes**: Applications and services should also follow the principle of least privilege, running with the minimum permissions required to function properly. This limits the potential impact of vulnerabilities or exploits.
+
+## Single Sign-On (SSO) and LDAP (OB 4.1)
+
+### Single Sign-On (SSO)
+
+**Single Sign-On (SSO)** is a common feature where users can **log in once** and gain **access to multiple systems or applications** without needing to re-enter their credentials for each one. SSO improves user convenience and productivity while maintaining security.
+
+### SSO Benefits
+
+- **Reduced Password Fatigue**: Users only need to remember one set of credentials, reducing the likelihood of password-related issues.
+- **Centralized Authentication Control**: SSO allows for centralized management of user authentication, making it easier to enforce security policies and monitor access.
+- **Reduced IT Workload**: With fewer password-related support requests, IT teams can focus on other tasks and improve overall efficiency.
+
+### Lightweight Directory Access Protocol (LDAP)
+
+**Lightweight Directory Access Protocol (LDAP)** is a protocol used to access and manage directory services over a network. LDAP is commonly used for storing and retrieving user information, such as usernames, passwords, and group memberships, in a centralized directory.
+
+> What are directory services? Directory services are specialized databases that store information about users, groups, devices, and other resources within an organization. They provide a centralized way to manage and access this information, making it easier to enforce security policies and control access to resources.
+
+Usage: Primarily used for directory services and information lookup. Commonly utilized for storing user credentials and groups in an enterprise environment. LDAP allows applications and services to authenticate users and retrieve user information from the directory.
+
+> Active Directory (AD) is a directory service developed by Microsoft that uses LDAP as its underlying protocol. AD provides a centralized way to manage user accounts, groups, and resources in a Windows-based network environment.
+
+### Negatives of SSO and LDAP
+
+The biggest negative of SSO is that if a user’s credentials are compromised, the attacker can gain access to all connected systems and applications. This makes it crucial to implement strong authentication methods, such as multi-factor authentication (MFA), to enhance security.
+
+However, in this case, the benefits of SSO outweigh the negatives. SSO improves user experience, reduces password fatigue, and simplifies access management, making it a valuable feature for organizations. By implementing strong security measures alongside SSO, organizations can mitigate the risks associated with credential compromise and ensure secure access to their systems and applications.
+
+## Federation and SAML (OB 4.1)
+
+### Federation
+
+**Federation** is a concept that allows users to access multiple systems or applications across different organizations or domains using a single set of credentials. It enables seamless authentication and authorization between trusted entities, allowing users to access resources without needing separate accounts for each system.
+
+It allows for single sign-on (SSO) and streamlined access management across different organizations or domains. Federation is commonly used in scenarios where users need to access resources from multiple organizations, such as in business partnerships or collaborations.
+
+Federation involves **identity providers (IdPs)** and **service providers (SPs)** and specific protocols and standards, such as **Security Assertion Markup Language (SAML)**, to facilitate secure communication and authentication between different systems.
+
+Federation makes the internet a lot easier to use. It allows users to access multiple systems or applications across different organizations or domains using a single set of credentials. This eliminates the need for users to remember multiple usernames and passwords, improving user experience and productivity.
+
+> But isn't Single Sign-on used for the web as well? Yes, but SSO is typically used within a single organization or domain, while federation allows for SSO across different organizations or domains. Federation enables seamless authentication and authorization between trusted entities, allowing users to access resources without needing separate accounts for each system.
+
+### SAML
+
+One of the most famous protocols used for federation is **Security Assertion Markup Language (SAML)**. SAML is an open standard that allows **identity providers (IdPs) and service providers (SPs)** to securely exchange authentication and authorization information.
+
+SAML enables single sign-on (SSO) by allowing users to authenticate once with their identity provider and then access multiple service providers without needing to log in again. This improves user experience and reduces the need for multiple passwords, enhancing security and convenience.
+
+Usage: SAML is commonly used in enterprise environments to enable SSO and federation between different systems and applications. It allows organizations to securely manage user identities and access to resources across multiple domains.
+
+Characteristics: SAML uses XML-based messages to communicate authentication and authorization information between identity providers and service providers. It supports various authentication methods, including username/password, multi-factor authentication (MFA), and digital certificates.
+
+### SAML (Key Components)
+
+- **Identity Provider (IdP)**: The IdP is responsible for authenticating users and providing identity information to service providers. It manages user credentials and verifies the user's identity before granting access to resources.
+  - Examples: Okta, Microsoft Azure AD, Google Identity Platform
+  - Attestation: The IdP attests to the user's identity by issuing a SAML assertion, which contains information about the user's authentication status and attributes.
+- **Service Provider (SP)**: The SP is the entity that provides access to resources or services. It relies on the IdP to authenticate users and provide identity information. The SP trusts the IdP's assertions and grants access to users based on the information received.
+  - Examples: Salesforce, Dropbox, Slack
+  - Trust Relationship: The SP establishes a trust relationship with the IdP, allowing it to accept SAML assertions and grant access to users based on their authenticated identity.
+
+### OAuth
+
+**OAuth** is an open standard for authorization that allows users to grant third-party applications limited access to their resources without sharing their credentials. It enables secure delegation of access, allowing users to authorize applications to act on their behalf.
+
+It is used to grant websites or applications access to user information without exposing passwords. OAuth is commonly used for social login, where users can log in to third-party applications using their existing accounts from platforms like Google, Facebook, or Twitter.
+
+Usage: OAuth is widely used in web and mobile applications to enable secure access to user resources, such as APIs, without requiring users to share their passwords. It allows users to authorize applications to access specific resources on their behalf while maintaining control over their credentials.
+
+Characteristics: OAuth is about **authorization**, not authentication. It provides a framework for granting access to resources based on tokens, which represent the user's authorization to access specific resources. OAuth supports various grant types, including authorization code, implicit, resource owner password credentials, and client credentials.
+
+### OpenID Connect (OIDC)
+
+**OpenID Connect (OIDC)** is an authentication layer built on top of the OAuth 2.0 protocol. It allows clients to verify the identity of users based on the authentication performed by an authorization server, as well as to obtain basic profile information about the user.
+
+Usage: OIDC is commonly used in web and mobile applications to enable secure user authentication and identity verification. It allows users to log in to applications using their existing accounts from identity providers, such as Google, Microsoft, or Facebook.
+
+Characteristics: OIDC extends OAuth 2.0 for use cases involving identity assertions and authentication. It provides a standardized way to authenticate users and obtain user profile information, making it easier for developers to implement secure authentication in their applications.
