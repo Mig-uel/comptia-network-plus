@@ -219,3 +219,15 @@ Another access control model with similar acronym is **Rule-Based Access Control
 - Use Case: ABAC is often used in complex environments where access decisions need to be made based on a wide range of attributes and conditions.
 - Key Aspects: Attribute-based access control, fine-grained access decisions, and flexibility in managing permissions.
 - Example: In an ABAC system, access to a document may be granted based on attributes such as the user's department, the sensitivity level of the document, and the time of access. For instance, a user from the Finance department may be granted access to a financial report during business hours, while a user from another department may be denied access regardless of the time.
+
+## Principle of Least Privilege (OB 4.1)
+
+In an orginization, it is important to ensure that users only have access to the resources they need to do their job and nothing more.
+
+The **Principle of Least Privilege** is a security principle that states that users should only be granted the minimum level of access necessary to perform their job functions. This helps to reduce the risk of unauthorized access and potential damage to the system.
+
+Applications:
+
+- **User Access Control**: Implementing the principle of least privilege ensures that users only have access to the resources they need to perform their job functions. This minimizes the risk of accidental or intentional misuse of sensitive information.
+- **Administrative Accounts**: System administrators should have elevated privileges only when necessary and should use standard user accounts for routine tasks. This reduces the risk of accidental changes or security breaches.
+- **Software and Processes**: Applications and services should also follow the principle of least privilege, running with the minimum permissions required to function properly. This limits the potential impact of vulnerabilities or exploits.
