@@ -310,3 +310,13 @@ Characteristics: OAuth is about **authorization**, not authentication. It provid
 Usage: OIDC is commonly used in web and mobile applications to enable secure user authentication and identity verification. It allows users to log in to applications using their existing accounts from identity providers, such as Google, Microsoft, or Facebook.
 
 Characteristics: OIDC extends OAuth 2.0 for use cases involving identity assertions and authentication. It provides a standardized way to authenticate users and obtain user profile information, making it easier for developers to implement secure authentication in their applications.
+
+## RADIUS and TACACS+ (OB 4.1)
+
+When managing a network, you are going to have many kinds of devices that need to be authenticated before they can access the network.
+
+**RADIUS (Remote Authentication Dial-In User Service)** or **TACACS+ (Terminal Access Controller Access-Control System Plus)** are two network protocols that provide centralized **authentication, authorization, and accounting (AAA)** services for network devices and users.
+
+They are widely used by ISPs and enterprises to manage access to network resources, such as routers, switches, and wireless access points. Both protocols allow for centralized management of user credentials and access policies, making it easier to enforce security measures and monitor user activity.
+
+Both of these protocols use the same technology but have different implementations. RADIUS is more commonly used for network access control, while TACACS+ is often used for device administration and management.
