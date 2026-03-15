@@ -329,3 +329,11 @@ Time-based authentication can be implemented in various ways, such as:
 
 - **Time-Based One-Time Passwords (TOTP)**: This method generates a unique password that is valid for a short period of time, typically 30 seconds. Users must enter the current TOTP to authenticate, which adds an extra layer of security.
 - **Time-Based Access Control**: This method restricts access to resources based on specific times or time ranges. For example, users may only be allowed to access certain resources during business hours, or access may be denied outside of those hours.
+
+## GeoFencing (OB 4.1)
+
+Certain organizations may want to restrict access to their systems based on the geographic location of the user. This is where **GeoFencing** comes into play.
+
+**GeoFencing** is a security mechanism that uses geographic location to control access to resources. It allows organizations to define virtual boundaries around specific geographic areas and restrict access to resources based on the user's location.
+
+GeoFencing can be implemented using various technologies, such as GPS, IP address geolocation, Wi-Fi triangulation, RFID, and Bluetooth beacons. By using GeoFencing, organizations can enhance security by ensuring that only users within a specific geographic area can access certain resources, while blocking access from unauthorized locations.
