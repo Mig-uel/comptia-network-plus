@@ -449,3 +449,25 @@ The **General Data Protection Regulation (GDPR)** is a comprehensive data protec
 GDPR sets strict requirements for how organizations collect, store, and use personal data, and it grants individuals greater control over their data. Compliance with GDPR involves implementing measures such as obtaining explicit consent for data processing, ensuring data security, and providing individuals with the right to access and delete their personal data.
 
 For example, if a company collects personal data from individuals in the EU, they must comply with GDPR requirements to ensure that the data is processed lawfully and securely. This may involve **obtaining explicit consent** from individuals before collecting their data, implementing security measures to protect the data from breaches, and providing individuals with the ability to access and delete their personal data upon request. Failure to comply with GDPR can result in significant fines and legal consequences for organizations.
+
+## Network Segmentation with Guest Networks and BYOD (OB 4.1)
+
+When it comes to managing a network, you are going to want to split the network into devices your trust and devices you don't trust. This is where **network segmentation** comes into play.
+
+### Network Segmentation Enforcements
+
+**Network segmentation** enforcement involves dividing a network into smaller segments or subnets to improve security, performance, and manageability.
+
+This strategy helps limit access to sensitive data, reduce the attack surface, and contain potential breaches by isolating different parts of the network.
+
+### Guest Networks
+
+**Guest networks** are a common form of network segmentation that provides a separate and isolated network for visitors or guests. This allows guests to access the internet without gaining access to the internal network and its resources.
+
+Implementing segmentation via guest networks helps protect the internal network from potential threats posed by guest devices, while still providing necessary connectivity for visitors.
+
+### BYOD (Bring Your Own Device) Segmentation
+
+**BYOD (Bring Your Own Device)** policies allow employees to use their personal devices for work purposes, which can introduce security risks if not managed properly. To mitigate these risks, organizations can implement network segmentation for BYOD devices.
+
+Segmentation of BYOD devices involves creating a separate network segment for these devices, which can help protect the internal network from potential threats posed by personal devices. This allows employees to use their own devices while still maintaining security and control over the organization's network resources.
