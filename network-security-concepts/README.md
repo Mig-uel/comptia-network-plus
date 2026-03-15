@@ -320,3 +320,12 @@ When managing a network, you are going to have many kinds of devices that need t
 They are widely used by ISPs and enterprises to manage access to network resources, such as routers, switches, and wireless access points. Both protocols allow for centralized management of user credentials and access policies, making it easier to enforce security measures and monitor user activity.
 
 Both of these protocols use the same technology but have different implementations. RADIUS is more commonly used for network access control, while TACACS+ is often used for device administration and management.
+
+## Time-Based Authentication (OB 4.1)
+
+**Time-Based Authentication** is a security mechanism that requires users to authenticate within a specific time frame. This can be used to enhance security by limiting the window of opportunity for attackers to gain unauthorized access.
+
+Time-based authentication can be implemented in various ways, such as:
+
+- **Time-Based One-Time Passwords (TOTP)**: This method generates a unique password that is valid for a short period of time, typically 30 seconds. Users must enter the current TOTP to authenticate, which adds an extra layer of security.
+- **Time-Based Access Control**: This method restricts access to resources based on specific times or time ranges. For example, users may only be allowed to access certain resources during business hours, or access may be denied outside of those hours.
