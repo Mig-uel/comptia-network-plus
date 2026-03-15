@@ -337,3 +337,37 @@ Certain organizations may want to restrict access to their systems based on the 
 **GeoFencing** is a security mechanism that uses geographic location to control access to resources. It allows organizations to define virtual boundaries around specific geographic areas and restrict access to resources based on the user's location.
 
 GeoFencing can be implemented using various technologies, such as GPS, IP address geolocation, Wi-Fi triangulation, RFID, and Bluetooth beacons. By using GeoFencing, organizations can enhance security by ensuring that only users within a specific geographic area can access certain resources, while blocking access from unauthorized locations.
+
+## Physical Security (OB 4.1)
+
+When people think of cybersecurity, they often focus on digital threats and overlook the importance of physical security. However, physical security is a critical component of overall security and can have a significant impact on the protection of information and resources.
+
+You can have the world's best cybersecurity measures in place, but if an attacker can physically access your systems or data, they can bypass all of those measures and cause significant damage.
+
+**Physical security** is crucial for protecting assets, personnel, and data from physical threats and events that could lead to loss, damage, or unauthorized access.
+
+This includes a variety of measures such as:
+
+- surveillance cameras
+- locking mechanisms
+- access control systems
+- security personnel
+- environmental controls (e.g., fire suppression, climate control)
+
+Two physical security controls that you must have in place are **security cameras** and **locks**.
+
+### Security Cameras
+
+**Security cameras** play a vital role in physical security by providing real-time monitoring and recording of activities in and around a facility.
+
+They can help deter criminal activity, provide evidence in the event of an incident, and enhance overall security by allowing security personnel to monitor and respond to potential threats effectively.
+
+Security cameras can be strategically placed at entry points, critical areas, and vulnerable locations to maximize their effectiveness in protecting assets and ensuring the safety of personnel.
+
+### Locks
+
+**Locks** are a fundamental physical security control that restricts access to physical spaces and resources. They can be used to secure doors, cabinets, safes, and other areas where sensitive information or valuable assets are stored.
+
+Modern security systems integrate electronic locks with access control systems, allowing for more sophisticated management of access permissions and enhanced security. By using locks effectively, organizations can prevent unauthorized access and protect their assets from theft or damage.
+
+A type of lock that is commonly used in physical security is a **cable lock**. Cable locks are flexible and can be used to secure a variety of items, such as laptops, bicycles, or other valuable equipment. They typically consist of a steel cable that can be looped around the item and secured with a locking mechanism, providing a deterrent against theft and unauthorized access.
