@@ -409,3 +409,43 @@ When an attacker attempts to access or interact with the honeyfile, it triggers 
 Similar to a honeyfile, a **honeytoken** is a decoy piece of data that is designed to attract and trap attackers. It can be any type of data, such as a username, password, or API key, that appears to be valuable and sensitive but is actually a fake token that is monitored for unauthorized access.
 
 This could be a faker user account, database record, or any other type of digital bait that, if interact with, would trigger an alert to the security team.
+
+## Audit and Compliance Laws (OB 4.1)
+
+When working in IT security, it is important to understand the various audit and compliance laws that govern the industry. These laws are designed to protect sensitive information and ensure that organizations are following best practices for security.
+
+There are many different laws around the world that govern how companies are allowed to gather, store, and use data. If a company does not comply with these laws, they can face significant fines and legal consequences.
+
+### Audits and Regulatory Compliance
+
+**Audits and Regulatory Compliance** are critical for ensuring that organizations adhere to **legal and industry standards** for security and data protection.
+
+Regular audits help verify compliance, identify vulnerabilities, and implement improvements to safeguard sensitive information and maintain trust with customers and stakeholders.
+
+### Data Locality
+
+**Data Locality** refers to the physical location where data is stored, processed, and managed.
+
+Compliance with data locality regulations is crucial for organizations to ensure that they are adhering to legal and industry standards for data protection and privacy. Different countries and regions have specific laws governing data locality, and organizations must ensure that they are storing and processing data in accordance with these regulations to avoid legal consequences and maintain trust with customers and stakeholders.
+
+For example, if a company is doing business in various countries, they may need to ensure that they are storing and processing data in compliance with the data locality regulations of each country. This may involve using local data centers or cloud providers that have data centers in the relevant regions to ensure compliance with data locality requirements.
+
+Two laws that you must know for the Network+ exam are the **General Data Protection Regulation (GDPR)** and the **Payment Card Industry Data Security Standard (PCI DSS)**.
+
+### Payment Card Industry Data Security Standard (PCI DSS)
+
+The **Payment Card Industry Data Security Standard (PCI DSS)** is a set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment.
+
+Compliance with PCI DSS involves implementing measures such as encryption, access controls, regular monitoring, and vulnerability management to protect cardholder data and prevent data breaches.
+
+For example, if a company processes credit card payments, and they store cardholder data on their servers, they must comply with PCI DSS requirements to ensure that the data is protected from unauthorized access and breaches. This may involve implementing encryption for stored cardholder data, restricting access to the data, and regularly monitoring and testing their security measures to maintain compliance with PCI DSS standards.
+
+This is not a law, it is a standard, but it is still important to know for the Network+ exam.
+
+### General Data Protection Regulation (GDPR)
+
+The **General Data Protection Regulation (GDPR)** is a comprehensive data protection regulation that governs the processing and movement of personal data within the **European Union (EU)** and beyond.
+
+GDPR sets strict requirements for how organizations collect, store, and use personal data, and it grants individuals greater control over their data. Compliance with GDPR involves implementing measures such as obtaining explicit consent for data processing, ensuring data security, and providing individuals with the right to access and delete their personal data.
+
+For example, if a company collects personal data from individuals in the EU, they must comply with GDPR requirements to ensure that the data is processed lawfully and securely. This may involve **obtaining explicit consent** from individuals before collecting their data, implementing security measures to protect the data from breaches, and providing individuals with the ability to access and delete their personal data upon request. Failure to comply with GDPR can result in significant fines and legal consequences for organizations.
