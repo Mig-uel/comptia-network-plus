@@ -371,3 +371,41 @@ Security cameras can be strategically placed at entry points, critical areas, an
 Modern security systems integrate electronic locks with access control systems, allowing for more sophisticated management of access permissions and enhanced security. By using locks effectively, organizations can prevent unauthorized access and protect their assets from theft or damage.
 
 A type of lock that is commonly used in physical security is a **cable lock**. Cable locks are flexible and can be used to secure a variety of items, such as laptops, bicycles, or other valuable equipment. They typically consist of a steel cable that can be looped around the item and secured with a locking mechanism, providing a deterrent against theft and unauthorized access.
+
+## Honeypot and Honeynet (OB 4.1)
+
+Anytime a hacker breaks into a system, they are going to want to explore the system and see what they can find. This is where **honeypots** and **honeynets** come into play.
+
+### Deception and Disruption Technology
+
+**Deception and Disruption Technology** refers to a set of cybersecurity techniques and tools designed to deceive, confuse, or disrupt the activities of attackers.
+
+These technologies are used to create traps or illusions that protect real assets and resources while misleading attackers into engaging with decoy systems or resources. The goal is to detect, analyze, and mitigate threats by diverting attackers away from valuable targets and gathering intelligence on their tactics and techniques.
+
+### Honeypot
+
+A **honeypot** is a security mechanism that is designed to attract and trap attackers. It is a **decoy system or resource** that appears to be vulnerable and valuable to attackers, but in reality, it is isolated and monitored to detect and analyze malicious activity.
+
+If we give them what they want, they will stay in the honeypot and we can monitor their activity and learn from it. This can help us understand the tactics, techniques, and procedures (TTPs) used by attackers, as well as identify potential vulnerabilities in our systems.
+
+Attackers engaging with a honeypot provide valuable insights into their behavior and methods, allowing security teams to enhance their defenses and respond more effectively to real threats. By using honeypots strategically, organizations can improve their overall security posture and better protect their assets from cyber attacks.
+
+### Honeynet
+
+A **honeynet** is a network of honeypots that are designed to work together to provide a more comprehensive and realistic environment for attackers. A honeynet can include multiple honeypots that simulate different types of systems, applications, and services, creating a more complex and convincing environment for attackers to interact with.
+
+Again, **a honeynet is essentially a network of honeypots**.
+
+It simulates a real network environment to attract and trap attackers. This setup is more complex and can provide deeper insights into how attackers interact with networks, what strategies they use, and how they move laterally within a network. By analyzing the activity within a honeynet, security teams can gain valuable intelligence on emerging threats and improve their overall security posture.
+
+### Honeyfile
+
+A **honeyfile** is a decoy file that is designed to attract and trap attackers. It is a file that appears to be valuable and sensitive, but in reality, it is a fake file that is monitored for unauthorized access.
+
+When an attacker attempts to access or interact with the honeyfile, it triggers an alert or notification to the security team, allowing them to investigate the activity and gather intelligence on the attacker's tactics and techniques. Honeyfiles can be used as part of a broader deception strategy to detect and analyze malicious activity while protecting real assets from harm.
+
+### Honeytoken
+
+Similar to a honeyfile, a **honeytoken** is a decoy piece of data that is designed to attract and trap attackers. It can be any type of data, such as a username, password, or API key, that appears to be valuable and sensitive but is actually a fake token that is monitored for unauthorized access.
+
+This could be a faker user account, database record, or any other type of digital bait that, if interact with, would trigger an alert to the security team.
