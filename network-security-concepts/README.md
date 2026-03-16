@@ -471,3 +471,35 @@ Implementing segmentation via guest networks helps protect the internal network 
 **BYOD (Bring Your Own Device)** policies allow employees to use their personal devices for work purposes, which can introduce security risks if not managed properly. To mitigate these risks, organizations can implement network segmentation for BYOD devices.
 
 Segmentation of BYOD devices involves creating a separate network segment for these devices, which can help protect the internal network from potential threats posed by personal devices. This allows employees to use their own devices while still maintaining security and control over the organization's network resources.
+
+### ICS (Industrial Control Systems) (OB 4.1)
+
+A lot of systems that are used in critical infrastructure, such as power plants, water treatment facilities, and manufacturing plants, are older systems that were not designed with security in mind. These systems are often referred to as **Industrial Control Systems (ICS)**.`
+
+### Industrial Control Systems (ICS)
+
+**Industrial Control Systems (ICS)** in a general term that refers to a variety of control systems used in industrial production, including:
+
+- **Supervisory Control and Data Acquisition (SCADA)**: A type of ICS used for remote monitoring and control of industrial processes, often found in critical infrastructure such as power plants and water treatment facilities.
+- **Distributed Control Systems (DCS)**: A type of ICS used for controlling complex processes in industries such as manufacturing and chemical processing, where control is distributed across multiple controllers.
+- **Programmable Logic Controllers (PLC)**: A type of ICS used for automation of industrial processes, often found in manufacturing and assembly lines.
+
+ICSs are typically used in industries such as electrical, water, oil, gas, and data centers, where they play a critical role in controlling and monitoring industrial processes.
+
+Field devices, such as sensors and actuators, are often connected to ICSs to collect data and control physical processes such as:
+
+- Opening and closing valves and breakers
+- Collecting data from sensors
+- Monitoring the local environment
+
+ICS were built in an era where security was not a concern, and they often have vulnerabilities that can be exploited by attackers.
+
+### Securing ICS
+
+**How can we secure these systems?**
+
+One way is to implement network segmentation to isolate ICS from other parts of the network. This can help prevent attackers from gaining access to ICS and causing damage to critical infrastructure.
+
+Additionally, implementing strong access controls, regular patching and updates, and monitoring for suspicious activity can help enhance the security of ICS and protect against potential threats.
+
+An example of a cyber attack on ICS is the **Stuxnet worm**, which was a sophisticated malware that targeted Iranian nuclear facilities. Stuxnet was designed to disrupt the operation of centrifuges used in uranium enrichment by causing them to spin out of control while reporting normal operation to monitoring systems. This attack highlighted the vulnerabilities of ICS and the potential consequences of cyber attacks on critical infrastructure.
